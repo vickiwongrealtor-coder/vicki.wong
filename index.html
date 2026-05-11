@@ -12,6 +12,13 @@
 <meta property="og:title" content="Vicki Wong | Cantonese Realtor – East Bay &amp; South Bay, CA">
 <meta property="og:description" content="Trilingual Bay Area realtor serving Castro Valley, Dublin, Hayward, Fremont, San Jose, Cupertino &amp; beyond. 廣東話 · 普通話 · English.">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://vickiwongrealty.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vicki Wong – Bay Area Cantonese Realtor serving East Bay and South Bay">
+<meta name="twitter:image" content="https://vickiwongrealty.com/og-image.jpg">
+<meta name="twitter:title" content="Vicki Wong | Cantonese Realtor – East Bay & South Bay, CA">
+<meta name="twitter:description" content="Trilingual Bay Area realtor. 廣東話 · 普通話 · English. Castro Valley, Fremont, San Jose, Cupertino & beyond.">
 
 <script type="application/ld+json">
 {
@@ -567,6 +574,46 @@ footer{background:var(--charcoal);padding:3rem 0 2rem;border-top:1px solid rgba(
   background: rgba(201,169,122,0.1);
 }
 
+
+/* ── BLOG ── */
+.blog-card {
+  background: var(--white); padding: 2rem;
+  border-top: 3px solid var(--oak);
+  display: flex; flex-direction: column; gap: 0.7rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.blog-card:nth-child(2) { border-top-color: var(--sage); }
+.blog-card:nth-child(3) { border-top-color: var(--sage); }
+.blog-card:nth-child(4) { border-top-color: var(--charcoal); }
+.blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(44,44,42,0.09); }
+.blog-tag {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--sage);
+}
+.blog-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-weight: 600; line-height: 1.3;
+  color: var(--charcoal);
+}
+.blog-excerpt {
+  font-size: 0.88rem; font-weight: 300; line-height: 1.75;
+  color: #6a6a68; flex: 1;
+}
+.blog-meta {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em;
+  color: #aaa;
+}
+.blog-read {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--oak);
+  text-decoration: none; border-bottom: 1px solid var(--oak);
+  padding-bottom: 1px; align-self: flex-start;
+  transition: color 0.2s, border-color 0.2s;
+}
+.blog-read:hover { color: var(--sage); border-color: var(--sage); }
+@media(max-width:900px){ #blog .section-inner > div[style*="grid"] { grid-template-columns: 1fr 1fr !important; } }
+@media(max-width:600px){ #blog .section-inner > div[style*="grid"] { grid-template-columns: 1fr !important; } }
+
 </style>
 </head>
 <body>
@@ -581,6 +628,7 @@ footer{background:var(--charcoal);padding:3rem 0 2rem;border-top:1px solid rgba(
     <li><a href="#sold" data-i18n="nav_listings">Listings</a></li>
     <li><a href="#cities" data-i18n="nav_cities">Cities</a></li>
     <li><a href="#testimonials" data-i18n="nav_reviews">Reviews</a></li>
+    <li><a href="#blog">Blog</a></li>
     <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -1208,6 +1256,119 @@ footer{background:var(--charcoal);padding:3rem 0 2rem;border-top:1px solid rgba(
 
         <button class="form-submit" type="submit" data-i18n="form_send">Send Message</button>
       </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ BLOG ═══ -->
+<section id="blog" style="background:var(--linen); padding:5rem 0;">
+  <div class="section-inner">
+    <div class="section-label">Resources & Insights</div>
+    <h2 class="section-title">Latest from the <em>Blog</em></h2>
+    <p style="font-size:0.95rem;font-weight:300;color:#6a6a68;margin-top:0.5rem;margin-bottom:2.5rem;max-width:520px;line-height:1.7;">
+      Local market insights, buying &amp; selling guides, and advice for Bay Area families — in English, Cantonese, and Mandarin.
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+
+      <article class="blog-card">
+        <div class="blog-tag">School Guide · Castro Valley</div>
+        <h3 class="blog-title">Castro Valley Elementary Schools: Full Breakdown of Rankings, Demographics &amp; Academics</h3>
+        <p class="blog-excerpt">Every elementary school in CVUSD ranked — Jensen Ranch, Proctor, Independent, and more. Test scores, student demographics, and what it means for your home search.</p>
+        <div class="blog-meta">May 2026 · 12 min read · 2024–25 Data</div>
+        <a class="blog-read" href="blog/castro-valley-elementary-schools-guide.html">Read More →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Buyer Guide</div>
+        <h3 class="blog-title">What to Know About Buying a Home in Castro Valley in 2026</h3>
+        <p class="blog-excerpt">Castro Valley remains one of the East Bay's most sought-after family communities. Pricing, offer strategy, and what buyers need to know right now.</p>
+        <div class="blog-meta">May 2026 · 5 min read</div>
+        <a class="blog-read" href="blog/buying-home-castro-valley-2026.html">Read More →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Market Insight</div>
+        <h3 class="blog-title">East Bay vs. South Bay: Which Is Right for Your Family?</h3>
+        <p class="blog-excerpt">A data-driven comparison of schools, pricing, commute, and community feel to help your family decide where to put down roots.</p>
+        <div class="blog-meta">May 2026 · 6 min read</div>
+        <a class="blog-read" href="blog/east-bay-vs-south-bay.html">Read More →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">廣東話指南</div>
+        <h3 class="blog-title">東灣 vs 南灣：哪裡更適合您的家庭？</h3>
+        <p class="blog-excerpt">廣東話詳細比較東灣與南灣的樓價、學校、通勤及社區，助您做出最適合家庭的選擇。</p>
+        <div class="blog-meta">2026年5月 · 閱讀 7 分鐘</div>
+        <a class="blog-read" href="blog/zh-HK-east-bay-vs-south-bay.html">閱讀全文 →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">简体中文指南</div>
+        <h3 class="blog-title">东湾 vs 南湾：哪里更适合您的家庭？</h3>
+        <p class="blog-excerpt">普通话详细对比东湾与南湾的房价、学校、通勤及社区，帮助华人家庭做出最佳选择。</p>
+        <div class="blog-meta">2026年5月 · 阅读 7 分钟</div>
+        <a class="blog-read" href="blog/zh-CN-east-bay-vs-south-bay.html">阅读全文 →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">廣東話指南</div>
+        <h3 class="blog-title">灣區買樓全攻略 — 廣東話逐步解說</h3>
+        <p class="blog-excerpt">由預批按揭到交匙，廣東話帶您了解美國買樓每一步驟。首次置業及換樓均適用。</p>
+        <div class="blog-meta">2026年5月 · 閱讀 8 分鐘</div>
+        <a class="blog-read" href="blog/cantonese-home-buying-guide.html">閱讀全文 →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">简体中文指南</div>
+        <h3 class="blog-title">湾区购房全攻略 — 普通话逐步解析</h3>
+        <p class="blog-excerpt">从预批贷款到收钥匙，普通话带您了解美国购房每一步骤。首次购房及换房均适用。</p>
+        <div class="blog-meta">2026年5月 · 阅读 8 分钟</div>
+        <a class="blog-read" href="blog/zh-CN-home-buying-guide.html">阅读全文 →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Seller Guide</div>
+        <h3 class="blog-title">How to Sell Your Bay Area Home for Top Dollar in 2026</h3>
+        <p class="blog-excerpt">Staging strategy, pricing psychology, and negotiation tips from an agent quoted in the Silicon Valley Business Journal.</p>
+        <div class="blog-meta">April 2026 · 7 min read</div>
+        <a class="blog-read" href="blog/selling-home-bay-area-2026.html">Read More →</a>
+      </article>
+
+    </div>
+
+      <article class="blog-card">
+        <div class="blog-tag">Buyer Guide</div>
+        <h3 class="blog-title">What to Know About Buying a Home in Castro Valley in 2026</h3>
+        <p class="blog-excerpt">Castro Valley remains one of the East Bay's most sought-after family communities. Here's what buyers need to know about inventory, pricing, and making a winning offer in today's market.</p>
+        <div class="blog-meta">May 2026 · 5 min read</div>
+        <a class="blog-read" href="blog/buying-home-castro-valley-2026.html">Read More →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Market Insight</div>
+        <h3 class="blog-title">East Bay vs. South Bay: Which Is Right for Your Family?</h3>
+        <p class="blog-excerpt">Castro Valley, Fremont, or Cupertino? San Jose or Hayward? A data-driven comparison of schools, commute, pricing, and community feel to help your family decide where to put down roots.</p>
+        <div class="blog-meta">May 2026 · 6 min read</div>
+        <a class="blog-read" href="blog/east-bay-vs-south-bay.html">Read More →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">廣東話指南</div>
+        <h3 class="blog-title">灣區買樓全攻略 — 廣東話逐步解說</h3>
+        <p class="blog-excerpt">從搵樓、出價、驗樓到過戶，用廣東話帶您了解美國買樓的每一個步驟。無論是首次置業還是換樓，這份指南都適合您。</p>
+        <div class="blog-meta">2026年5月 · 閱讀時間8分鐘</div>
+        <a class="blog-read" href="blog/cantonese-home-buying-guide.html">閱讀全文 →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Seller Guide</div>
+        <h3 class="blog-title">How to Sell Your Bay Area Home for Top Dollar in 2026</h3>
+        <p class="blog-excerpt">From staging strategy to pricing psychology, here's what separates homes that sell in days for over asking — and homes that sit. Practical tips from an agent quoted in the Silicon Valley Business Journal.</p>
+        <div class="blog-meta">April 2026 · 7 min read</div>
+        <a class="blog-read" href="blog/selling-home-bay-area-2026.html">Read More →</a>
+      </article>
+
     </div>
   </div>
 </section>
