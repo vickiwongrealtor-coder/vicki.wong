@@ -1,74 +1,1546 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- ── HOMEPAGE ── -->
   <url>
     <loc>https://vickiwongrealty.com/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/?lang=zh-HK"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/?lang=zh-CN"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vickiwongrealty.com/"/>
+    <image:image>
+      <image:loc>https://vickiwongrealty.com/og-image.jpg</image:loc>
+      <image:title>Vicki Wong — Bay Area Cantonese Realtor</image:title>
+    </image:image>
   </url>
 
-  <!-- English Blog Posts -->
+  <!-- ── CITY PAGES ── -->
   <url>
-    <loc>https://vickiwongrealty.com/blog/castro-valley-elementary-schools-guide/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://vickiwongrealty.com/cities/castro-valley/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/cities/castro-valley/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/fremont/</loc>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://vickiwongrealty.com/cities/hayward/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/dublin/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/cupertino/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/palo-alto/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/san-jose/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/mountain-view/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/cities/milpitas/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ── BLOG: ENGLISH ── -->
+  <url>
+    <loc>https://vickiwongrealty.com/blog/castro-valley-elementary-schools-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://vickiwongrealty.com/blog/buying-home-castro-valley-2026/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vickiwongrealty.com/blog/east-bay-vs-south-bay/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/blog/east-bay-vs-south-bay/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-east-bay-vs-south-bay/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-east-bay-vs-south-bay/"/>
   </url>
   <url>
     <loc>https://vickiwongrealty.com/blog/selling-home-bay-area-2026/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ── BLOG: CANTONESE 廣東話 ── -->
   <url>
     <loc>https://vickiwongrealty.com/blog/cantonese-home-buying-guide/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/cantonese-home-buying-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-home-buying-guide/"/>
   </url>
-
-  <!-- Chinese Blog Posts -->
   <url>
     <loc>https://vickiwongrealty.com/blog/zh-HK-east-bay-vs-south-bay/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-east-bay-vs-south-bay/"/>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/blog/east-bay-vs-south-bay/"/>
-  </url>
-  <url>
-    <loc>https://vickiwongrealty.com/blog/zh-CN-east-bay-vs-south-bay/</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-east-bay-vs-south-bay/"/>
     <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/blog/east-bay-vs-south-bay/"/>
   </url>
+
+  <!-- ── BLOG: MANDARIN 普通話 ── -->
   <url>
     <loc>https://vickiwongrealty.com/blog/zh-CN-home-buying-guide/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-home-buying-guide/"/>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/blog/cantonese-home-buying-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/cantonese-home-buying-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-east-bay-vs-south-bay/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-east-bay-vs-south-bay/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-east-bay-vs-south-bay/"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://vickiwongrealty.com/blog/east-bay-vs-south-bay/"/>
   </url>
 
+  <url>
+    <loc>https://vickiwongrealty.com/blog/eichler-palo-alto-vs-castro-valley/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/eichler-palo-alto-vs-castro-valley/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/greenridge-castro-valley-mcm/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/greenridge-castro-valley-mcm/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/eichler-maintenance-costs/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/eichler-maintenance-costs/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/staging-an-eichler/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/staging-an-eichler/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/eichler-floor-to-ceiling-windows/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/eichler-floor-to-ceiling-windows/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/modernizing-mcm-ai-age/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/modernizing-mcm-ai-age/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/eichler-atrium-indoor-outdoor/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/eichler-atrium-indoor-outdoor/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/eichler-neighborhoods-compared/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/eichler-neighborhoods-compared/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/anthropic-effect-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/anthropic-effect-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/menlo-park-palo-alto-ai-hub/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/menlo-park-palo-alto-ai-hub/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/return-to-office-san-jose/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/return-to-office-san-jose/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/nvidia-millionaires-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/nvidia-millionaires-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/ai-predict-home-sale/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/ai-predict-home-sale/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/smart-home-vs-ai-home/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/smart-home-vs-ai-home/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/tech-layoffs-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/tech-layoffs-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/meta-apple-google-campus-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/meta-apple-google-campus-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/ai-startup-bay-area-housing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/ai-startup-bay-area-housing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/semiconductor-chip-act-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/semiconductor-chip-act-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/1031-exchange-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/1031-exchange-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/drop-and-swap-1031/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/drop-and-swap-1031/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/kids-inherit-1031-exchange/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/kids-inherit-1031-exchange/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/prop-19-55-plus/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/prop-19-55-plus/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/gifting-vs-inheriting-property/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/gifting-vs-inheriting-property/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/backyard-vineyard-tax/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/backyard-vineyard-tax/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/flat-lot-vs-hillside-premium/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/flat-lot-vs-hillside-premium/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/property-tax-appeal-santa-clara/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/property-tax-appeal-santa-clara/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/heloc-investment-strategy/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/heloc-investment-strategy/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/prop-13-vs-prop-19/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/prop-13-vs-prop-19/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/foreign-buyers-firpta/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/foreign-buyers-firpta/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/capital-gains-timing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/capital-gains-timing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/stanford-path-private-schools/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/stanford-path-private-schools/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/school-district-premium/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/school-district-premium/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/menlo-park-school-neighborhoods/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/menlo-park-school-neighborhoods/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/fremont-mission-san-jose-competitive/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/fremont-mission-san-jose-competitive/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/private-vs-public-school-cost/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/private-vs-public-school-cost/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/palo-alto-junior-museum/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/palo-alto-junior-museum/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/cupertino-school-ranking-homes/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/cupertino-school-ranking-homes/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/los-altos-school-zone/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/los-altos-school-zone/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/saratoga-school-premium/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/saratoga-school-premium/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/east-bay-school-comparison/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/east-bay-school-comparison/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/palo-alto-neighborhoods/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/palo-alto-neighborhoods/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/mountain-view-beyond-google/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/mountain-view-beyond-google/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/atherton-buyer-persona/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/atherton-buyer-persona/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/palomares-hills-turnover/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/palomares-hills-turnover/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/castro-valley-vs-hayward/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/castro-valley-vs-hayward/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/sunnyvale-record-low-inventory/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/sunnyvale-record-low-inventory/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/trader-joes-home-appreciation/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/trader-joes-home-appreciation/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/burlingame-vs-san-mateo/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/burlingame-vs-san-mateo/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/willow-glen-vs-palo-alto/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/willow-glen-vs-palo-alto/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/fremont-neighborhood-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/fremont-neighborhood-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/campbell-neighborhood-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/campbell-neighborhood-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/menlo-park-atherton-border/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/menlo-park-atherton-border/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/los-gatos-lifestyle/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/los-gatos-lifestyle/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/morgan-hill-gilroy-value/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/morgan-hill-gilroy-value/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/san-jose-evergreen-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/san-jose-evergreen-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/pleasanton-tri-valley/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/pleasanton-tri-valley/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/danville-san-ramon/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/danville-san-ramon/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/oakland-hills-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/oakland-hills-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/alameda-island-living/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/alameda-island-living/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/san-leandro-hidden-value/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/san-leandro-hidden-value/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zestimate-myth-sellers/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/zestimate-myth-sellers/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/redfin-estimate-wrong/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/redfin-estimate-wrong/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/low-ball-offer-zillow/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/low-ball-offer-zillow/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/staging-with-kids-pets/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/staging-with-kids-pets/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/first-7-days-listing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/first-7-days-listing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/transparent-vs-underpricing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/transparent-vs-underpricing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/pre-inspection-report/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/pre-inspection-report/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/when-to-list-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/when-to-list-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/seller-concessions-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/seller-concessions-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/overpriced-listing-recovery/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/overpriced-listing-recovery/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/virtual-staging-vs-real/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/virtual-staging-vs-real/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/sellers-market-vs-buyers/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/sellers-market-vs-buyers/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/listing-agent-interview/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/listing-agent-interview/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/kitchen-renovation-roi/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/kitchen-renovation-roi/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/declutter-before-listing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/declutter-before-listing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/2m-new-1m-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/2m-new-1m-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/cash-offer-vs-high-ltv/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/cash-offer-vs-high-ltv/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/contingency-trap-appraisal/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/contingency-trap-appraisal/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/stanford-circle-inventory-hacks/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/stanford-circle-inventory-hacks/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/fixer-upper-fallacy/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/fixer-upper-fallacy/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/adu-peninsula-investment/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/adu-peninsula-investment/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/drought-tolerant-landscaping-roi/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/drought-tolerant-landscaping-roi/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/hidden-bay-area-low-tax/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/hidden-bay-area-low-tax/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/multigenerational-living-adu/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/multigenerational-living-adu/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/first-time-buyer-cantonese/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/first-time-buyer-cantonese/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/rsu-income-mortgage/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/rsu-income-mortgage/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/all-cash-offer-strategy/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/all-cash-offer-strategy/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/home-inspection-red-flags/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/home-inspection-red-flags/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/earnest-money-how-much/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/earnest-money-how-much/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/buying-sight-unseen/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/buying-sight-unseen/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/offer-letter-still-work/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/offer-letter-still-work/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/co-buying-with-family/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/co-buying-with-family/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/adjustable-rate-mortgage-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/adjustable-rate-mortgage-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/bridge-loan-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/bridge-loan-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/buyer-agent-questions/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/buyer-agent-questions/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/house-hacking-oakland/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/house-hacking-oakland/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/airbnb-bay-area-cities/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/airbnb-bay-area-cities/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/cap-rate-bay-area-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/cap-rate-bay-area-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/sf-to-residential-conversion/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/sf-to-residential-conversion/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/1031-exchange-timeline/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/1031-exchange-timeline/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/multifamily-east-bay/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/multifamily-east-bay/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/opportunity-zone-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/opportunity-zone-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/rent-control-cities/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/rent-control-cities/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/vacation-rental-lake-tahoe/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/vacation-rental-lake-tahoe/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/heloc-vs-cash-out-refi/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/heloc-vs-cash-out-refi/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/build-adu-cost-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/build-adu-cost-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/duplex-conversion-garage/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/duplex-conversion-garage/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/passive-income-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/passive-income-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/property-management-tips/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/property-management-tips/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/dsr-debt-to-income/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/dsr-debt-to-income/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/nnn-lease-investment/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/nnn-lease-investment/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/real-estate-vs-stocks-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/real-estate-vs-stocks-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/syndication-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/syndication-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/cost-segregation-rental/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/cost-segregation-rental/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/net-worth-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/net-worth-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/quiet-luxury-kitchen-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/quiet-luxury-kitchen-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/maximalism-with-meaning/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/maximalism-with-meaning/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/biophilic-design-peninsula/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/biophilic-design-peninsula/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/painted-ceilings-cove-lighting/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/painted-ceilings-cove-lighting/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/earthy-neutrals-terracotta/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/earthy-neutrals-terracotta/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/home-gym-infrared-sauna/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/home-gym-infrared-sauna/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/boutique-hotel-primary-suite/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/boutique-hotel-primary-suite/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/solar-storage-resale-value/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/solar-storage-resale-value/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/venetian-plaster-zellige-tiles/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/venetian-plaster-zellige-tiles/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/wine-wall-coffee-bar/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/wine-wall-coffee-bar/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/newt-pond-trail-cv/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/newt-pond-trail-cv/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/five-canyons-perimeter-loop/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/five-canyons-perimeter-loop/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/lake-chabot-east-shore/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/lake-chabot-east-shore/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/cull-canyon-swim-lagoon/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/cull-canyon-swim-lagoon/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/anthony-chabot-eucalyptus/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/anthony-chabot-eucalyptus/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/super-bowl-lx-rentals/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/super-bowl-lx-rentals/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/world-cup-2026-san-jose/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/world-cup-2026-san-jose/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/lunar-new-year-sf-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/lunar-new-year-sf-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/fog-design-art-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/fog-design-art-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/farmers-market-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/farmers-market-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/dog-friendly-menlo-park/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/dog-friendly-menlo-park/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/luxury-mudroom-dog-wash/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/luxury-mudroom-dog-wash/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/mcm-furniture-sourcing/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/mcm-furniture-sourcing/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/sustainable-landscaping-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/sustainable-landscaping-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/stealth-wealth-atherton/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/stealth-wealth-atherton/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/ace-train-vs-caltrain/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/ace-train-vs-caltrain/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/google-village-san-jose/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/google-village-san-jose/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/tech-shuttle-premium/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/tech-shuttle-premium/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/commute-times-caltrain-driving/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/commute-times-caltrain-driving/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/best-coffee-shops-palo-alto/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/best-coffee-shops-palo-alto/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/bay-area-market-outlook-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/bay-area-market-outlook-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/interest-rate-impact-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/interest-rate-impact-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/inventory-crisis-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/inventory-crisis-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/luxury-market-slowdown/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/luxury-market-slowdown/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/peninsula-vs-east-bay-appreciation/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/peninsula-vs-east-bay-appreciation/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/condo-vs-sfh-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/condo-vs-sfh-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/new-construction-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/new-construction-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/foreclosure-wave-coming/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/foreclosure-wave-coming/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/migration-out-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/migration-out-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/housing-policy-impact/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/housing-policy-impact/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/climate-risk-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/climate-risk-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zillow-offers-dead/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/zillow-offers-dead/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/remote-work-suburb-boom/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/remote-work-suburb-boom/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/chinese-buyer-bay-area-2026/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/chinese-buyer-bay-area-2026/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/bay-area-rent-vs-buy/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/bay-area-rent-vs-buy/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-silicon-valley-buying-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-silicon-valley-buying-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-silicon-valley-buying-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-silicon-valley-buying-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-tax-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-tax-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-tax-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-tax-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-school-zone-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-school-zone-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-school-zone-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-school-zone-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-seller-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-seller-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-seller-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-seller-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-1031-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-1031-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-first-time-buyer/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-first-time-buyer/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-first-time-buyer/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-first-time-buyer/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-investment-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-investment-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-CN-investment-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://vickiwongrealty.com/blog/zh-CN-investment-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-eichler-guide/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-eichler-guide/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/zh-HK-prop19-prop13/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/blog/zh-HK-prop19-prop13/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/unincorporated-alameda-county/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/unincorporated-alameda-county/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/mountain-view-terra-bella/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/mountain-view-terra-bella/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/professorville-palo-alto/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/professorville-palo-alto/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/sunnyvale-murphy-ave/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/sunnyvale-murphy-ave/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/palo-alto-university-ave/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/palo-alto-university-ave/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/portola-valley-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/portola-valley-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/los-altos-hills-estates/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/los-altos-hills-estates/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/woodside-ca-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/woodside-ca-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/half-moon-bay-investment/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/half-moon-bay-investment/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/east-palo-alto-gentrification/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/east-palo-alto-gentrification/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/newark-ca-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/newark-ca-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/union-city-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/union-city-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/livermore-wine-country/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/livermore-wine-country/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/concord-bay-area/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/concord-bay-area/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/daly-city-colma/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/daly-city-colma/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/foster-city-san-mateo/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/foster-city-san-mateo/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/redwood-city-downtown/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/redwood-city-downtown/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/los-altos-vs-los-altos-hills/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/los-altos-vs-los-altos-hills/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/saratoga-monte-sereno/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/saratoga-monte-sereno/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/hillsborough-real-estate/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/hillsborough-real-estate/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/millbrae-sfo-proximity/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/millbrae-sfo-proximity/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/belmont-san-carlos/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/belmont-san-carlos/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/san-mateo-neighborhoods/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/san-mateo-neighborhoods/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/south-bay-luxury-market/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/south-bay-luxury-market/"/>
+  </url>
+  <url>
+    <loc>https://vickiwongrealty.com/blog/bay-area-off-market/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/bay-area-off-market/"/>
+  </url>
 </urlset>

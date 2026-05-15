@@ -1,0 +1,21 @@
+# robots.txt — vickiwongrealty.com
+# Vicki Wong | 廣東話地產經紀 | Bay Area Cantonese Realtor
+
+User-agent: *
+Allow: /
+Disallow: /vicki_wong_website.html
+
+# Crawl priority hints
+Crawl-delay: 1
+
+# Block scrapers
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+Sitemap: https://vickiwongrealty.com/sitemap.xml
