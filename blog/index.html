@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Bay Area Real Estate Insights | Vicki Wong</title>
+<meta name="description" content="200+ expert articles on Bay Area real estate — market outlook, buying strategy, selling tips, school zones, tax planning, investment, and neighborhood guides. In English, Cantonese (廣東話), and Mandarin (普通話).">
+<meta name="keywords" content="bay area real estate blog, cantonese realtor blog, east bay south bay real estate articles, vicki wong blog, 廣東話地產blog">
+<link rel="canonical" href="https://vickiwongrealty.com/blog/">
+<meta property="og:title" content="Blog — Bay Area Real Estate Insights | Vicki Wong">
+<meta property="og:description" content="200+ expert articles on Bay Area real estate in English, 廣東話, and 普通話.">
+<meta property="og:image" content="https://vickiwongrealty.com/og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/blog/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"Blog",
+  "name":"Vicki Wong Real Estate Blog",
+  "url":"https://vickiwongrealty.com/blog/",
+  "description":"Expert Bay Area real estate articles in English, Cantonese and Mandarin",
+  "author":{"@type":"Person","name":"Vicki Wong","url":"https://vickiwongrealty.com"}
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--linen:#F5EFE4;--oak:#C9A97A;--sage:#7A9272;--charcoal:#2C2C2A;--white:#FFFFFF}
+body{font-family:'Jost',sans-serif;background:var(--linen);color:var(--charcoal)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;background:rgba(245,239,228,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,122,0.25)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--charcoal);text-decoration:none}
+.nav-logo span{color:var(--oak)}
+.nav-home{font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sage);text-decoration:none;transition:color 0.2s}
+.nav-home:hover{color:var(--oak)}
+
+/* HERO */
+.blog-hero{background:var(--charcoal);padding:8rem 0 4rem;text-align:center}
+.blog-hero-inner{max-width:700px;margin:0 auto;padding:0 2rem}
+.blog-eyebrow{font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--oak);margin-bottom:1rem;display:block}
+.blog-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:1rem}
+.blog-hero h1 em{font-style:italic;color:var(--oak)}
+.blog-hero p{font-size:0.95rem;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.7;max-width:520px;margin:0 auto}
+
+/* STATS */
+.blog-stats{background:var(--white);display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid rgba(201,169,122,0.2)}
+.bs{padding:1.2rem;text-align:center;border-right:1px solid rgba(201,169,122,0.2)}
+.bs:last-child{border-right:none}
+.bs-num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--oak)}
+.bs-lbl{font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#9a9a98;margin-top:0.2rem}
+
+/* SEARCH */
+.search-wrap{max-width:1100px;margin:2.5rem auto 0;padding:0 2rem}
+.search-box{display:flex;align-items:center;gap:0;background:var(--white);border:1px solid rgba(201,169,122,0.3);overflow:hidden}
+.search-box input{flex:1;font-family:'Jost',sans-serif;font-size:0.9rem;font-weight:300;padding:0.9rem 1.2rem;border:none;outline:none;background:transparent;color:var(--charcoal)}
+.search-box input::placeholder{color:#aaa}
+.search-btn{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.9rem 1.5rem;background:var(--oak);color:var(--white);border:none;cursor:pointer}
+
+/* CATEGORY PILLS */
+.cat-pills{max-width:1100px;margin:1.5rem auto 0;padding:0 2rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+.cat-pill{font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(201,169,122,0.35);color:var(--charcoal);background:transparent;cursor:pointer;transition:all 0.15s;text-decoration:none}
+.cat-pill:hover,.cat-pill.active{background:var(--charcoal);color:var(--white);border-color:var(--charcoal)}
+
+/* MAIN LAYOUT */
+.blog-main{max-width:1100px;margin:3rem auto;padding:0 2rem 6rem;display:grid;grid-template-columns:240px 1fr;gap:3rem;align-items:start}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:5rem}
+.sidebar-section{margin-bottom:2rem}
+.sidebar-heading{font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage);margin-bottom:0.8rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(201,169,122,0.2)}
+.sidebar-link{display:flex;align-items:center;gap:0.6rem;padding:0.5rem 0;font-size:0.82rem;font-weight:400;color:var(--charcoal);text-decoration:none;border-bottom:1px solid rgba(44,44,42,0.06);transition:color 0.15s}
+.sidebar-link:hover{color:var(--oak)}
+.sidebar-link .s-emoji{font-size:0.9rem;flex-shrink:0;width:1.2rem}
+.sidebar-link .s-count{margin-left:auto;font-size:0.7rem;color:#aaa;font-weight:500}
+.sidebar-lang{display:flex;flex-direction:column;gap:0.4rem;margin-top:0.5rem}
+.lang-tag{font-size:0.75rem;font-weight:600;padding:0.4rem 0.8rem;border:1px solid rgba(201,169,122,0.3);color:var(--oak);text-decoration:none;transition:all 0.15s}
+.lang-tag:hover{background:var(--oak);color:var(--white)}
+
+/* CATEGORY SECTIONS */
+.cat-section{margin-bottom:3rem}
+.cat-header{display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;background:var(--charcoal);margin-bottom:0}
+.cat-emoji{font-size:1.4rem;flex-shrink:0}
+.cat-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--white)}
+.cat-desc{font-size:0.78rem;font-weight:300;color:rgba(255,255,255,0.45);margin-top:0.15rem}
+.cat-count{margin-left:auto;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--oak);flex-shrink:0}
+.post-list{background:var(--white);border:1px solid rgba(201,169,122,0.15);border-top:none}
+.post-row{display:flex;align-items:center;justify-content:space-between;padding:0.8rem 1.5rem;border-bottom:1px solid rgba(44,44,42,0.06);text-decoration:none;transition:background 0.15s;gap:1rem}
+.post-row:last-child{border-bottom:none}
+.post-row:hover{background:rgba(201,169,122,0.06)}
+.post-row:hover .post-row-arrow{color:var(--oak);transform:translateX(3px)}
+.post-row-title{font-size:0.88rem;font-weight:400;color:var(--charcoal);line-height:1.4;display:flex;align-items:center;flex-wrap:wrap;gap:0.4rem}
+.post-row-arrow{color:#ccc;font-size:0.9rem;flex-shrink:0;transition:all 0.2s}
+.lang-badge{font-size:0.58rem;font-weight:700;letter-spacing:0.08em;padding:0.15rem 0.5rem;border-radius:2px;flex-shrink:0}
+.lang-badge.zh-hk{background:rgba(122,146,114,0.15);color:var(--sage);border:1px solid rgba(122,146,114,0.3)}
+.lang-badge.zh-cn{background:rgba(201,169,122,0.12);color:var(--oak);border:1px solid rgba(201,169,122,0.3)}
+
+/* CTA */
+.blog-cta{background:var(--charcoal);padding:3rem 2rem;text-align:center;margin-top:3rem}
+.blog-cta h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--white);margin-bottom:0.7rem}
+.blog-cta p{font-size:0.9rem;font-weight:300;color:rgba(255,255,255,0.5);margin-bottom:1.5rem}
+.cta-btn{display:inline-block;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:0.85rem 2rem;background:var(--oak);color:var(--white);text-decoration:none;transition:background 0.2s;margin:0.3rem}
+.cta-btn:hover{background:var(--sage)}
+.cta-btn.outline{background:transparent;border:1.5px solid rgba(255,255,255,0.3);color:var(--white)}
+
+footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba(255,255,255,0.4);font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.06)}
+
+/* SEARCH FILTER */
+.post-row.hidden{display:none}
+
+@media(max-width:900px){
+  .blog-main{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .blog-stats{grid-template-columns:1fr 1fr}
+  nav{padding:1rem 1.5rem}
+}
+@media(max-width:500px){
+  .blog-stats{grid-template-columns:1fr 1fr}
+  .cat-header{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../">Vicki <span>Wong</span></a>
+  <a class="nav-home" href="../">← Home</a>
+</nav>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <span class="blog-eyebrow">Knowledge Base</span>
+    <h1>Bay Area Real Estate<br><em>Insights & Guides</em></h1>
+    <p>200+ expert articles on buying, selling, investing, and living in the East Bay and South Bay — in English, Cantonese (廣東話), and Mandarin (普通話).</p>
+  </div>
+</div>
+
+<div class="blog-stats">
+  <div class="bs"><div class="bs-num">208</div><div class="bs-lbl">Total Articles</div></div>
+  <div class="bs"><div class="bs-num">12</div><div class="bs-lbl">Categories</div></div>
+  <div class="bs"><div class="bs-num">3</div><div class="bs-lbl">Languages</div></div>
+  <div class="bs"><div class="bs-num">26+</div><div class="bs-lbl">Cities Covered</div></div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="Search articles — e.g. Castro Valley schools, 1031 exchange, Eichler..." oninput="filterPosts(this.value)">
+    <button class="search-btn" onclick="filterPosts(document.getElementById('search-input').value)">Search</button>
+  </div>
+</div>
+
+<div class="cat-pills">
+  <a class="cat-pill active" href="#" onclick="showAll(event)">All</a>
+  <a class="cat-pill" href="#cat-market-outlook" onclick="filterCat(event, this)">📊 Market Outlook</a><a class="cat-pill" href="#cat-buyer-advice" onclick="filterCat(event, this)">🏠 Buyer Advice</a><a class="cat-pill" href="#cat-seller-strategy" onclick="filterCat(event, this)">📈 Seller Strategy</a><a class="cat-pill" href="#cat-investment" onclick="filterCat(event, this)">💼 Investment</a><a class="cat-pill" href="#cat-tax---wealth" onclick="filterCat(event, this)">💰 Tax & Wealth</a><a class="cat-pill" href="#cat-schools" onclick="filterCat(event, this)">🏫 Schools</a><a class="cat-pill" href="#cat-neighborhoods" onclick="filterCat(event, this)">🏘 Neighborhoods</a><a class="cat-pill" href="#cat-architecture" onclick="filterCat(event, this)">🏛 Architecture</a><a class="cat-pill" href="#cat-ai---tech" onclick="filterCat(event, this)">💻 AI & Tech</a><a class="cat-pill" href="#cat-lifestyle---design" onclick="filterCat(event, this)">🌿 Lifestyle & Design</a><a class="cat-pill" href="#cat-deep-dive" onclick="filterCat(event, this)">🔍 Deep Dive</a><a class="cat-pill" href="#cat-chinese-language" onclick="filterCat(event, this)">廣 Chinese Language</a>
+</div>
+
+<div class="blog-main">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Categories</div>
+      <a class="sidebar-link" href="#cat-market-outlook"><span class="s-emoji">📊</span>Market Outlook<span class="s-count">16</span></a><a class="sidebar-link" href="#cat-buyer-advice"><span class="s-emoji">🏠</span>Buyer Advice<span class="s-count">21</span></a><a class="sidebar-link" href="#cat-seller-strategy"><span class="s-emoji">📈</span>Seller Strategy<span class="s-count">16</span></a><a class="sidebar-link" href="#cat-investment"><span class="s-emoji">💼</span>Investment<span class="s-count">20</span></a><a class="sidebar-link" href="#cat-tax---wealth"><span class="s-emoji">💰</span>Tax & Wealth<span class="s-count">12</span></a><a class="sidebar-link" href="#cat-schools"><span class="s-emoji">🏫</span>Schools<span class="s-count">11</span></a><a class="sidebar-link" href="#cat-neighborhoods"><span class="s-emoji">🏘</span>Neighborhoods<span class="s-count">20</span></a><a class="sidebar-link" href="#cat-architecture"><span class="s-emoji">🏛</span>Architecture<span class="s-count">8</span></a><a class="sidebar-link" href="#cat-ai---tech"><span class="s-emoji">💻</span>AI & Tech<span class="s-count">10</span></a><a class="sidebar-link" href="#cat-lifestyle---design"><span class="s-emoji">🌿</span>Lifestyle & Design<span class="s-count">30</span></a><a class="sidebar-link" href="#cat-deep-dive"><span class="s-emoji">🔍</span>Deep Dive<span class="s-count">25</span></a><a class="sidebar-link" href="#cat-chinese-language"><span class="s-emoji">廣</span>Chinese Language<span class="s-count">19</span></a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Languages</div>
+      <div class="sidebar-lang">
+        <a class="lang-tag" href="cantonese-home-buying-guide.html">廣東話 Cantonese</a>
+        <a class="lang-tag" href="zh-CN-home-buying-guide.html">普通话 Mandarin</a>
+        <a class="lang-tag" href="buying-home-castro-valley-2026.html">English</a>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Featured</div>
+      <a class="sidebar-link" href="castro-valley-elementary-schools-guide.html"><span class="s-emoji">🏫</span>Castro Valley Schools Guide</a>
+      <a class="sidebar-link" href="eichler-palo-alto-vs-castro-valley.html"><span class="s-emoji">🏛</span>The Eichler Premium</a>
+      <a class="sidebar-link" href="1031-exchange-bay-area.html"><span class="s-emoji">💰</span>1031 Exchange Guide</a>
+      <a class="sidebar-link" href="bay-area-market-outlook-2026.html"><span class="s-emoji">📊</span>2026 Market Outlook</a>
+      <a class="sidebar-link" href="anthropic-effect-real-estate.html"><span class="s-emoji">💻</span>The Anthropic Effect</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Talk to Vicki</div>
+      <p style="font-size:0.8rem;font-weight:300;color:#6a6a68;line-height:1.6;margin-bottom:0.8rem">Free consultation in English, 廣東話, or 普通話.</p>
+      <a href="../#contact" style="display:block;text-align:center;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.7rem;background:var(--charcoal);color:var(--white);text-decoration:none">Contact Vicki →</a>
+    </div>
+  </aside>
+
+  <!-- POSTS BY CATEGORY -->
+  <main id="posts-container">
+    
+  <section class="cat-section" id="cat-market-outlook">
+    <div class="cat-header">
+      <div class="cat-emoji">📊</div>
+      <div>
+        <div class="cat-name">Market Outlook</div>
+        <div class="cat-desc">Bay Area market trends, pricing analysis, and 2026 forecasts.</div>
+      </div>
+      <div class="cat-count">16 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="east-bay-vs-south-bay.html">
+          <div class="post-row-title">East Bay vs. South Bay: Which Is Right for Your Family?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="bay-area-market-outlook-2026.html">
+          <div class="post-row-title">2026 Market Outlook: Why the Wait-and-See Strategy Is Costing Buyers Thousands</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="interest-rate-impact-2026.html">
+          <div class="post-row-title">Interest Rate Reality: How 2026 Rates Are Reshaping Bay Area Affordability</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="inventory-crisis-bay-area.html">
+          <div class="post-row-title">The Inventory Crisis Continues: Why Bay Area Homes Remain So Scarce</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="luxury-market-slowdown.html">
+          <div class="post-row-title">Is the Bay Area Luxury Market Slowing? A Data-Driven Look at $5M+ Sales</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="peninsula-vs-east-bay-appreciation.html">
+          <div class="post-row-title">Peninsula vs. East Bay Appreciation: Where Is the Money Actually Going?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="condo-vs-sfh-2026.html">
+          <div class="post-row-title">Condos vs. Single-Family Homes in 2026: Which Is the Smarter Buy?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="new-construction-bay-area.html">
+          <div class="post-row-title">New Construction in the Bay Area: Is It Worth the Premium Over Resale?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="foreclosure-wave-coming.html">
+          <div class="post-row-title">Is a Foreclosure Wave Coming to the Bay Area? What the Data Shows</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="migration-out-bay-area.html">
+          <div class="post-row-title">The Great Departure: Are Tech Workers Really Leaving the Bay Area?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="housing-policy-impact.html">
+          <div class="post-row-title">California Housing Policy 2026: How New Laws Are Changing What You Can Build</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="climate-risk-real-estate.html">
+          <div class="post-row-title">Climate Risk & Bay Area Real Estate: Wildfires, Floods & What It Means for Buyers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zillow-offers-dead.html">
+          <div class="post-row-title">What Happened to iBuyers? The Lessons Bay Area Sellers Should Remember</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="remote-work-suburb-boom.html">
+          <div class="post-row-title">The Suburb Boom: How Remote Work Permanently Changed Bay Area Real Estate</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="chinese-buyer-bay-area-2026.html">
+          <div class="post-row-title">Chinese Buyers in the Bay Area 2026: Trends, Cities & What's Changing</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="bay-area-rent-vs-buy.html">
+          <div class="post-row-title">Rent vs. Buy in the Bay Area in 2026: The Real Math Nobody Shows You</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-buyer-advice">
+    <div class="cat-header">
+      <div class="cat-emoji">🏠</div>
+      <div>
+        <div class="cat-name">Buyer Advice</div>
+        <div class="cat-desc">Everything buyers need to know — from offer strategy to school zones.</div>
+      </div>
+      <div class="cat-count">21 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="buying-home-castro-valley-2026.html">
+          <div class="post-row-title">What to Know About Buying a Home in Castro Valley in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="2m-new-1m-bay-area.html">
+          <div class="post-row-title">Is $2M the New $1M? The Psychological Shift in Bay Area Entry-Level Homes</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cash-offer-vs-high-ltv.html">
+          <div class="post-row-title">Cash Offers vs. High LTV: How to Win Multiple Offers Without Being a Billionaire</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="contingency-trap-appraisal.html">
+          <div class="post-row-title">The Contingency Trap: When Is It Safe to Waive Your Appraisal?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="stanford-circle-inventory-hacks.html">
+          <div class="post-row-title">Buying Near Stanford: Inventory Hacks for Homes Near Campus</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="fixer-upper-fallacy.html">
+          <div class="post-row-title">The Fixer-Upper Fallacy: Why Bay Area Renovation Costs Make Fixers Risky</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="adu-peninsula-investment.html">
+          <div class="post-row-title">ADUs in the Peninsula: Is Building a Backyard Cottage Still a Good Investment?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="drought-tolerant-landscaping-roi.html">
+          <div class="post-row-title">Landscaping for ROI: Why Drought-Tolerant Yards Sell Faster in San Jose</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="hidden-bay-area-low-tax.html">
+          <div class="post-row-title">The Hidden Bay Area: Cities with the Lowest Property Tax-to-Value Ratios</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="multigenerational-living-adu.html">
+          <div class="post-row-title">The Rise of Multi-Gen Living: Designing ADUs for Parents vs. Adult Children</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="first-time-buyer-cantonese.html">
+          <div class="post-row-title">廣東話買家必讀：灣區首次置業的 10 個關鍵問題<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="rsu-income-mortgage.html">
+          <div class="post-row-title">RSU Income & Mortgage Qualification: What Silicon Valley Buyers Need to Know</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="all-cash-offer-strategy.html">
+          <div class="post-row-title">How to Make a Competitive All-Cash Offer Without Actually Having All Cash</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="home-inspection-red-flags.html">
+          <div class="post-row-title">10 Home Inspection Red Flags Bay Area Buyers Always Miss</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="earnest-money-how-much.html">
+          <div class="post-row-title">Earnest Money in the Bay Area: How Much Is Enough to Win?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="buying-sight-unseen.html">
+          <div class="post-row-title">Buying a Bay Area Home Sight Unseen: A Complete Risk Guide</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="offer-letter-still-work.html">
+          <div class="post-row-title">Does a Personal Offer Letter Still Work in Bay Area Bidding Wars?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="co-buying-with-family.html">
+          <div class="post-row-title">Co-Buying a Home with Family or Friends in the Bay Area: Legal Pitfalls</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="adjustable-rate-mortgage-2026.html">
+          <div class="post-row-title">ARM vs. Fixed Rate in 2026: Which Makes More Sense in the Bay Area?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="bridge-loan-bay-area.html">
+          <div class="post-row-title">Bridge Loans in the Bay Area: How to Buy Before You Sell</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="buyer-agent-questions.html">
+          <div class="post-row-title">12 Questions to Ask Your Bay Area Buyer's Agent Before Signing Anything</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-seller-strategy">
+    <div class="cat-header">
+      <div class="cat-emoji">📈</div>
+      <div>
+        <div class="cat-name">Seller Strategy</div>
+        <div class="cat-desc">Data-driven seller guides, staging, pricing, and marketing strategy.</div>
+      </div>
+      <div class="cat-count">16 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="selling-home-bay-area-2026.html">
+          <div class="post-row-title">How to Sell Your Bay Area Home for Top Dollar in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zestimate-myth-sellers.html">
+          <div class="post-row-title">The Zestimate Myth: Why Checking Zillow Before Listing Is Dangerous</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="redfin-estimate-wrong.html">
+          <div class="post-row-title">Why Redfin's Estimate Is Often Wrong: The Bay Area Off-Market Data Lag</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="low-ball-offer-zillow.html">
+          <div class="post-row-title">The Art of the Low Ball: Why Zestimate-Obsessed Buyers Lose Offers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="staging-with-kids-pets.html">
+          <div class="post-row-title">Staging While Living In It: Tips for Keeping Home Show-Ready with Kids & Pets</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="first-7-days-listing.html">
+          <div class="post-row-title">The First 7 Days: Why Your Bay Area Listing Lives or Dies in Week One</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="transparent-vs-underpricing.html">
+          <div class="post-row-title">Transparent Pricing vs. Underpricing: The Psychology of the Bidding War</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="pre-inspection-report.html">
+          <div class="post-row-title">Pre-Inspection Reports: Why Paying Upfront Saves You $50K in Negotiations</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="when-to-list-bay-area.html">
+          <div class="post-row-title">Best Time to List Your Bay Area Home: A Month-by-Month Guide</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="seller-concessions-2026.html">
+          <div class="post-row-title">Seller Concessions in 2026: What Buyers Are Now Expecting at Closing</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="overpriced-listing-recovery.html">
+          <div class="post-row-title">My Home Has Been Sitting: How to Recover a Stale Bay Area Listing</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="virtual-staging-vs-real.html">
+          <div class="post-row-title">Virtual Staging vs. Real Staging: Which Gets More Offers in 2026?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sellers-market-vs-buyers.html">
+          <div class="post-row-title">Sellers Market vs. Buyers Market: How to Read the Bay Area Right Now</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="listing-agent-interview.html">
+          <div class="post-row-title">10 Questions to Ask Before You Hire a Listing Agent in the Bay Area</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="kitchen-renovation-roi.html">
+          <div class="post-row-title">Kitchen Renovations Before Selling: Which Upgrades Actually Pay Off?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="declutter-before-listing.html">
+          <div class="post-row-title">The 30-Day Declutter Plan: Getting Your Bay Area Home Market-Ready</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-investment">
+    <div class="cat-header">
+      <div class="cat-emoji">💼</div>
+      <div>
+        <div class="cat-name">Investment</div>
+        <div class="cat-desc">Cap rates, 1031 exchanges, ADUs, and Bay Area investment analysis.</div>
+      </div>
+      <div class="cat-count">20 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="house-hacking-oakland.html">
+          <div class="post-row-title">House Hacking in Oakland: Can a Duplex Pay Your Mortgage?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="airbnb-bay-area-cities.html">
+          <div class="post-row-title">Short-Term Rental Laws: Which Bay Area Cities Allow Airbnb?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cap-rate-bay-area-2026.html">
+          <div class="post-row-title">Cap Rates in the Bay Area: Are Investment Properties Still Worth It in 2026?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sf-to-residential-conversion.html">
+          <div class="post-row-title">Commercial-to-Residential Conversions: Opportunities in Bay Area Downtowns</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="1031-exchange-timeline.html">
+          <div class="post-row-title">The 45-Day Clock: Mastering the 1031 Exchange Timeline</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="multifamily-east-bay.html">
+          <div class="post-row-title">Multifamily Investing in the East Bay: Hayward, Oakland & Fremont Analysis</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="opportunity-zone-bay-area.html">
+          <div class="post-row-title">Opportunity Zones in the Bay Area: Are the Tax Benefits Still Real?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="rent-control-cities.html">
+          <div class="post-row-title">Rent Control Cities in the Bay Area: What Landlords Must Know in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="vacation-rental-lake-tahoe.html">
+          <div class="post-row-title">Bay Area to Lake Tahoe: Is a Vacation Rental Still a Smart Investment?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="heloc-vs-cash-out-refi.html">
+          <div class="post-row-title">HELOC vs. Cash-Out Refinance: Which Is Better for Bay Area Investors?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="build-adu-cost-2026.html">
+          <div class="post-row-title">How Much Does It Really Cost to Build an ADU in the Bay Area in 2026?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="duplex-conversion-garage.html">
+          <div class="post-row-title">Garage to ADU Conversion: The Bay Area Numbers That Actually Work</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="passive-income-real-estate.html">
+          <div class="post-row-title">Passive Income Through Real Estate in the Bay Area: Realistic Expectations</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="property-management-tips.html">
+          <div class="post-row-title">Should You Self-Manage or Hire a Property Manager in the Bay Area?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="dsr-debt-to-income.html">
+          <div class="post-row-title">Debt-to-Income Ratio: How Bay Area Tech Workers Can Qualify for Larger Mortgages</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="nnn-lease-investment.html">
+          <div class="post-row-title">Triple Net Leases in Silicon Valley: A Beginner's Guide to Commercial RE</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="real-estate-vs-stocks-2026.html">
+          <div class="post-row-title">Real Estate vs. Stocks in 2026: Which Builds More Wealth in the Bay Area?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="syndication-real-estate.html">
+          <div class="post-row-title">Real Estate Syndications: How Bay Area Professionals Are Investing Passively</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cost-segregation-rental.html">
+          <div class="post-row-title">Cost Segregation Studies: The Tax Hack Bay Area Landlords Are Missing</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="net-worth-real-estate.html">
+          <div class="post-row-title">How Bay Area Real Estate Has Built More Millionaires Than the Stock Market</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-tax--wealth">
+    <div class="cat-header">
+      <div class="cat-emoji">💰</div>
+      <div>
+        <div class="cat-name">Tax & Wealth</div>
+        <div class="cat-desc">Prop 13, Prop 19, capital gains, 1031 exchanges, and wealth strategy.</div>
+      </div>
+      <div class="cat-count">12 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="1031-exchange-bay-area.html">
+          <div class="post-row-title">1031 Exchange Breakdown: Swap Bay Area Rentals Without the Tax Hit</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="drop-and-swap-1031.html">
+          <div class="post-row-title">The Drop and Swap: Using 1031 Exchanges in a Partnership Dissolution</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="kids-inherit-1031-exchange.html">
+          <div class="post-row-title">Can Your Kids Inherit Your 1031 Exchange? Step-Up in Basis Explained</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="prop-19-55-plus.html">
+          <div class="post-row-title">Prop 19 for 55+: Moving Your Low Tax Base to a Cheaper California County</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="gifting-vs-inheriting-property.html">
+          <div class="post-row-title">Wait to Die or Sell Now? Gifting vs. Inheriting Bay Area Property</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="backyard-vineyard-tax.html">
+          <div class="post-row-title">The Backyard Vineyard Tax Credit: Can Growing Grapes Lower Your Property Tax?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="flat-lot-vs-hillside-premium.html">
+          <div class="post-row-title">Hillsborough Flatlands: Why a Flat Lot Commands a 20% Premium Over Hillside</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="property-tax-appeal-santa-clara.html">
+          <div class="post-row-title">Property Tax Appeals: When & How to Challenge Your Santa Clara Assessment</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="heloc-investment-strategy.html">
+          <div class="post-row-title">The HELOC Strategy: Using Home Equity to Buy Your Second Investment Property</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="prop-13-vs-prop-19.html">
+          <div class="post-row-title">Prop 13 vs. Prop 19: Survival Guide for Long-Term California Homeowners</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="foreign-buyers-firpta.html">
+          <div class="post-row-title">Foreign Buyers in Silicon Valley: Navigating FIRPTA & Tax Treaties</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="capital-gains-timing.html">
+          <div class="post-row-title">Timing Your Sale: How to Minimize Capital Gains on Your Bay Area Home</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-schools">
+    <div class="cat-header">
+      <div class="cat-emoji">🏫</div>
+      <div>
+        <div class="cat-name">Schools</div>
+        <div class="cat-desc">School zone guides, district rankings, and family decision frameworks.</div>
+      </div>
+      <div class="cat-count">11 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="castro-valley-elementary-schools-guide.html">
+          <div class="post-row-title">Castro Valley Elementary Schools: Rankings, Demographics & Academics</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="stanford-path-private-schools.html">
+          <div class="post-row-title">The Stanford Path: Silicon Valley Private Schools That Feed Ivy League</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="school-district-premium.html">
+          <div class="post-row-title">The School District Premium: What Are You Really Paying for a 10/10 Rating?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="menlo-park-school-neighborhoods.html">
+          <div class="post-row-title">Menlo Park Neighborhoods: Balancing Quiet Streets & School Proximity</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="fremont-mission-san-jose-competitive.html">
+          <div class="post-row-title">Fremont Mission San Jose: The Most Competitive School Zone in the East Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="private-vs-public-school-cost.html">
+          <div class="post-row-title">Private vs. Public: $3M Home with Top Schools vs. $2M + Private Tuition</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="palo-alto-junior-museum.html">
+          <div class="post-row-title">Palo Alto Junior Museum & Zoo: A Local's Guide for Families</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cupertino-school-ranking-homes.html">
+          <div class="post-row-title">Cupertino Schools & Home Values: A Street-by-Street Analysis</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-altos-school-zone.html">
+          <div class="post-row-title">Los Altos School Zone Guide: What Parents Need to Know Before Buying</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="saratoga-school-premium.html">
+          <div class="post-row-title">Saratoga Schools: Why Families Pay $500K More for the Right Address</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="east-bay-school-comparison.html">
+          <div class="post-row-title">East Bay School Districts Compared: CVUSD vs FUSD vs NUSD</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-neighborhoods">
+    <div class="cat-header">
+      <div class="cat-emoji">🏘</div>
+      <div>
+        <div class="cat-name">Neighborhoods</div>
+        <div class="cat-desc">Deep dives into every East Bay and South Bay neighborhood.</div>
+      </div>
+      <div class="cat-count">20 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="palo-alto-neighborhoods.html">
+          <div class="post-row-title">Palo Alto Breakdown: From Professorville to South Palo Alto</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="mountain-view-beyond-google.html">
+          <div class="post-row-title">Mountain View's Evolution: Beyond Google, the Charm of Old Mountain View</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="atherton-buyer-persona.html">
+          <div class="post-row-title">Atherton Buyer Persona: Who Is Buying the $15M+ Estates in 94027?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="palomares-hills-turnover.html">
+          <div class="post-row-title">Palomares Hills: Why People Move In and Never Want to Leave</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="castro-valley-vs-hayward.html">
+          <div class="post-row-title">Castro Valley vs. Hayward: The Hidden Value in the East Bay Hills</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sunnyvale-record-low-inventory.html">
+          <div class="post-row-title">Sunnyvale: Why the Center of the Valley Has Record-Low Inventory</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="trader-joes-home-appreciation.html">
+          <div class="post-row-title">The Trader Joe's Effect: Mapping TJ's Locations & Home Appreciation</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="burlingame-vs-san-mateo.html">
+          <div class="post-row-title">Burlingame vs. San Mateo: Which Downtown Wins?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="willow-glen-vs-palo-alto.html">
+          <div class="post-row-title">Why $3M in Willow Glen Feels Different Than $3M in Palo Alto</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="fremont-neighborhood-guide.html">
+          <div class="post-row-title">Fremont Neighborhood Guide: Warm Springs, Mission San Jose & Beyond</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="campbell-neighborhood-guide.html">
+          <div class="post-row-title">Campbell CA: The Underrated South Bay City Worth a Second Look</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="menlo-park-atherton-border.html">
+          <div class="post-row-title">Living on the Menlo Park-Atherton Border: Best of Both Worlds</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-gatos-lifestyle.html">
+          <div class="post-row-title">Los Gatos: Where Silicon Valley Money Meets Small-Town Charm</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="morgan-hill-gilroy-value.html">
+          <div class="post-row-title">Morgan Hill & Gilroy: Is the South County Drive Worth the Savings?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-jose-evergreen-guide.html">
+          <div class="post-row-title">San Jose Evergreen: The East Side Neighborhood That Tech Forgot (For Now)</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="pleasanton-tri-valley.html">
+          <div class="post-row-title">Pleasanton: The Tri-Valley City That Outperforms Its Price Tag</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="danville-san-ramon.html">
+          <div class="post-row-title">Danville vs. San Ramon: Which Tri-Valley City Is Right for Your Family?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="oakland-hills-real-estate.html">
+          <div class="post-row-title">Oakland Hills: Affordability, Views, and the Wildfire Question</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="alameda-island-living.html">
+          <div class="post-row-title">Alameda Island Living: A Surprisingly Affordable Bay Area Secret</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-leandro-hidden-value.html">
+          <div class="post-row-title">San Leandro: The East Bay City Quietly Appreciating Under the Radar</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-architecture">
+    <div class="cat-header">
+      <div class="cat-emoji">🏛</div>
+      <div>
+        <div class="cat-name">Architecture</div>
+        <div class="cat-desc">Eichler homes, mid-century modern, and Bay Area design history.</div>
+      </div>
+      <div class="cat-count">8 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="eichler-palo-alto-vs-castro-valley.html">
+          <div class="post-row-title">$4M in Palo Alto vs. $2M in Castro Valley: The Eichler Premium</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="greenridge-castro-valley-mcm.html">
+          <div class="post-row-title">Greenridge Castro Valley: The East Bay's Best-Kept MCM Secret</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="eichler-maintenance-costs.html">
+          <div class="post-row-title">The Eichler Tax: Real Maintenance Costs for Glass Walls & Radiant Heat</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="staging-an-eichler.html">
+          <div class="post-row-title">Staging an Eichler: Honoring 1950s Minimalism Without the Museum Feel</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="eichler-floor-to-ceiling-windows.html">
+          <div class="post-row-title">Living in a Fishbowl: The Pros & Cons of Eichler Floor-to-Ceiling Windows</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="modernizing-mcm-ai-age.html">
+          <div class="post-row-title">Modernizing the MCM: Upgrading a 70-Year-Old Eichler for the AI Age</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="eichler-atrium-indoor-outdoor.html">
+          <div class="post-row-title">The Atrium Advantage: Indoor-Outdoor Living in Peninsula Eichlers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="eichler-neighborhoods-compared.html">
+          <div class="post-row-title">Eichler Neighborhoods Compared: Sunnyvale vs Walnut Creek vs Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-ai--tech">
+    <div class="cat-header">
+      <div class="cat-emoji">💻</div>
+      <div>
+        <div class="cat-name">AI & Tech</div>
+        <div class="cat-desc">How Silicon Valley's tech sector shapes real estate demand.</div>
+      </div>
+      <div class="cat-count">10 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="anthropic-effect-real-estate.html">
+          <div class="post-row-title">The Anthropic Effect: How AI HQ Is Shifting Peninsula Real Estate Demand</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="menlo-park-palo-alto-ai-hub.html">
+          <div class="post-row-title">The New Tech Hubs: Why Menlo Park & Palo Alto Remain AI's Main & Main</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="return-to-office-san-jose.html">
+          <div class="post-row-title">Remote Work 2.0: How RTO Is Impacting San Jose Home Prices & Traffic</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="nvidia-millionaires-real-estate.html">
+          <div class="post-row-title">The NVIDIA Millionaires: How Stock Vests Are Fueling $3M+ Bidding Wars</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="ai-predict-home-sale.html">
+          <div class="post-row-title">Predictive Analytics: Can AI Really Tell You When Your Neighbor Will Sell?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="smart-home-vs-ai-home.html">
+          <div class="post-row-title">Smart Homes vs. AI Homes: What High-End Buyers Actually Want in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="tech-layoffs-real-estate.html">
+          <div class="post-row-title">Tech Layoffs & Real Estate: How Silicon Valley Downturns Affect Home Prices</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="meta-apple-google-campus-real-estate.html">
+          <div class="post-row-title">Living Near Meta, Apple & Google: Which Campus Has the Best Neighborhood?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="ai-startup-bay-area-housing.html">
+          <div class="post-row-title">AI Startup Boom: Why Palo Alto & SF Are Seeing Record Lease Demand</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="semiconductor-chip-act-real-estate.html">
+          <div class="post-row-title">The CHIPS Act Effect: How Semiconductor Growth Is Boosting Santa Clara Real Estate</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-lifestyle--design">
+    <div class="cat-header">
+      <div class="cat-emoji">🌿</div>
+      <div>
+        <div class="cat-name">Lifestyle & Design</div>
+        <div class="cat-desc">Interior trends, trails, events, and Bay Area lifestyle guides.</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="quiet-luxury-kitchen-2026.html">
+          <div class="post-row-title">The Quiet Luxury Kitchen: Two-Tone Cabinets in Navy & Warm Charcoal</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="maximalism-with-meaning.html">
+          <div class="post-row-title">Beyond Minimalism: Layering Textures & Maximalism with Meaning</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="biophilic-design-peninsula.html">
+          <div class="post-row-title">Biophilic Design in the Peninsula: Indoor Gardens & Green Walls</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="painted-ceilings-cove-lighting.html">
+          <div class="post-row-title">The Return of the Ceiling: Painted Ceilings & LED Cove Lighting Trends</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="earthy-neutrals-terracotta.html">
+          <div class="post-row-title">Earthy Neutrals: From Cool Grays to Terracotta, Sage & Setting Plaster</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="home-gym-infrared-sauna.html">
+          <div class="post-row-title">Smart Wellness Spaces: Designing Home Gyms with Infrared Saunas & Cold Plunges</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="boutique-hotel-primary-suite.html">
+          <div class="post-row-title">The Boutique Hotel Primary Suite: Fireplace Lounges & Double Steam Showers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="solar-storage-resale-value.html">
+          <div class="post-row-title">Eco-Tech Integration: How Solar Storage Is Boosting Home Resale Value</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="venetian-plaster-zellige-tiles.html">
+          <div class="post-row-title">Textured Walls: Venetian Plaster & Zellige Tiles in Silicon Valley Homes</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="wine-wall-coffee-bar.html">
+          <div class="post-row-title">Custom Beverage Stations: Why a Wine Wall or Coffee Bar Is a Must-Have</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="newt-pond-trail-cv.html">
+          <div class="post-row-title">The Newt Pond Trail: A Family Secret in Don Castro Regional Park</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="five-canyons-perimeter-loop.html">
+          <div class="post-row-title">Five Canyons Perimeter Loop: 5-Mile Ridge Hike with Bay Views</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="lake-chabot-east-shore.html">
+          <div class="post-row-title">Lake Chabot's Quiet Side: East Shore Trail for Solitude Seekers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cull-canyon-swim-lagoon.html">
+          <div class="post-row-title">Cull Canyon's Swim Lagoon: Castro Valley's Hidden Summer Oasis</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="anthony-chabot-eucalyptus.html">
+          <div class="post-row-title">Anthony Chabot Eucalyptus Groves: Best Shaded Trails for Hot Days</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="super-bowl-lx-rentals.html">
+          <div class="post-row-title">Super Bowl LX at Levi's Stadium: Impact on Bay Area Short-Term Rentals</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="world-cup-2026-san-jose.html">
+          <div class="post-row-title">World Cup 2026 in San Jose & Santa Clara: Real Estate Impact & Fan Zones</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="lunar-new-year-sf-2026.html">
+          <div class="post-row-title">Lunar New Year San Francisco 2026: Flower Market & Parade Guide</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="fog-design-art-bay-area.html">
+          <div class="post-row-title">FOG Design+Art: Why This Fort Mason Event Is the 'Met Gala' of Bay Area Design</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="farmers-market-bay-area.html">
+          <div class="post-row-title">Best Farmers Markets: Comparing Campbell, Mountain View & Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="dog-friendly-menlo-park.html">
+          <div class="post-row-title">Dog-Friendly Patios in Menlo Park: Where Your Pup Is the Guest of Honor</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="luxury-mudroom-dog-wash.html">
+          <div class="post-row-title">The Luxury Mudroom: Why Bay Area Hikers Demand Dog-Wash Stations</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="mcm-furniture-sourcing.html">
+          <div class="post-row-title">Mid-Century Modern Furniture Sourcing in Oakland & San Jose</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sustainable-landscaping-2026.html">
+          <div class="post-row-title">Sustainable Landscaping 2026: Swap Lawns for Native Plants & Save on Water</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="stealth-wealth-atherton.html">
+          <div class="post-row-title">Stealth Wealth Architecture of Atherton: Why the Best Homes Are Hidden</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="ace-train-vs-caltrain.html">
+          <div class="post-row-title">ACE Train vs. Caltrain: The Commuter's Dilemma from East Bay to South Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="google-village-san-jose.html">
+          <div class="post-row-title">The Google Village Update: What Downtown West Means for San Jose Homeowners</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="tech-shuttle-premium.html">
+          <div class="post-row-title">Living Near Tech Shuttles: Which Neighborhoods Have the Best Stop Premiums?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="commute-times-caltrain-driving.html">
+          <div class="post-row-title">Commute Reality: Caltrain vs. Driving from San Mateo to San Francisco</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="best-coffee-shops-palo-alto.html">
+          <div class="post-row-title">Best Coffee Shops for Remote Real Estate Work in Palo Alto</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-deep-dive">
+    <div class="cat-header">
+      <div class="cat-emoji">🔍</div>
+      <div>
+        <div class="cat-name">Deep Dive</div>
+        <div class="cat-desc">Hyper-local analysis of specific cities, streets, and micro-markets.</div>
+      </div>
+      <div class="cat-count">25 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="unincorporated-alameda-county.html">
+          <div class="post-row-title">Unincorporated Alameda County: Tax & Zoning Perks Most Buyers Miss</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="mountain-view-terra-bella.html">
+          <div class="post-row-title">Mountain View Terra Bella: Industrial to High-End Residential</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="professorville-palo-alto.html">
+          <div class="post-row-title">Professorville Palo Alto: Why This Pocket Remains the Ultimate Status Symbol</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sunnyvale-murphy-ave.html">
+          <div class="post-row-title">Sunnyvale Murphy Avenue: Walkable Downtown Living in Silicon Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="palo-alto-university-ave.html">
+          <div class="post-row-title">University Avenue Palo Alto: Why This Zip Code Commands Global Demand</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="portola-valley-real-estate.html">
+          <div class="post-row-title">Portola Valley: Silicon Valley's Most Serene (and Expensive) Small Town</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-altos-hills-estates.html">
+          <div class="post-row-title">Los Altos Hills: Privacy, Horses & $5M+ Estates in the Santa Cruz Foothills</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="woodside-ca-real-estate.html">
+          <div class="post-row-title">Woodside CA: The Tech Billionaire's Country Estate 30 Minutes from San Jose</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="half-moon-bay-investment.html">
+          <div class="post-row-title">Half Moon Bay: Ocean Views, Limited Supply & the Coastal Commission Challenge</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="east-palo-alto-gentrification.html">
+          <div class="post-row-title">East Palo Alto: The Last Affordable Address Next to Silicon Valley Royalty</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="newark-ca-real-estate.html">
+          <div class="post-row-title">Newark CA: The Overlooked East Bay City With Strong Investment Fundamentals</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="union-city-real-estate.html">
+          <div class="post-row-title">Union City: BART Access, Diverse Community & Underrated Value</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="livermore-wine-country.html">
+          <div class="post-row-title">Livermore Wine Country Real Estate: Acreage, Privacy & 45 Minutes From SF</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="concord-bay-area.html">
+          <div class="post-row-title">Concord CA: Contra Costa's Most Undervalued City in 2026?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="daly-city-colma.html">
+          <div class="post-row-title">Daly City & Colma: The Peninsula's Entry Point That Nobody Talks About</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="foster-city-san-mateo.html">
+          <div class="post-row-title">Foster City: Water Views, Top Schools & the Bay Area's Best-Kept Peninsula Secret</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="redwood-city-downtown.html">
+          <div class="post-row-title">Redwood City Downtown Revival: Why This Peninsula City Is Having Its Moment</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-altos-vs-los-altos-hills.html">
+          <div class="post-row-title">Los Altos vs. Los Altos Hills: Two Cities, One ZIP Code, Completely Different Lives</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="saratoga-monte-sereno.html">
+          <div class="post-row-title">Saratoga & Monte Sereno: The Quiet Power of Silicon Valley's Most Exclusive Small Cities</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="hillsborough-real-estate.html">
+          <div class="post-row-title">Hillsborough: San Mateo County's Most Prestigious Address & What It Costs</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="millbrae-sfo-proximity.html">
+          <div class="post-row-title">Millbrae: Where SFO Proximity & BART Meets Peninsula Charm</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="belmont-san-carlos.html">
+          <div class="post-row-title">Belmont & San Carlos: The Peninsula's Sweet Spot Between San Jose and SF</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-mateo-neighborhoods.html">
+          <div class="post-row-title">San Mateo Neighborhood Guide: Baywood, Shoreview & Hillsdale Compared</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="south-bay-luxury-market.html">
+          <div class="post-row-title">South Bay Luxury Market 2026: Who Is Buying $5M+ Homes in Silicon Valley?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="bay-area-off-market.html">
+          <div class="post-row-title">Off-Market Properties in the Bay Area: How to Find Homes Before They List</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-chinese-language">
+    <div class="cat-header">
+      <div class="cat-emoji">廣</div>
+      <div>
+        <div class="cat-name">Chinese Language</div>
+        <div class="cat-desc">Resources in Traditional Chinese (廣東話) and Simplified Chinese (普通話).</div>
+      </div>
+      <div class="cat-count">19 posts</div>
+    </div>
+    <div class="post-list">
+      
+        <a class="post-row" href="cantonese-home-buying-guide.html">
+          <div class="post-row-title">灣區買樓全攻略 — 廣東話逐步解說<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-east-bay-vs-south-bay.html">
+          <div class="post-row-title">東灣 vs 南灣：哪裡更適合您的家庭？<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-east-bay-vs-south-bay.html">
+          <div class="post-row-title">东湾 vs 南湾：哪里更适合您的家庭？<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-home-buying-guide.html">
+          <div class="post-row-title">湾区购房全攻略 — 普通话逐步解析<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-silicon-valley-buying-guide.html">
+          <div class="post-row-title">矽谷置業全攻略：廣東話版 2026<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-silicon-valley-buying-guide.html">
+          <div class="post-row-title">硅谷购房全攻略：普通话版 2026<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-tax-guide.html">
+          <div class="post-row-title">廣東話稅務指南：灣區業主必知的加州稅務知識<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-tax-guide.html">
+          <div class="post-row-title">湾区税务指南：华人业主必知的加州税务知识 (普通话)<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-school-zone-guide.html">
+          <div class="post-row-title">廣東話學區指南：東灣及南灣最佳學區全攻略<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-school-zone-guide.html">
+          <div class="post-row-title">学区房全攻略：东湾和南湾最佳学区指南 (普通话)<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-seller-guide.html">
+          <div class="post-row-title">廣東話賣樓指南：如何在灣區以最高價格出售您的房產<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-seller-guide.html">
+          <div class="post-row-title">卖房全指南：如何在湾区以最高价格出售您的房产 (普通话)<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-1031-guide.html">
+          <div class="post-row-title">1031 交換廣東話解說：如何合法延遲繳稅換取更好資產<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-first-time-buyer.html">
+          <div class="post-row-title">廣東話首次置業指南：灣區買樓的 15 個關鍵問題<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-first-time-buyer.html">
+          <div class="post-row-title">普通话首次购房指南：湾区买房的 15 个关键问题<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-investment-guide.html">
+          <div class="post-row-title">廣東話投資物業指南：在灣區建立房地產資產組合<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-investment-guide.html">
+          <div class="post-row-title">普通话房产投资指南：在湾区建立房地产资产组合<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-eichler-guide.html">
+          <div class="post-row-title">廣東話 Eichler 置業指南：中世紀現代建築在灣區的投資價值<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-prop19-prop13.html">
+          <div class="post-row-title">廣東話：加州 Prop 13 vs Prop 19 — 長期業主必讀<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+    </div>
+  </section>
+  </main>
+
+</div>
+
+<div class="blog-cta">
+  <h2>Ready to Make Your Move?</h2>
+  <p>Free consultation · English · 廣東話 · 普通話 · eXp Realty</p>
+  <a class="cta-btn" href="../#contact">Contact Vicki →</a>
+  <a class="cta-btn outline" href="https://www.zillow.com/profile/VickiWongCA" target="_blank" rel="noopener">Zillow Profile →</a>
+</div>
+
+<footer>© 2026 Vicki Wong · eXp Realty of California, Inc. · CA DRE on file · 廣東話 · 普通話 · English</footer>
+
+<script>
+function filterPosts(query) {
+  var q = query.toLowerCase().trim();
+  document.querySelectorAll('.post-row').forEach(function(row) {
+    var text = row.querySelector('.post-row-title').textContent.toLowerCase();
+    row.classList.toggle('hidden', q.length > 0 && text.indexOf(q) === -1);
+  });
+  // Show/hide empty category sections
+  document.querySelectorAll('.cat-section').forEach(function(sec) {
+    var visible = sec.querySelectorAll('.post-row:not(.hidden)').length > 0;
+    sec.style.display = (q.length > 0 && !visible) ? 'none' : '';
+  });
+}
+
+function showAll(e) {
+  e.preventDefault();
+  document.getElementById('search-input').value = '';
+  filterPosts('');
+  document.querySelectorAll('.cat-pill').forEach(function(p) { p.classList.remove('active'); });
+  e.target.classList.add('active');
+}
+
+function filterCat(e, pill) {
+  // Just scroll to section, don't filter
+  document.querySelectorAll('.cat-pill').forEach(function(p) { p.classList.remove('active'); });
+  pill.classList.add('active');
+}
+</script>
+
+</body>
+</html>
