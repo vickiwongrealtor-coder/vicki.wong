@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — Bay Area Real Estate Insights | Vicki Wong</title>
-<meta name="description" content="200+ expert articles on Bay Area real estate — market outlook, buying strategy, selling tips, school zones, tax planning, investment, and neighborhood guides. In English, Cantonese (廣東話), and Mandarin (普通話).">
+<meta name="description" content="200+ expert articles on Bay Area real estate — market outlook, buying strategy, selling tips, school zones, tax planning, investment, and neighborhood guides. In English, Cantonese , and Mandarin .">
 <meta name="keywords" content="bay area real estate blog, cantonese realtor blog, east bay south bay real estate articles, vicki wong blog, 廣東話地產blog">
 <link rel="canonical" href="https://vickiwongrealty.com/blog/">
 <meta property="og:title" content="Blog — Bay Area Real Estate Insights | Vicki Wong">
@@ -117,26 +117,63 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
   .blog-stats{grid-template-columns:1fr 1fr}
   .cat-header{flex-wrap:wrap}
 }
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(245,239,228,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,169,122,0.2);gap:1rem}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--charcoal);text-decoration:none;white-space:nowrap}.nav-logo span{color:var(--oak)}
+.nav-links{display:flex;align-items:center;gap:1.8rem;flex-wrap:nowrap}
+.nav-links a{font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color 0.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--oak)}
+.nav-cta{background:var(--charcoal)!important;color:var(--white)!important;padding:0.55rem 1.2rem!important;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--oak)!important;color:var(--white)!important}
+.nav-burger{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--charcoal)}
+@media(max-width:750px){
+  .nav-links{display:none;position:fixed;top:58px;left:0;right:0;background:rgba(245,239,228,0.98);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem;border-bottom:1px solid rgba(201,169,122,0.3);backdrop-filter:blur(14px)}
+  nav.open .nav-links{display:flex}
+  .nav-burger{display:block}
+  nav{padding:1rem 1.5rem}
+}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);color:rgba(255,255,255,0.55);margin-top:0}
+.footer-inner{max-width:1100px;margin:0 auto;padding:3.5rem 2rem 2rem;display:grid;grid-template-columns:1fr 2fr;gap:3rem}
+.footer-brand{}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--white);margin-bottom:0.4rem}.footer-logo span{color:var(--oak)}
+.footer-tagline{font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:0.3rem}
+.footer-langs{font-size:0.72rem;font-weight:600;letter-spacing:0.1em;color:var(--oak)}
+.footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.footer-col{}
+.footer-col-title{font-size:0.65rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--oak);margin-bottom:0.8rem}
+.footer-col a{display:block;font-size:0.8rem;font-weight:300;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.4rem;transition:color 0.15s}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{max-width:1100px;margin:0 auto;padding:1.2rem 2rem;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;font-size:0.72rem;color:rgba(255,255,255,0.3)}
+@media(max-width:700px){.footer-inner{grid-template-columns:1fr}.footer-links{grid-template-columns:1fr 1fr}.footer-bottom{flex-direction:column}}
+
 </style>
 </head>
 <body>
 
 <nav>
   <a class="nav-logo" href="../">Vicki <span>Wong</span></a>
-  <a class="nav-home" href="../">← Home</a>
+  <div class="nav-links">
+    <a href="../">Home</a>
+    <a href="../#cities">Cities</a>
+    <a href="../#contact" class="nav-cta">Free Consultation</a>
+  </div>
+  <button class="nav-burger" onclick="this.parentElement.classList.toggle('open')" aria-label="Menu">☰</button>
 </nav>
 
 <div class="blog-hero">
   <div class="blog-hero-inner">
     <span class="blog-eyebrow">Knowledge Base</span>
     <h1>Bay Area Real Estate<br><em>Insights & Guides</em></h1>
-    <p>200+ expert articles on buying, selling, investing, and living in the East Bay and South Bay — in English, Cantonese (廣東話), and Mandarin (普通話).</p>
+    <p>200+ expert articles on buying, selling, investing, and living in the East Bay and South Bay — in English, Cantonese , and Mandarin .</p>
   </div>
 </div>
 
 <div class="blog-stats">
-  <div class="bs"><div class="bs-num">208</div><div class="bs-lbl">Total Articles</div></div>
-  <div class="bs"><div class="bs-num">12</div><div class="bs-lbl">Categories</div></div>
+  <div class="bs"><div class="bs-num">1,548+</div><div class="bs-lbl">Total Articles</div></div>
+  <div class="bs"><div class="bs-num">53+</div><div class="bs-lbl">Categories</div></div>
   <div class="bs"><div class="bs-num">3</div><div class="bs-lbl">Languages</div></div>
   <div class="bs"><div class="bs-num">26+</div><div class="bs-lbl">Cities Covered</div></div>
 </div>
@@ -150,6 +187,8 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
 
 <div class="cat-pills">
   <a class="cat-pill active" href="#" onclick="showAll(event)">All</a>
+  <a class="cat-pill" href="#castro-valley" onclick="filterCat(event, this)">📍 Castro Valley</a>
+  <a class="cat-pill" href="#bay-area-cities" onclick="filterCat(event, this)">🗺 City Guides</a>
   <a class="cat-pill" href="#cat-market-outlook" onclick="filterCat(event, this)">📊 Market Outlook</a><a class="cat-pill" href="#cat-buyer-advice" onclick="filterCat(event, this)">🏠 Buyer Advice</a><a class="cat-pill" href="#cat-seller-strategy" onclick="filterCat(event, this)">📈 Seller Strategy</a><a class="cat-pill" href="#cat-investment" onclick="filterCat(event, this)">💼 Investment</a><a class="cat-pill" href="#cat-tax---wealth" onclick="filterCat(event, this)">💰 Tax & Wealth</a><a class="cat-pill" href="#cat-schools" onclick="filterCat(event, this)">🏫 Schools</a><a class="cat-pill" href="#cat-neighborhoods" onclick="filterCat(event, this)">🏘 Neighborhoods</a><a class="cat-pill" href="#cat-architecture" onclick="filterCat(event, this)">🏛 Architecture</a><a class="cat-pill" href="#cat-ai---tech" onclick="filterCat(event, this)">💻 AI & Tech</a><a class="cat-pill" href="#cat-lifestyle---design" onclick="filterCat(event, this)">🌿 Lifestyle & Design</a><a class="cat-pill" href="#cat-deep-dive" onclick="filterCat(event, this)">🔍 Deep Dive</a><a class="cat-pill" href="#cat-chinese-language" onclick="filterCat(event, this)">廣 Chinese Language</a>
 </div>
 
@@ -170,6 +209,17 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
       </div>
     </div>
     <div class="sidebar-section">
+      <div class="sidebar-heading">📍 Castro Valley</div>
+      <a class="sidebar-link" href="cv-1-12m-median-2026.html"><span class="s-emoji">📈</span>The $1.12M Median 2026</a>
+      <a class="sidebar-link" href="cv-measure-b-212m.html"><span class="s-emoji">💰</span>The $212M Measure B</a>
+      <a class="sidebar-link" href="cv-jensen-ranch-competitive.html"><span class="s-emoji">🏫</span>Jensen Ranch Schools</a>
+      <a class="sidebar-link" href="cv-greenridge-soul.html"><span class="s-emoji">🏛</span>Greenridge Eichlers</a>
+      <a class="sidebar-link" href="cv-quiet-luxury-hills.html"><span class="s-emoji">🌿</span>Quiet Luxury in the Hills</a>
+      <div class="sidebar-heading">🗺 City Guides</div>
+      <a class="sidebar-link" href="#region-east-bay"><span class="s-emoji">🏘</span>East Bay Cities<span class="s-count">13</span></a>
+      <a class="sidebar-link" href="#region-south-bay"><span class="s-emoji">💻</span>South Bay Cities<span class="s-count">12</span></a>
+      <a class="sidebar-link" href="#region-peninsula"><span class="s-emoji">🌉</span>Peninsula Cities<span class="s-count">11</span></a>
+      <a class="sidebar-link" href="#region-north-bay"><span class="s-emoji">🍷</span>North Bay Cities<span class="s-count">4</span></a>
       <div class="sidebar-heading">Featured</div>
       <a class="sidebar-link" href="castro-valley-elementary-schools-guide.html"><span class="s-emoji">🏫</span>Castro Valley Schools Guide</a>
       <a class="sidebar-link" href="eichler-palo-alto-vs-castro-valley.html"><span class="s-emoji">🏛</span>The Eichler Premium</a>
@@ -186,6 +236,1880 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
 
   <!-- POSTS BY CATEGORY -->
   <main id="posts-container">
+    
+    
+    <!-- ═══ BAY AREA CITY GUIDES ═══ -->
+    <div id="bay-area-cities" style="border:2px solid var(--sage);margin-bottom:2.5rem;">
+      <div style="background:var(--sage);padding:1.2rem 1.8rem;display:flex;align-items:center;justify-content:space-between;">
+        <div>
+          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.3rem;">Complete Bay Area Coverage</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--white);">🗺 Bay Area City Guides</div>
+          <div style="font-size:0.8rem;font-weight:300;color:rgba(255,255,255,0.65);margin-top:0.2rem;">40 cities · 10 topics each · English · 廣東話 · 普通話</div>
+        </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:rgba(255,255,255,0.4);">1040+</div>
+      </div>
+      <section class="cat-section" id="region-east-bay">
+        <div class="cat-header">
+          <div class="cat-emoji">🏘</div>
+          <div>
+            <div class="cat-name">East Bay</div>
+            <div class="cat-desc">12 cities · 10 topics each · 3 languages</div>
+          </div>
+          <div class="cat-count">360+</div>
+        </div>
+        <div class="post-list">
+        <a class="post-row" href="fremont-market-2026.html">
+          <div class="post-row-title">Fremont 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.1M–$1.6M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-fremont-buyer-guide.html">
+          <div class="post-row-title">Fremont 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-fremont-mandarin-guide.html">
+          <div class="post-row-title">Fremont 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="hayward-market-2026.html">
+          <div class="post-row-title">Hayward 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$750K–$1.1M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-hayward-buyer-guide.html">
+          <div class="post-row-title">Hayward 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-hayward-mandarin-guide.html">
+          <div class="post-row-title">Hayward 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-leandro-market-2026.html">
+          <div class="post-row-title">San Leandro 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$700K–$1.0M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-leandro-buyer-guide.html">
+          <div class="post-row-title">San Leandro 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-leandro-mandarin-guide.html">
+          <div class="post-row-title">San Leandro 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="dublin-market-2026.html">
+          <div class="post-row-title">Dublin 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.0M–$1.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-dublin-buyer-guide.html">
+          <div class="post-row-title">Dublin 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-dublin-mandarin-guide.html">
+          <div class="post-row-title">Dublin 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="pleasanton-market-2026.html">
+          <div class="post-row-title">Pleasanton 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.1M–$1.6M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-pleasanton-buyer-guide.html">
+          <div class="post-row-title">Pleasanton 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-pleasanton-mandarin-guide.html">
+          <div class="post-row-title">Pleasanton 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="livermore-market-2026.html">
+          <div class="post-row-title">Livermore 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.3M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-livermore-buyer-guide.html">
+          <div class="post-row-title">Livermore 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-livermore-mandarin-guide.html">
+          <div class="post-row-title">Livermore 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-ramon-market-2026.html">
+          <div class="post-row-title">San Ramon 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.2M–$1.8M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-ramon-buyer-guide.html">
+          <div class="post-row-title">San Ramon 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-ramon-mandarin-guide.html">
+          <div class="post-row-title">San Ramon 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="danville-market-2026.html">
+          <div class="post-row-title">Danville 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.4M–$2.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-danville-buyer-guide.html">
+          <div class="post-row-title">Danville 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-danville-mandarin-guide.html">
+          <div class="post-row-title">Danville 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="union-city-market-2026.html">
+          <div class="post-row-title">Union City 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-union-city-buyer-guide.html">
+          <div class="post-row-title">Union City 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-union-city-mandarin-guide.html">
+          <div class="post-row-title">Union City 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="newark-market-2026.html">
+          <div class="post-row-title">Newark 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$850K–$1.1M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-newark-buyer-guide.html">
+          <div class="post-row-title">Newark 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-newark-mandarin-guide.html">
+          <div class="post-row-title">Newark 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="oakland-hills-market-2026.html">
+          <div class="post-row-title">Oakland Hills 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-oakland-hills-buyer-guide.html">
+          <div class="post-row-title">Oakland Hills 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-oakland-hills-mandarin-guide.html">
+          <div class="post-row-title">Oakland Hills 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="alameda-market-2026.html">
+          <div class="post-row-title">Alameda 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.3M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-alameda-buyer-guide.html">
+          <div class="post-row-title">Alameda 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-alameda-mandarin-guide.html">
+          <div class="post-row-title">Alameda 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+      </section>
+      <section class="cat-section" id="region-south-bay">
+        <div class="cat-header">
+          <div class="cat-emoji">💻</div>
+          <div>
+            <div class="cat-name">South Bay</div>
+            <div class="cat-desc">12 cities · 10 topics each · 3 languages</div>
+          </div>
+          <div class="cat-count">360+</div>
+        </div>
+        <div class="post-list">
+        <a class="post-row" href="cupertino-market-2026.html">
+          <div class="post-row-title">Cupertino 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$2.0M–$3.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cupertino-buyer-guide.html">
+          <div class="post-row-title">Cupertino 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cupertino-mandarin-guide.html">
+          <div class="post-row-title">Cupertino 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="mountain-view-market-2026.html">
+          <div class="post-row-title">Mountain View 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.6M–$2.8M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-mountain-view-buyer-guide.html">
+          <div class="post-row-title">Mountain View 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-mountain-view-mandarin-guide.html">
+          <div class="post-row-title">Mountain View 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="palo-alto-market-2026.html">
+          <div class="post-row-title">Palo Alto 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$3.5M–$6M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-palo-alto-buyer-guide.html">
+          <div class="post-row-title">Palo Alto 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-palo-alto-mandarin-guide.html">
+          <div class="post-row-title">Palo Alto 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-jose-market-2026.html">
+          <div class="post-row-title">San Jose 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-jose-buyer-guide.html">
+          <div class="post-row-title">San Jose 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-jose-mandarin-guide.html">
+          <div class="post-row-title">San Jose 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="milpitas-market-2026.html">
+          <div class="post-row-title">Milpitas 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.1M–$1.6M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-milpitas-buyer-guide.html">
+          <div class="post-row-title">Milpitas 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-milpitas-mandarin-guide.html">
+          <div class="post-row-title">Milpitas 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sunnyvale-market-2026.html">
+          <div class="post-row-title">Sunnyvale 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.5M–$2.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-sunnyvale-buyer-guide.html">
+          <div class="post-row-title">Sunnyvale 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-sunnyvale-mandarin-guide.html">
+          <div class="post-row-title">Sunnyvale 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="santa-clara-market-2026.html">
+          <div class="post-row-title">Santa Clara 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.2M–$1.8M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-santa-clara-buyer-guide.html">
+          <div class="post-row-title">Santa Clara 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-santa-clara-mandarin-guide.html">
+          <div class="post-row-title">Santa Clara 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="campbell-market-2026.html">
+          <div class="post-row-title">Campbell 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.2M–$1.7M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-campbell-buyer-guide.html">
+          <div class="post-row-title">Campbell 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-campbell-mandarin-guide.html">
+          <div class="post-row-title">Campbell 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-altos-market-2026.html">
+          <div class="post-row-title">Los Altos 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$3.0M–$5M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-los-altos-buyer-guide.html">
+          <div class="post-row-title">Los Altos 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-los-altos-mandarin-guide.html">
+          <div class="post-row-title">Los Altos 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="saratoga-market-2026.html">
+          <div class="post-row-title">Saratoga 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$3.0M–$5M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-saratoga-buyer-guide.html">
+          <div class="post-row-title">Saratoga 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-saratoga-mandarin-guide.html">
+          <div class="post-row-title">Saratoga 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="los-gatos-market-2026.html">
+          <div class="post-row-title">Los Gatos 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$2.0M–$3.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-los-gatos-buyer-guide.html">
+          <div class="post-row-title">Los Gatos 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-los-gatos-mandarin-guide.html">
+          <div class="post-row-title">Los Gatos 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="morgan-hill-market-2026.html">
+          <div class="post-row-title">Morgan Hill 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$900K–$1.3M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-morgan-hill-buyer-guide.html">
+          <div class="post-row-title">Morgan Hill 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-morgan-hill-mandarin-guide.html">
+          <div class="post-row-title">Morgan Hill 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+      </section>
+      <section class="cat-section" id="region-peninsula">
+        <div class="cat-header">
+          <div class="cat-emoji">🌉</div>
+          <div>
+            <div class="cat-name">Peninsula</div>
+            <div class="cat-desc">11 cities · 10 topics each · 3 languages</div>
+          </div>
+          <div class="cat-count">330+</div>
+        </div>
+        <div class="post-list">
+        <a class="post-row" href="san-mateo-market-2026.html">
+          <div class="post-row-title">San Mateo 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.3M–$2.0M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-mateo-buyer-guide.html">
+          <div class="post-row-title">San Mateo 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-mateo-mandarin-guide.html">
+          <div class="post-row-title">San Mateo 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="burlingame-market-2026.html">
+          <div class="post-row-title">Burlingame 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.8M–$3.0M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-burlingame-buyer-guide.html">
+          <div class="post-row-title">Burlingame 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-burlingame-mandarin-guide.html">
+          <div class="post-row-title">Burlingame 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="foster-city-market-2026.html">
+          <div class="post-row-title">Foster City 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.4M–$2.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-foster-city-buyer-guide.html">
+          <div class="post-row-title">Foster City 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-foster-city-mandarin-guide.html">
+          <div class="post-row-title">Foster City 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="redwood-city-market-2026.html">
+          <div class="post-row-title">Redwood City 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.4M–$2.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-redwood-city-buyer-guide.html">
+          <div class="post-row-title">Redwood City 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-redwood-city-mandarin-guide.html">
+          <div class="post-row-title">Redwood City 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="menlo-park-market-2026.html">
+          <div class="post-row-title">Menlo Park 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$2.5M–$4.5M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-menlo-park-buyer-guide.html">
+          <div class="post-row-title">Menlo Park 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-menlo-park-mandarin-guide.html">
+          <div class="post-row-title">Menlo Park 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="belmont-market-2026.html">
+          <div class="post-row-title">Belmont 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.6M–$2.4M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-belmont-buyer-guide.html">
+          <div class="post-row-title">Belmont 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-belmont-mandarin-guide.html">
+          <div class="post-row-title">Belmont 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="san-carlos-market-2026.html">
+          <div class="post-row-title">San Carlos 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.8M–$2.6M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-carlos-buyer-guide.html">
+          <div class="post-row-title">San Carlos 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-carlos-mandarin-guide.html">
+          <div class="post-row-title">San Carlos 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="millbrae-market-2026.html">
+          <div class="post-row-title">Millbrae 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.4M–$2.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-millbrae-buyer-guide.html">
+          <div class="post-row-title">Millbrae 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-millbrae-mandarin-guide.html">
+          <div class="post-row-title">Millbrae 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="daly-city-market-2026.html">
+          <div class="post-row-title">Daly City 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$800K–$1.1M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-daly-city-buyer-guide.html">
+          <div class="post-row-title">Daly City 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-daly-city-mandarin-guide.html">
+          <div class="post-row-title">Daly City 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="hillsborough-market-2026.html">
+          <div class="post-row-title">Hillsborough 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$3.5M–$7M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-hillsborough-buyer-guide.html">
+          <div class="post-row-title">Hillsborough 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-hillsborough-mandarin-guide.html">
+          <div class="post-row-title">Hillsborough 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="atherton-market-2026.html">
+          <div class="post-row-title">Atherton 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$5M–$20M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-atherton-buyer-guide.html">
+          <div class="post-row-title">Atherton 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-atherton-mandarin-guide.html">
+          <div class="post-row-title">Atherton 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+      </section>
+      <section class="cat-section" id="region-north-bay">
+        <div class="cat-header">
+          <div class="cat-emoji">🍷</div>
+          <div>
+            <div class="cat-name">North Bay</div>
+            <div class="cat-desc">4 cities · 10 topics each · 3 languages</div>
+          </div>
+          <div class="cat-count">120+</div>
+        </div>
+        <div class="post-list">
+        <a class="post-row" href="marin-county-market-2026.html">
+          <div class="post-row-title">Marin County 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.5M–$5M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-marin-county-buyer-guide.html">
+          <div class="post-row-title">Marin County 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-marin-county-mandarin-guide.html">
+          <div class="post-row-title">Marin County 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="napa-market-2026.html">
+          <div class="post-row-title">Napa 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$700K–$1.2M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-napa-buyer-guide.html">
+          <div class="post-row-title">Napa 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-napa-mandarin-guide.html">
+          <div class="post-row-title">Napa 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="sonoma-market-2026.html">
+          <div class="post-row-title">Sonoma 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$700K–$1.3M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-sonoma-buyer-guide.html">
+          <div class="post-row-title">Sonoma 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-sonoma-mandarin-guide.html">
+          <div class="post-row-title">Sonoma 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="petaluma-market-2026.html">
+          <div class="post-row-title">Petaluma 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$700K–$1.1M</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-petaluma-buyer-guide.html">
+          <div class="post-row-title">Petaluma 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-petaluma-mandarin-guide.html">
+          <div class="post-row-title">Petaluma 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+      </section>
+      <section class="cat-section" id="region-san-francisco">
+        <div class="cat-header">
+          <div class="cat-emoji">🌁</div>
+          <div>
+            <div class="cat-name">San Francisco</div>
+            <div class="cat-desc">1 cities · 10 topics each · 3 languages</div>
+          </div>
+          <div class="cat-count">30+</div>
+        </div>
+        <div class="post-list">
+        <a class="post-row" href="san-francisco-market-2026.html">
+          <div class="post-row-title">San Francisco 2026 Market Report · <span style="color:var(--sage);font-size:0.78rem">$1.2M–$4M+</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-san-francisco-buyer-guide.html">
+          <div class="post-row-title">San Francisco 廣東話置業指南 <span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-san-francisco-mandarin-guide.html">
+          <div class="post-row-title">San Francisco 普通话置业指南 <span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+      </section>
+    </div>
+
+    <!-- ═══ CASTRO VALLEY ═══ -->
+    <div id="castro-valley" style="border:2px solid var(--oak);margin-bottom:2.5rem;">
+      <div style="background:var(--oak);padding:1.2rem 1.8rem;display:flex;align-items:center;justify-content:space-between;">
+        <div>
+          <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.3rem;">Local Expert Series</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--white);">📍 Castro Valley Complete Guide</div>
+          <div style="font-size:0.8rem;font-weight:300;color:rgba(255,255,255,0.65);margin-top:0.2rem;">100 posts · 3 languages · 94552 · Your definitive East Bay real estate resource</div>
+        </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:rgba(255,255,255,0.4);">300</div>
+      </div>
+      <div style="padding:0.8rem 1.8rem;background:rgba(201,169,122,0.08);border-bottom:1px solid rgba(201,169,122,0.2);display:flex;gap:0.6rem;flex-wrap:wrap;">
+        <a href="#cv-market" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">📈 Market</a><a href="#cv-tax---wealth" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">💰 Tax & Wealth</a><a href="#cv-schools" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🏫 Schools</a><a href="#cv-architecture" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🏛 Architecture</a><a href="#cv-lifestyle" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🌿 Lifestyle</a><a href="#cv-hidden-gems" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">💎 Hidden Gems</a><a href="#cv-seller-strategy" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">📋 Seller Strategy</a><a href="#cv-ai---future" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🤖 AI & Future</a><a href="#cv-neighborhoods" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🏘 Neighborhoods</a><a href="#cv-culture" style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,169,122,0.4);color:var(--oak);text-decoration:none;">🏮 Culture</a>
+      </div>
+      
+  <section class="cat-section" id="cv-market">
+    <div class="cat-header">
+      <div class="cat-emoji">📈</div>
+      <div>
+        <div class="cat-name">Castro Valley · Market</div>
+        <div class="cat-desc">2026 market dynamics, pricing, and competitive strategy</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-wait-and-see-2027.html">
+          <div class="post-row-title">The 'Wait and See' Cost: Why Waiting for 2027 Could Cost Castro Valley Buyers $100K</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-wait-and-see-2027.html">
+          <div class="post-row-title">The 'Wait and See' Cost: Why Waiting for 2027 Could Cost Castro Valley Buyers $100K<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-wait-and-see-2027.html">
+          <div class="post-row-title">The 'Wait and See' Cost: Why Waiting for 2027 Could Cost Castro Valley Buyers $100K（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-zillow-94552-data-gap.html">
+          <div class="post-row-title">Why Zillow Estimates Miss the Mark in 94552: The Hill-Property Data Gap</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-zillow-94552-data-gap.html">
+          <div class="post-row-title">Why Zillow Estimates Miss the Mark in 94552: The Hill-Property Data Gap<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-zillow-94552-data-gap.html">
+          <div class="post-row-title">Why Zillow Estimates Miss the Mark in 94552: The Hill-Property Data Gap（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-event-pricing-strategy.html">
+          <div class="post-row-title">Event Pricing Strategy: How 5% Below Market Triggers the Bidding War Effect in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-event-pricing-strategy.html">
+          <div class="post-row-title">Event Pricing Strategy: How 5% Below Market Triggers the Bidding War Effect in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-event-pricing-strategy.html">
+          <div class="post-row-title">Event Pricing Strategy: How 5% Below Market Triggers the Bidding War Effect in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-1-12m-median-2026.html">
+          <div class="post-row-title">The $1.12M Median: Breaking Down 2026 Entry-Level vs. Luxury Price Points</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-1-12m-median-2026.html">
+          <div class="post-row-title">The $1.12M Median: Breaking Down 2026 Entry-Level vs. Luxury Price Points<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-1-12m-median-2026.html">
+          <div class="post-row-title">The $1.12M Median: Breaking Down 2026 Entry-Level vs. Luxury Price Points（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-redfin-vs-reality.html">
+          <div class="post-row-title">Redfin vs. Reality: Why Days on Market in Castro Valley Is Shorter Than the Apps Suggest</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-redfin-vs-reality.html">
+          <div class="post-row-title">Redfin vs. Reality: Why Days on Market in Castro Valley Is Shorter Than the Apps Suggest<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-redfin-vs-reality.html">
+          <div class="post-row-title">Redfin vs. Reality: Why Days on Market in Castro Valley Is Shorter Than the Apps Suggest（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-unincorporated-advantage.html">
+          <div class="post-row-title">The Unincorporated Advantage: How Not Being a City Affects Property Tax & Zoning in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-unincorporated-advantage.html">
+          <div class="post-row-title">The Unincorporated Advantage: How Not Being a City Affects Property Tax & Zoning in 2026<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-unincorporated-advantage.html">
+          <div class="post-row-title">The Unincorporated Advantage: How Not Being a City Affects Property Tax & Zoning in 2026（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-bart-impact-2026.html">
+          <div class="post-row-title">BART's Impact on 2026 Values: Is the 1-Mile Station Premium Still 10%?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-bart-impact-2026.html">
+          <div class="post-row-title">BART's Impact on 2026 Values: Is the 1-Mile Station Premium Still 10%?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-bart-impact-2026.html">
+          <div class="post-row-title">BART's Impact on 2026 Values: Is the 1-Mile Station Premium Still 10%?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-vs-dublin-2026.html">
+          <div class="post-row-title">Castro Valley vs. Dublin: Why Hill Charm Is Outperforming New-Build Subdivisions</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-vs-dublin-2026.html">
+          <div class="post-row-title">Castro Valley vs. Dublin: Why Hill Charm Is Outperforming New-Build Subdivisions<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-vs-dublin-2026.html">
+          <div class="post-row-title">Castro Valley vs. Dublin: Why Hill Charm Is Outperforming New-Build Subdivisions（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-inventory-scarcity.html">
+          <div class="post-row-title">Inventory Scarcity: Why Castro Valley's Physical Boundaries Prevent a Housing Crash</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-inventory-scarcity.html">
+          <div class="post-row-title">Inventory Scarcity: Why Castro Valley's Physical Boundaries Prevent a Housing Crash<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-inventory-scarcity.html">
+          <div class="post-row-title">Inventory Scarcity: Why Castro Valley's Physical Boundaries Prevent a Housing Crash（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-may-2026-sellers-market.html">
+          <div class="post-row-title">The May 2026 Seller's Market: Analyzing the 87/100 Competitiveness Score</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-may-2026-sellers-market.html">
+          <div class="post-row-title">The May 2026 Seller's Market: Analyzing the 87/100 Competitiveness Score<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-may-2026-sellers-market.html">
+          <div class="post-row-title">The May 2026 Seller's Market: Analyzing the 87/100 Competitiveness Score（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-tax--wealth">
+    <div class="cat-header">
+      <div class="cat-emoji">💰</div>
+      <div>
+        <div class="cat-name">Castro Valley · Tax & Wealth</div>
+        <div class="cat-desc">Prop 13, Prop 19, Measure B, 1031 exchanges</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-prop19-55-plus.html">
+          <div class="post-row-title">Prop 19 & The 55+ Move: Moving Your Low Tax Base to Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-prop19-55-plus.html">
+          <div class="post-row-title">Prop 19 & The 55+ Move: Moving Your Low Tax Base to Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-prop19-55-plus.html">
+          <div class="post-row-title">Prop 19 & The 55+ Move: Moving Your Low Tax Base to Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-1031-tech-pros.html">
+          <div class="post-row-title">1031 Exchange for Tech Pros: Swapping Your SF Condo for a Castro Valley Rental</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-1031-tech-pros.html">
+          <div class="post-row-title">1031 Exchange for Tech Pros: Swapping Your SF Condo for a Castro Valley Rental<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-1031-tech-pros.html">
+          <div class="post-row-title">1031 Exchange for Tech Pros: Swapping Your SF Condo for a Castro Valley Rental（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-step-up-basis.html">
+          <div class="post-row-title">Wait to Die or Sell Now? How Step-Up in Basis Works for Castro Valley Family Homes</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-step-up-basis.html">
+          <div class="post-row-title">Wait to Die or Sell Now? How Step-Up in Basis Works for Castro Valley Family Homes<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-step-up-basis.html">
+          <div class="post-row-title">Wait to Die or Sell Now? How Step-Up in Basis Works for Castro Valley Family Homes（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-kids-inherit-1031.html">
+          <div class="post-row-title">Can Your Kids Inherit a 1031? Long-Term Wealth Transfer in the East Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-kids-inherit-1031.html">
+          <div class="post-row-title">Can Your Kids Inherit a 1031? Long-Term Wealth Transfer in the East Bay<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-kids-inherit-1031.html">
+          <div class="post-row-title">Can Your Kids Inherit a 1031? Long-Term Wealth Transfer in the East Bay（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-measure-b-212m.html">
+          <div class="post-row-title">The $212M Measure B: How the 2026 School Bond Affects Your Annual Property Tax</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-measure-b-212m.html">
+          <div class="post-row-title">The $212M Measure B: How the 2026 School Bond Affects Your Annual Property Tax<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-measure-b-212m.html">
+          <div class="post-row-title">The $212M Measure B: How the 2026 School Bond Affects Your Annual Property Tax（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-agricultural-tax-breaks.html">
+          <div class="post-row-title">Agricultural Tax Breaks: Do You Need a Vineyard to Get a Tax Break in the CV Hills?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-agricultural-tax-breaks.html">
+          <div class="post-row-title">Agricultural Tax Breaks: Do You Need a Vineyard to Get a Tax Break in the CV Hills?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-agricultural-tax-breaks.html">
+          <div class="post-row-title">Agricultural Tax Breaks: Do You Need a Vineyard to Get a Tax Break in the CV Hills?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-stepup-vs-gifting.html">
+          <div class="post-row-title">Step-Up in Basis vs. Gifting: What Castro Valley Parents Need to Know Before 2027</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-stepup-vs-gifting.html">
+          <div class="post-row-title">Step-Up in Basis vs. Gifting: What Castro Valley Parents Need to Know Before 2027<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-stepup-vs-gifting.html">
+          <div class="post-row-title">Step-Up in Basis vs. Gifting: What Castro Valley Parents Need to Know Before 2027（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-adu-tax-math.html">
+          <div class="post-row-title">The ADU Tax Math: How Much Does a Backyard Cottage Add to Your Assessment?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-adu-tax-math.html">
+          <div class="post-row-title">The ADU Tax Math: How Much Does a Backyard Cottage Add to Your Assessment?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-adu-tax-math.html">
+          <div class="post-row-title">The ADU Tax Math: How Much Does a Backyard Cottage Add to Your Assessment?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-capital-gains-shield.html">
+          <div class="post-row-title">Capital Gains Shield: Using the $500K Exclusion Effectively in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-capital-gains-shield.html">
+          <div class="post-row-title">Capital Gains Shield: Using the $500K Exclusion Effectively in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-capital-gains-shield.html">
+          <div class="post-row-title">Capital Gains Shield: Using the $500K Exclusion Effectively in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-prop13-landed-gentry.html">
+          <div class="post-row-title">Prop 13 Protection: Why Long-Term Castro Valley Owners Are the Landed Gentry of the East Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-prop13-landed-gentry.html">
+          <div class="post-row-title">Prop 13 Protection: Why Long-Term Castro Valley Owners Are the Landed Gentry of the East Bay<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-prop13-landed-gentry.html">
+          <div class="post-row-title">Prop 13 Protection: Why Long-Term Castro Valley Owners Are the Landed Gentry of the East Bay（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-schools">
+    <div class="cat-header">
+      <div class="cat-emoji">🏫</div>
+      <div>
+        <div class="cat-name">Castro Valley · Schools</div>
+        <div class="cat-desc">CVUSD, Jensen Ranch, Measure B school bond</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-10-10-premium.html">
+          <div class="post-row-title">The 10/10 Premium: Why Castro Valley Unified Adds $200K to Your Home's Value</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-10-10-premium.html">
+          <div class="post-row-title">The 10/10 Premium: Why Castro Valley Unified Adds $200K to Your Home's Value<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-10-10-premium.html">
+          <div class="post-row-title">The 10/10 Premium: Why Castro Valley Unified Adds $200K to Your Home's Value（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-measure-b-classrooms.html">
+          <div class="post-row-title">Measure B Deep Dive: What the $212 Million Will Actually Fix in Local Classrooms</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-measure-b-classrooms.html">
+          <div class="post-row-title">Measure B Deep Dive: What the $212 Million Will Actually Fix in Local Classrooms<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-measure-b-classrooms.html">
+          <div class="post-row-title">Measure B Deep Dive: What the $212 Million Will Actually Fix in Local Classrooms（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-stanford-path.html">
+          <div class="post-row-title">The Stanford Path: Which Silicon Valley Private Schools Are Popular with Castro Valley Commuters?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-stanford-path.html">
+          <div class="post-row-title">The Stanford Path: Which Silicon Valley Private Schools Are Popular with Castro Valley Commuters?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-stanford-path.html">
+          <div class="post-row-title">The Stanford Path: Which Silicon Valley Private Schools Are Popular with Castro Valley Commuters?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-cvhs-vs-private.html">
+          <div class="post-row-title">CVHS vs. Private School: Is $40K/Year Tuition Worth It in a Top School District?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-cvhs-vs-private.html">
+          <div class="post-row-title">CVHS vs. Private School: Is $40K/Year Tuition Worth It in a Top School District?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-cvhs-vs-private.html">
+          <div class="post-row-title">CVHS vs. Private School: Is $40K/Year Tuition Worth It in a Top School District?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-jensen-ranch-competitive.html">
+          <div class="post-row-title">Jensen Ranch Elementary: Why This Pocket Is the Most Competitive for Young Families</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-jensen-ranch-competitive.html">
+          <div class="post-row-title">Jensen Ranch Elementary: Why This Pocket Is the Most Competitive for Young Families<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-jensen-ranch-competitive.html">
+          <div class="post-row-title">Jensen Ranch Elementary: Why This Pocket Is the Most Competitive for Young Families（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-stem-canyon.html">
+          <div class="post-row-title">STEM in the Canyons: Castro Valley High's 2026 Engineering & Tech Accolades</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-stem-canyon.html">
+          <div class="post-row-title">STEM in the Canyons: Castro Valley High's 2026 Engineering & Tech Accolades<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-stem-canyon.html">
+          <div class="post-row-title">STEM in the Canyons: Castro Valley High's 2026 Engineering & Tech Accolades（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-phone-free-schools.html">
+          <div class="post-row-title">Phone-Free Schools: How CVUSD Is Implementing the 2026 Smartphone Regulations</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-phone-free-schools.html">
+          <div class="post-row-title">Phone-Free Schools: How CVUSD Is Implementing the 2026 Smartphone Regulations<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-phone-free-schools.html">
+          <div class="post-row-title">Phone-Free Schools: How CVUSD Is Implementing the 2026 Smartphone Regulations（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-commuter-student.html">
+          <div class="post-row-title">The Commuter Student: Balancing a Silicon Valley Career with Castro Valley School Events</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-commuter-student.html">
+          <div class="post-row-title">The Commuter Student: Balancing a Silicon Valley Career with Castro Valley School Events<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-commuter-student.html">
+          <div class="post-row-title">The Commuter Student: Balancing a Silicon Valley Career with Castro Valley School Events（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-school-zone-map.html">
+          <div class="post-row-title">School Zone Boundaries: A Map of the Most Desirable Pockets in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-school-zone-map.html">
+          <div class="post-row-title">School Zone Boundaries: A Map of the Most Desirable Pockets in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-school-zone-map.html">
+          <div class="post-row-title">School Zone Boundaries: A Map of the Most Desirable Pockets in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-community-feel-schools.html">
+          <div class="post-row-title">Beyond the Rating: Why the Community Feel at Proctor & Marshall Attracts Tech Parents</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-community-feel-schools.html">
+          <div class="post-row-title">Beyond the Rating: Why the Community Feel at Proctor & Marshall Attracts Tech Parents<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-community-feel-schools.html">
+          <div class="post-row-title">Beyond the Rating: Why the Community Feel at Proctor & Marshall Attracts Tech Parents（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-architecture">
+    <div class="cat-header">
+      <div class="cat-emoji">🏛</div>
+      <div>
+        <div class="cat-name">Castro Valley · Architecture</div>
+        <div class="cat-desc">Eichler, Greenridge, mid-century modern</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-2m-greenridge-eichler.html">
+          <div class="post-row-title">The $2M Greenridge Eichler: Best Value-Per-Square-Foot Modernism in the Bay?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-2m-greenridge-eichler.html">
+          <div class="post-row-title">The $2M Greenridge Eichler: Best Value-Per-Square-Foot Modernism in the Bay?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-2m-greenridge-eichler.html">
+          <div class="post-row-title">The $2M Greenridge Eichler: Best Value-Per-Square-Foot Modernism in the Bay?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-eichler-vs-new-construction.html">
+          <div class="post-row-title">Eichler vs. 2026 Modern: Why 70-Year-Old Post-and-Beam Beats New Construction</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-eichler-vs-new-construction.html">
+          <div class="post-row-title">Eichler vs. 2026 Modern: Why 70-Year-Old Post-and-Beam Beats New Construction<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-eichler-vs-new-construction.html">
+          <div class="post-row-title">Eichler vs. 2026 Modern: Why 70-Year-Old Post-and-Beam Beats New Construction（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-atrium-maintenance.html">
+          <div class="post-row-title">Maintaining the Atrium: Glass-Wall Living in the Castro Valley Microclimate</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-atrium-maintenance.html">
+          <div class="post-row-title">Maintaining the Atrium: Glass-Wall Living in the Castro Valley Microclimate<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-atrium-maintenance.html">
+          <div class="post-row-title">Maintaining the Atrium: Glass-Wall Living in the Castro Valley Microclimate（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-radiant-heat-retrofit.html">
+          <div class="post-row-title">Radiant Heat Woes: Retrofitting 1950s Tech for 2026 Energy Standards</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-radiant-heat-retrofit.html">
+          <div class="post-row-title">Radiant Heat Woes: Retrofitting 1950s Tech for 2026 Energy Standards<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-radiant-heat-retrofit.html">
+          <div class="post-row-title">Radiant Heat Woes: Retrofitting 1950s Tech for 2026 Energy Standards（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-staging-eichler-ux.html">
+          <div class="post-row-title">Staging an Eichler While Living In It: A UX-Inspired Minimalist Approach</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-staging-eichler-ux.html">
+          <div class="post-row-title">Staging an Eichler While Living In It: A UX-Inspired Minimalist Approach<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-staging-eichler-ux.html">
+          <div class="post-row-title">Staging an Eichler While Living In It: A UX-Inspired Minimalist Approach（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-greenridge-turnover.html">
+          <div class="post-row-title">Greenridge Turnover Rates: Why People Wait Years for a Home in This Enclave</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-greenridge-turnover.html">
+          <div class="post-row-title">Greenridge Turnover Rates: Why People Wait Years for a Home in This Enclave<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-greenridge-turnover.html">
+          <div class="post-row-title">Greenridge Turnover Rates: Why People Wait Years for a Home in This Enclave（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-silicon-valley-style-east-bay.html">
+          <div class="post-row-title">The Silicon Valley Style in the East Bay: Why MCM Architecture Attracts Tech Founders</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-silicon-valley-style-east-bay.html">
+          <div class="post-row-title">The Silicon Valley Style in the East Bay: Why MCM Architecture Attracts Tech Founders<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-silicon-valley-style-east-bay.html">
+          <div class="post-row-title">The Silicon Valley Style in the East Bay: Why MCM Architecture Attracts Tech Founders（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-mcm-kitchen-update.html">
+          <div class="post-row-title">Updating a Mid-Century Kitchen: Adding 2026 Smart Tech Without Losing the 1950s Soul</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-mcm-kitchen-update.html">
+          <div class="post-row-title">Updating a Mid-Century Kitchen: Adding 2026 Smart Tech Without Losing the 1950s Soul<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-mcm-kitchen-update.html">
+          <div class="post-row-title">Updating a Mid-Century Kitchen: Adding 2026 Smart Tech Without Losing the 1950s Soul（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-floor-to-ceiling-glass.html">
+          <div class="post-row-title">Floor-to-Ceiling Glass: The Privacy vs. Light Trade-Off in Greenridge</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-floor-to-ceiling-glass.html">
+          <div class="post-row-title">Floor-to-Ceiling Glass: The Privacy vs. Light Trade-Off in Greenridge<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-floor-to-ceiling-glass.html">
+          <div class="post-row-title">Floor-to-Ceiling Glass: The Privacy vs. Light Trade-Off in Greenridge（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-architecture-map.html">
+          <div class="post-row-title">Castro Valley's Architecture Map: From Ranchers to Mediterranean Revivals</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-architecture-map.html">
+          <div class="post-row-title">Castro Valley's Architecture Map: From Ranchers to Mediterranean Revivals<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-architecture-map.html">
+          <div class="post-row-title">Castro Valley's Architecture Map: From Ranchers to Mediterranean Revivals（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-lifestyle">
+    <div class="cat-header">
+      <div class="cat-emoji">🌿</div>
+      <div>
+        <div class="cat-name">Castro Valley · Lifestyle</div>
+        <div class="cat-desc">Pets, wellness, quiet luxury, remote work</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-ux-home-floorplans.html">
+          <div class="post-row-title">The UX of a Home: How Design Background Helps Spot Functional vs. Dysfunctional Floor Plans</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-ux-home-floorplans.html">
+          <div class="post-row-title">The UX of a Home: How Design Background Helps Spot Functional vs. Dysfunctional Floor Plans<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-ux-home-floorplans.html">
+          <div class="post-row-title">The UX of a Home: How Design Background Helps Spot Functional vs. Dysfunctional Floor Plans（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-pet-trends-2026.html">
+          <div class="post-row-title">Pet Trends 2026: Why Every Luxury Castro Valley Kitchen Needs a Dog Station</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-pet-trends-2026.html">
+          <div class="post-row-title">Pet Trends 2026: Why Every Luxury Castro Valley Kitchen Needs a Dog Station<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-pet-trends-2026.html">
+          <div class="post-row-title">Pet Trends 2026: Why Every Luxury Castro Valley Kitchen Needs a Dog Station（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-slow-feeders-kitchen.html">
+          <div class="post-row-title">Slow Feeders & Kitchen Design: Integrating Your Pet's Health into Your Home's Layout</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-slow-feeders-kitchen.html">
+          <div class="post-row-title">Slow Feeders & Kitchen Design: Integrating Your Pet's Health into Your Home's Layout<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-slow-feeders-kitchen.html">
+          <div class="post-row-title">Slow Feeders & Kitchen Design: Integrating Your Pet's Health into Your Home's Layout（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-dog-trails.html">
+          <div class="post-row-title">The Best Dog Trails: Navigating Lake Chabot Loops with Your Four-Legged Friend</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-dog-trails.html">
+          <div class="post-row-title">The Best Dog Trails: Navigating Lake Chabot Loops with Your Four-Legged Friend<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-dog-trails.html">
+          <div class="post-row-title">The Best Dog Trails: Navigating Lake Chabot Loops with Your Four-Legged Friend（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-quiet-luxury-hills.html">
+          <div class="post-row-title">Quiet Luxury in the Hills: Why Castro Valley Is the Capital of Stealth Wealth</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-quiet-luxury-hills.html">
+          <div class="post-row-title">Quiet Luxury in the Hills: Why Castro Valley Is the Capital of Stealth Wealth<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-quiet-luxury-hills.html">
+          <div class="post-row-title">Quiet Luxury in the Hills: Why Castro Valley Is the Capital of Stealth Wealth（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-sanctuary-home-introverts.html">
+          <div class="post-row-title">Designing for Introverts: How to Create a Sanctuary Home in the Busy Bay Area</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-sanctuary-home-introverts.html">
+          <div class="post-row-title">Designing for Introverts: How to Create a Sanctuary Home in the Busy Bay Area<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-sanctuary-home-introverts.html">
+          <div class="post-row-title">Designing for Introverts: How to Create a Sanctuary Home in the Busy Bay Area（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-remote-agent-digital.html">
+          <div class="post-row-title">The Remote Agent's Life: Managing Real Estate While Staying Digital-First</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-remote-agent-digital.html">
+          <div class="post-row-title">The Remote Agent's Life: Managing Real Estate While Staying Digital-First<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-remote-agent-digital.html">
+          <div class="post-row-title">The Remote Agent's Life: Managing Real Estate While Staying Digital-First（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-interior-design-2026.html">
+          <div class="post-row-title">Interior Design 2026: Earthy Neutrals and Biophilic Design in Hillside Homes</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-interior-design-2026.html">
+          <div class="post-row-title">Interior Design 2026: Earthy Neutrals and Biophilic Design in Hillside Homes<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-interior-design-2026.html">
+          <div class="post-row-title">Interior Design 2026: Earthy Neutrals and Biophilic Design in Hillside Homes（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-wellness-room.html">
+          <div class="post-row-title">The Wellness Room: Why 2026 Buyers Are Demanding Sauna & Meditation Spaces</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-wellness-room.html">
+          <div class="post-row-title">The Wellness Room: Why 2026 Buyers Are Demanding Sauna & Meditation Spaces<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-wellness-room.html">
+          <div class="post-row-title">The Wellness Room: Why 2026 Buyers Are Demanding Sauna & Meditation Spaces（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-sustainable-landscaping.html">
+          <div class="post-row-title">Sustainable Landscaping: Swapping Lawns for Native Plants in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-sustainable-landscaping.html">
+          <div class="post-row-title">Sustainable Landscaping: Swapping Lawns for Native Plants in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-sustainable-landscaping.html">
+          <div class="post-row-title">Sustainable Landscaping: Swapping Lawns for Native Plants in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-hidden-gems">
+    <div class="cat-header">
+      <div class="cat-emoji">💎</div>
+      <div>
+        <div class="cat-name">Castro Valley · Hidden Gems</div>
+        <div class="cat-desc">Trails, food, local secrets</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-newt-pond-toddlers.html">
+          <div class="post-row-title">The Newt Pond Secret: The Best Toddler-Friendly Hike in Don Castro Regional Park</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-newt-pond-toddlers.html">
+          <div class="post-row-title">The Newt Pond Secret: The Best Toddler-Friendly Hike in Don Castro Regional Park<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-newt-pond-toddlers.html">
+          <div class="post-row-title">The Newt Pond Secret: The Best Toddler-Friendly Hike in Don Castro Regional Park（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-lake-chabot-east-shore.html">
+          <div class="post-row-title">Lake Chabot's Quiet Side: Why the East Shore Trail Is a Local's Best-Kept Secret</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-lake-chabot-east-shore.html">
+          <div class="post-row-title">Lake Chabot's Quiet Side: Why the East Shore Trail Is a Local's Best-Kept Secret<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-lake-chabot-east-shore.html">
+          <div class="post-row-title">Lake Chabot's Quiet Side: Why the East Shore Trail Is a Local's Best-Kept Secret（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-cull-canyon-lagoon.html">
+          <div class="post-row-title">Cull Canyon Lagoon: The Inland Beach Every Castro Valley Family Needs to Visit</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-cull-canyon-lagoon.html">
+          <div class="post-row-title">Cull Canyon Lagoon: The Inland Beach Every Castro Valley Family Needs to Visit<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-cull-canyon-lagoon.html">
+          <div class="post-row-title">Cull Canyon Lagoon: The Inland Beach Every Castro Valley Family Needs to Visit（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-five-canyons-loop.html">
+          <div class="post-row-title">Five Canyons Perimeter Loop: The Ultimate 5-Mile Ridge Hike for Golden Hour</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-five-canyons-loop.html">
+          <div class="post-row-title">Five Canyons Perimeter Loop: The Ultimate 5-Mile Ridge Hike for Golden Hour<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-five-canyons-loop.html">
+          <div class="post-row-title">Five Canyons Perimeter Loop: The Ultimate 5-Mile Ridge Hike for Golden Hour（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-best-wfh-coffee.html">
+          <div class="post-row-title">The Best Coffee for WFH: Ranking Wifi & Brews at Cafe Rumi vs. Bodi's Java</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-best-wfh-coffee.html">
+          <div class="post-row-title">The Best Coffee for WFH: Ranking Wifi & Brews at Cafe Rumi vs. Bodi's Java<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-best-wfh-coffee.html">
+          <div class="post-row-title">The Best Coffee for WFH: Ranking Wifi & Brews at Cafe Rumi vs. Bodi's Java（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-marketplace-food-hall.html">
+          <div class="post-row-title">Castro Valley Marketplace: A Guide to the East Bay's Best Artisanal Food Hall</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-marketplace-food-hall.html">
+          <div class="post-row-title">Castro Valley Marketplace: A Guide to the East Bay's Best Artisanal Food Hall<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-marketplace-food-hall.html">
+          <div class="post-row-title">Castro Valley Marketplace: A Guide to the East Bay's Best Artisanal Food Hall（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-stargazing-spots.html">
+          <div class="post-row-title">Hidden Stargazing Spots: Why the CV Hills Are Perfect for a Telescope</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-stargazing-spots.html">
+          <div class="post-row-title">Hidden Stargazing Spots: Why the CV Hills Are Perfect for a Telescope<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-stargazing-spots.html">
+          <div class="post-row-title">Hidden Stargazing Spots: Why the CV Hills Are Perfect for a Telescope（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-stonebrae-golf-path.html">
+          <div class="post-row-title">The 'Secret' Golf Path: Navigating the Stonebrae Section of the Bay Area Ridge Trail</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-stonebrae-golf-path.html">
+          <div class="post-row-title">The 'Secret' Golf Path: Navigating the Stonebrae Section of the Bay Area Ridge Trail<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-stonebrae-golf-path.html">
+          <div class="post-row-title">The 'Secret' Golf Path: Navigating the Stonebrae Section of the Bay Area Ridge Trail（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-dinosaur-footprints.html">
+          <div class="post-row-title">Dinosaur Footprints? The Weird & Wonderful Geological History of the East Bay Hills</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-dinosaur-footprints.html">
+          <div class="post-row-title">Dinosaur Footprints? The Weird & Wonderful Geological History of the East Bay Hills<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-dinosaur-footprints.html">
+          <div class="post-row-title">Dinosaur Footprints? The Weird & Wonderful Geological History of the East Bay Hills（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-jensen-ranch-sunset.html">
+          <div class="post-row-title">Sunset at Jensen Ranch: The #1 Spot for Family Photos in 94552</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-jensen-ranch-sunset.html">
+          <div class="post-row-title">Sunset at Jensen Ranch: The #1 Spot for Family Photos in 94552<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-jensen-ranch-sunset.html">
+          <div class="post-row-title">Sunset at Jensen Ranch: The #1 Spot for Family Photos in 94552（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-seller-strategy">
+    <div class="cat-header">
+      <div class="cat-emoji">📋</div>
+      <div>
+        <div class="cat-name">Castro Valley · Seller Strategy</div>
+        <div class="cat-desc">UX-driven staging, pricing, and listing approach</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-staging-ai-buyer.html">
+          <div class="post-row-title">Staging for the AI Buyer: Why Your Home Office Needs a High-End Background</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-staging-ai-buyer.html">
+          <div class="post-row-title">Staging for the AI Buyer: Why Your Home Office Needs a High-End Background<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-staging-ai-buyer.html">
+          <div class="post-row-title">Staging for the AI Buyer: Why Your Home Office Needs a High-End Background（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-invisible-fixes.html">
+          <div class="post-row-title">The 'Invisible' Fixes: Why 2026 Buyers Care More About HVAC & Roof Than Paint</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-invisible-fixes.html">
+          <div class="post-row-title">The 'Invisible' Fixes: Why 2026 Buyers Care More About HVAC & Roof Than Paint<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-invisible-fixes.html">
+          <div class="post-row-title">The 'Invisible' Fixes: Why 2026 Buyers Care More About HVAC & Roof Than Paint（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-curb-appeal-roi.html">
+          <div class="post-row-title">First Impressions: The ROI of Professional Curb Appeal Landscaping in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-curb-appeal-roi.html">
+          <div class="post-row-title">First Impressions: The ROI of Professional Curb Appeal Landscaping in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-curb-appeal-roi.html">
+          <div class="post-row-title">First Impressions: The ROI of Professional Curb Appeal Landscaping in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-decluttering-ux.html">
+          <div class="post-row-title">Decluttering as UX Design: Removing Friction for the Potential Buyer</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-decluttering-ux.html">
+          <div class="post-row-title">Decluttering as UX Design: Removing Friction for the Potential Buyer<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-decluttering-ux.html">
+          <div class="post-row-title">Decluttering as UX Design: Removing Friction for the Potential Buyer（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-photography-iphone.html">
+          <div class="post-row-title">Professional Photography vs. iPhone: Why 'Good Enough' Is Losing You Money</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-photography-iphone.html">
+          <div class="post-row-title">Professional Photography vs. iPhone: Why 'Good Enough' Is Losing You Money<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-photography-iphone.html">
+          <div class="post-row-title">Professional Photography vs. iPhone: Why 'Good Enough' Is Losing You Money（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-open-house-ux.html">
+          <div class="post-row-title">The Open House Playbook: Creating a User Experience That Leads to Multiple Offers</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-open-house-ux.html">
+          <div class="post-row-title">The Open House Playbook: Creating a User Experience That Leads to Multiple Offers<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-open-house-ux.html">
+          <div class="post-row-title">The Open House Playbook: Creating a User Experience That Leads to Multiple Offers（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-living-in-listing.html">
+          <div class="post-row-title">Living in Your Listing: A Survival Guide for Families with Kids and Pets</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-living-in-listing.html">
+          <div class="post-row-title">Living in Your Listing: A Survival Guide for Families with Kids and Pets<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-living-in-listing.html">
+          <div class="post-row-title">Living in Your Listing: A Survival Guide for Families with Kids and Pets（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-pre-inspection-sellers.html">
+          <div class="post-row-title">The Power of the Pre-Inspection: Why I Recommend Sellers Pay for Their Own Reports</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-pre-inspection-sellers.html">
+          <div class="post-row-title">The Power of the Pre-Inspection: Why I Recommend Sellers Pay for Their Own Reports<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-pre-inspection-sellers.html">
+          <div class="post-row-title">The Power of the Pre-Inspection: Why I Recommend Sellers Pay for Their Own Reports（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-closing-72-hours.html">
+          <div class="post-row-title">Closing the Deal: Navigating the Final 72 Hours of a Castro Valley Escrow</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-closing-72-hours.html">
+          <div class="post-row-title">Closing the Deal: Navigating the Final 72 Hours of a Castro Valley Escrow<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-closing-72-hours.html">
+          <div class="post-row-title">Closing the Deal: Navigating the Final 72 Hours of a Castro Valley Escrow（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-after-sale-1031.html">
+          <div class="post-row-title">After the Sale: 1031 Strategies for Your Next Investment from Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-after-sale-1031.html">
+          <div class="post-row-title">After the Sale: 1031 Strategies for Your Next Investment from Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-after-sale-1031.html">
+          <div class="post-row-title">After the Sale: 1031 Strategies for Your Next Investment from Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-ai--future">
+    <div class="cat-header">
+      <div class="cat-emoji">🤖</div>
+      <div>
+        <div class="cat-name">Castro Valley · AI & Future</div>
+        <div class="cat-desc">Tech sector, Anthropic, smart homes</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-anthropic-east-bay.html">
+          <div class="post-row-title">How Anthropic Is Changing the Map: Will AI Hubs Move Closer to the East Bay?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-anthropic-east-bay.html">
+          <div class="post-row-title">How Anthropic Is Changing the Map: Will AI Hubs Move Closer to the East Bay?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-anthropic-east-bay.html">
+          <div class="post-row-title">How Anthropic Is Changing the Map: Will AI Hubs Move Closer to the East Bay?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-ai-view-lot-valuation.html">
+          <div class="post-row-title">AI-Driven Valuations: Can a Machine Really Understand the Value of a View Lot?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-ai-view-lot-valuation.html">
+          <div class="post-row-title">AI-Driven Valuations: Can a Machine Really Understand the Value of a View Lot?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-ai-view-lot-valuation.html">
+          <div class="post-row-title">AI-Driven Valuations: Can a Machine Really Understand the Value of a View Lot?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-predictive-off-market.html">
+          <div class="post-row-title">Predictive Selling: How AI Helps Find Off-Market Homes for Castro Valley Clients</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-predictive-off-market.html">
+          <div class="post-row-title">Predictive Selling: How AI Helps Find Off-Market Homes for Castro Valley Clients<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-predictive-off-market.html">
+          <div class="post-row-title">Predictive Selling: How AI Helps Find Off-Market Homes for Castro Valley Clients（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-smart-home-2026.html">
+          <div class="post-row-title">The Smart Home of 2026: Which Gadgets Actually Add Value in Castro Valley?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-smart-home-2026.html">
+          <div class="post-row-title">The Smart Home of 2026: Which Gadgets Actually Add Value in Castro Valley?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-smart-home-2026.html">
+          <div class="post-row-title">The Smart Home of 2026: Which Gadgets Actually Add Value in Castro Valley?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-ai-escrow-14-day.html">
+          <div class="post-row-title">AI in Escrow: How Technology Is Making the 14-Day Close the New Standard</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-ai-escrow-14-day.html">
+          <div class="post-row-title">AI in Escrow: How Technology Is Making the 14-Day Close the New Standard<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-ai-escrow-14-day.html">
+          <div class="post-row-title">AI in Escrow: How Technology Is Making the 14-Day Close the New Standard（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-virtual-staging-2026.html">
+          <div class="post-row-title">Virtual Staging 2.0: Can Buyers Tell the Difference in 2026?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-virtual-staging-2026.html">
+          <div class="post-row-title">Virtual Staging 2.0: Can Buyers Tell the Difference in 2026?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-virtual-staging-2026.html">
+          <div class="post-row-title">Virtual Staging 2.0: Can Buyers Tell the Difference in 2026?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-chatbots-vs-agents.html">
+          <div class="post-row-title">Chatbots vs. Agents: Why the Human Element Matters More in a High-Stakes Market</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-chatbots-vs-agents.html">
+          <div class="post-row-title">Chatbots vs. Agents: Why the Human Element Matters More in a High-Stakes Market<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-chatbots-vs-agents.html">
+          <div class="post-row-title">Chatbots vs. Agents: Why the Human Element Matters More in a High-Stakes Market（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-energy-ai-smart-grid.html">
+          <div class="post-row-title">Energy Efficiency & AI: Smart Grids in New Castro Valley Developments</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-energy-ai-smart-grid.html">
+          <div class="post-row-title">Energy Efficiency & AI: Smart Grids in New Castro Valley Developments<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-energy-ai-smart-grid.html">
+          <div class="post-row-title">Energy Efficiency & AI: Smart Grids in New Castro Valley Developments（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-crypto-real-estate.html">
+          <div class="post-row-title">Crypto in Real Estate: Are We Seeing Digital Currency Offers in the Bay Area?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-crypto-real-estate.html">
+          <div class="post-row-title">Crypto in Real Estate: Are We Seeing Digital Currency Offers in the Bay Area?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-crypto-real-estate.html">
+          <div class="post-row-title">Crypto in Real Estate: Are We Seeing Digital Currency Offers in the Bay Area?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-ai-boulevard-retail.html">
+          <div class="post-row-title">The Future of the Boulevard: AI-Driven Retail Coming to Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-ai-boulevard-retail.html">
+          <div class="post-row-title">The Future of the Boulevard: AI-Driven Retail Coming to Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-ai-boulevard-retail.html">
+          <div class="post-row-title">The Future of the Boulevard: AI-Driven Retail Coming to Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-neighborhoods">
+    <div class="cat-header">
+      <div class="cat-emoji">🏘</div>
+      <div>
+        <div class="cat-name">Castro Valley · Neighborhoods</div>
+        <div class="cat-desc">Jensen Ranch, Greenridge, Palomares Hills & more</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-palomares-hills-2026.html">
+          <div class="post-row-title">Palomares Hills 2026: Is the $1.85M Price Point the New Floor for This Community?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-palomares-hills-2026.html">
+          <div class="post-row-title">Palomares Hills 2026: Is the $1.85M Price Point the New Floor for This Community?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-palomares-hills-2026.html">
+          <div class="post-row-title">Palomares Hills 2026: Is the $1.85M Price Point the New Floor for This Community?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-five-canyons-breakdown.html">
+          <div class="post-row-title">Five Canyons Breakdown: Olympic Pools, Tennis Courts & High-End Living</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-five-canyons-breakdown.html">
+          <div class="post-row-title">Five Canyons Breakdown: Olympic Pools, Tennis Courts & High-End Living<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-five-canyons-breakdown.html">
+          <div class="post-row-title">Five Canyons Breakdown: Olympic Pools, Tennis Courts & High-End Living（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-greenridge-soul.html">
+          <div class="post-row-title">Greenridge: The Soul of Mid-Century Modernism in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-greenridge-soul.html">
+          <div class="post-row-title">Greenridge: The Soul of Mid-Century Modernism in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-greenridge-soul.html">
+          <div class="post-row-title">Greenridge: The Soul of Mid-Century Modernism in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-columbia-pines.html">
+          <div class="post-row-title">Columbia Pines: Why This Flat-Land Pocket Is the Secret Garden of Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-columbia-pines.html">
+          <div class="post-row-title">Columbia Pines: Why This Flat-Land Pocket Is the Secret Garden of Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-columbia-pines.html">
+          <div class="post-row-title">Columbia Pines: Why This Flat-Land Pocket Is the Secret Garden of Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-parsons-estates.html">
+          <div class="post-row-title">Parsons Estates: For Those Who Want Acreage Without the Commute</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-parsons-estates.html">
+          <div class="post-row-title">Parsons Estates: For Those Who Want Acreage Without the Commute<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-parsons-estates.html">
+          <div class="post-row-title">Parsons Estates: For Those Who Want Acreage Without the Commute（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-proctor-terrace.html">
+          <div class="post-row-title">Proctor Terrace: Charm, History & Proximity to the Top Elementary School</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-proctor-terrace.html">
+          <div class="post-row-title">Proctor Terrace: Charm, History & Proximity to the Top Elementary School<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-proctor-terrace.html">
+          <div class="post-row-title">Proctor Terrace: Charm, History & Proximity to the Top Elementary School（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-bart-district-invest.html">
+          <div class="post-row-title">The BART District: Investing in the Walkable Zone Near the Station</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-bart-district-invest.html">
+          <div class="post-row-title">The BART District: Investing in the Walkable Zone Near the Station<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-bart-district-invest.html">
+          <div class="post-row-title">The BART District: Investing in the Walkable Zone Near the Station（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-jensen-ranch-enclave.html">
+          <div class="post-row-title">Jensen Ranch: The Luxury Hilltop Enclave with the Best Views in the East Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-jensen-ranch-enclave.html">
+          <div class="post-row-title">Jensen Ranch: The Luxury Hilltop Enclave with the Best Views in the East Bay<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-jensen-ranch-enclave.html">
+          <div class="post-row-title">Jensen Ranch: The Luxury Hilltop Enclave with the Best Views in the East Bay（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-lake-chabot-highlands.html">
+          <div class="post-row-title">Lake Chabot Highlands: Living on the Edge of the Regional Park</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-lake-chabot-highlands.html">
+          <div class="post-row-title">Lake Chabot Highlands: Living on the Edge of the Regional Park<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-lake-chabot-highlands.html">
+          <div class="post-row-title">Lake Chabot Highlands: Living on the Edge of the Regional Park（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-marshall-canyon-horses.html">
+          <div class="post-row-title">Marshall Canyon: Where You Can Still Find Horse Trails in 2026</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-marshall-canyon-horses.html">
+          <div class="post-row-title">Marshall Canyon: Where You Can Still Find Horse Trails in 2026<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-marshall-canyon-horses.html">
+          <div class="post-row-title">Marshall Canyon: Where You Can Still Find Horse Trails in 2026（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+  <section class="cat-section" id="cv-culture">
+    <div class="cat-header">
+      <div class="cat-emoji">🏮</div>
+      <div>
+        <div class="cat-name">Castro Valley · Culture</div>
+        <div class="cat-desc">Events, community, cityhood debate</div>
+      </div>
+      <div class="cat-count">30 posts</div>
+    </div>
+    <div class="post-list">
+        <a class="post-row" href="cv-fall-festival-2026.html">
+          <div class="post-row-title">The 2026 Fall Festival: What to Expect at the Boulevard's Biggest Party</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-fall-festival-2026.html">
+          <div class="post-row-title">The 2026 Fall Festival: What to Expect at the Boulevard's Biggest Party<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-fall-festival-2026.html">
+          <div class="post-row-title">The 2026 Fall Festival: What to Expect at the Boulevard's Biggest Party（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-rowell-ranch-rodeo.html">
+          <div class="post-row-title">The Rowell Ranch Rodeo: Celebrating Castro Valley's Cowboy Roots</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-rowell-ranch-rodeo.html">
+          <div class="post-row-title">The Rowell Ranch Rodeo: Celebrating Castro Valley's Cowboy Roots<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-rowell-ranch-rodeo.html">
+          <div class="post-row-title">The Rowell Ranch Rodeo: Celebrating Castro Valley's Cowboy Roots（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-library-remote-workers.html">
+          <div class="post-row-title">Castro Valley Library: A Hub for Local Remote Workers & Tech Parents</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-library-remote-workers.html">
+          <div class="post-row-title">Castro Valley Library: A Hub for Local Remote Workers & Tech Parents<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-library-remote-workers.html">
+          <div class="post-row-title">Castro Valley Library: A Hub for Local Remote Workers & Tech Parents（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-chabot-cinema.html">
+          <div class="post-row-title">The Chabot Cinema: Supporting Our Local Indie Theater in the Streaming Age</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-chabot-cinema.html">
+          <div class="post-row-title">The Chabot Cinema: Supporting Our Local Indie Theater in the Streaming Age<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-chabot-cinema.html">
+          <div class="post-row-title">The Chabot Cinema: Supporting Our Local Indie Theater in the Streaming Age（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-boulevard-new-eateries.html">
+          <div class="post-row-title">New Eateries on the Boulevard: Is the Silicon Valley Foodie Scene Arriving Here?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-boulevard-new-eateries.html">
+          <div class="post-row-title">New Eateries on the Boulevard: Is the Silicon Valley Foodie Scene Arriving Here?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-boulevard-new-eateries.html">
+          <div class="post-row-title">New Eateries on the Boulevard: Is the Silicon Valley Foodie Scene Arriving Here?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-commute-san-jose-2026.html">
+          <div class="post-row-title">Commuting to San Jose: The 2026 Reality of the I-580 / I-680 Connector</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-commute-san-jose-2026.html">
+          <div class="post-row-title">Commuting to San Jose: The 2026 Reality of the I-580 / I-680 Connector<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-commute-san-jose-2026.html">
+          <div class="post-row-title">Commuting to San Jose: The 2026 Reality of the I-580 / I-680 Connector（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-cityhood-debate.html">
+          <div class="post-row-title">The Cityhood Debate: Should Castro Valley Finally Incorporate in 2027?</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-cityhood-debate.html">
+          <div class="post-row-title">The Cityhood Debate: Should Castro Valley Finally Incorporate in 2027?<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-cityhood-debate.html">
+          <div class="post-row-title">The Cityhood Debate: Should Castro Valley Finally Incorporate in 2027?（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-farmers-market.html">
+          <div class="post-row-title">Local Farmer's Market: Finding the Best Organic Produce in the East Bay</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-farmers-market.html">
+          <div class="post-row-title">Local Farmer's Market: Finding the Best Organic Produce in the East Bay<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-farmers-market.html">
+          <div class="post-row-title">Local Farmer's Market: Finding the Best Organic Produce in the East Bay（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-wellness-guide.html">
+          <div class="post-row-title">The Wellness Guide: Best Yoga & Pilates Studios in Castro Valley</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-wellness-guide.html">
+          <div class="post-row-title">The Wellness Guide: Best Yoga & Pilates Studios in Castro Valley<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-wellness-guide.html">
+          <div class="post-row-title">The Wellness Guide: Best Yoga & Pilates Studios in Castro Valley（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="cv-why-i-love-cv.html">
+          <div class="post-row-title">Why I Love This Town: My Personal Journey as a Castro Valley Resident & Agent</div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-HK-cv-why-i-love-cv.html">
+          <div class="post-row-title">Why I Love This Town: My Personal Journey as a Castro Valley Resident & Agent<span class="lang-badge zh-hk">廣東話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a>
+        <a class="post-row" href="zh-CN-cv-why-i-love-cv.html">
+          <div class="post-row-title">Why I Love This Town: My Personal Journey as a Castro Valley Resident & Agent（普通话）<span class="lang-badge zh-cn">普通話</span></div>
+          <div class="post-row-arrow">→</div>
+        </a></div>
+  </section>
+    </div>
     
   <section class="cat-section" id="cat-market-outlook">
     <div class="cat-header">
@@ -1091,7 +3015,7 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
       <div class="cat-emoji">廣</div>
       <div>
         <div class="cat-name">Chinese Language</div>
-        <div class="cat-desc">Resources in Traditional Chinese (廣東話) and Simplified Chinese (普通話).</div>
+        <div class="cat-desc">Resources in Traditional Chinese  and Simplified Chinese .</div>
       </div>
       <div class="cat-count">19 posts</div>
     </div>
@@ -1186,7 +3110,41 @@ footer{background:var(--charcoal);padding:2rem 3rem;text-align:center;color:rgba
   <a class="cta-btn outline" href="https://www.zillow.com/profile/VickiWongCA" target="_blank" rel="noopener">Zillow Profile →</a>
 </div>
 
-<footer>© 2026 Vicki Wong · eXp Realty of California, Inc. · CA DRE on file · 廣東話 · 普通話 · English</footer>
+<footer>
+  <div style="max-width:1100px;margin:0 auto;padding:3rem 2rem 1.5rem;display:grid;grid-template-columns:1fr 2fr;gap:3rem">
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--white);margin-bottom:0.4rem">Vicki <span style="color:var(--oak)">Wong</span></div>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:0.3rem">以終為始 · 灣區置業專家</div>
+      <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.1em;color:var(--oak)">English · 廣東話 · 普通話</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+      <div>
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--oak);margin-bottom:0.8rem">Cities</div>
+        <a href="../cities/castro-valley.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">Castro Valley</a>
+        <a href="../cities/fremont.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">Fremont</a>
+        <a href="../cities/cupertino.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">Cupertino</a>
+        <a href="../cities/mountain-view.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">Mountain View</a>
+        <a href="../cities/palo-alto.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none">Palo Alto</a>
+      </div>
+      <div>
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--oak);margin-bottom:0.8rem">Popular Posts</div>
+        <a href="zh-HK-bay-area-cantonese-buyers-guide.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">廣東話買家指南</a>
+        <a href="zh-CN-bay-area-mandarin-buyers-guide.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">普通话买家指南</a>
+        <a href="fremont-seller-strategy.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">Fremont Seller Guide</a>
+        <a href="fremont-demographics.html" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none">Fremont Demographics</a>
+      </div>
+      <div>
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--oak);margin-bottom:0.8rem">Contact</div>
+        <a href="tel:6503945303" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">(650) 394-5303</a>
+        <a href="mailto:vickiwongrealtor@gmail.com" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.35rem">vickiwongrealtor@gmail.com</a>
+        <a href="../#contact" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);text-decoration:none">Free Consultation →</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;padding:1rem 2rem;border-top:1px solid rgba(255,255,255,0.08);font-size:0.72rem;color:rgba(255,255,255,0.3)">
+    © 2026 Vicki Wong · eXp Realty of California, Inc. · CA DRE License on file
+  </div>
+</footer>
 
 <script>
 function filterPosts(query) {
