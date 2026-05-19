@@ -1104,6 +1104,133 @@ footer{background:var(--charcoal);padding:3rem 0 2rem;border-top:1px solid rgba(
 }
 @media(max-width:768px){ .case-grid { grid-template-columns: 1fr; } }
 
+
+/* ════════════════════════════════════════════
+   MAIN NAV
+═══════════════════════════════════════════ */
+#main-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2.5rem; height: 62px;
+  background: rgba(245,239,228,0.97); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(201,169,122,0.25);
+  gap: 1rem;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+  font-weight: 600; color: var(--charcoal); text-decoration: none; white-space: nowrap;
+}
+.nav-logo span { color: var(--oak); }
+
+/* ── Top-level links ── */
+.nav-links {
+  display: flex; align-items: center; gap: 0.25rem; flex-shrink: 0;
+}
+.nav-links > a,
+.nav-dropdown-trigger {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--charcoal); text-decoration: none;
+  padding: 0.5rem 0.75rem; border-radius: 2px;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap; cursor: pointer;
+}
+.nav-links > a:hover,
+.nav-dropdown-trigger:hover { color: var(--oak); }
+
+.nav-cta {
+  background: var(--charcoal) !important; color: var(--white) !important;
+  padding: 0.5rem 1.1rem !important; margin-left: 0.25rem !important;
+}
+.nav-cta:hover { background: var(--oak) !important; color: var(--white) !important; }
+
+.nav-arrow { font-size: 0.6rem; margin-left: 0.2rem; transition: transform 0.2s; }
+
+/* ── Dropdown wrapper ── */
+.nav-dropdown-wrap {
+  position: relative;
+}
+.nav-dropdown-trigger {
+  display: flex; align-items: center;
+  border: none; background: none; font-family: 'Jost', sans-serif;
+}
+.nav-dropdown {
+  display: none;
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: var(--white); border: 1px solid rgba(201,169,122,0.25);
+  box-shadow: 0 12px 40px rgba(44,44,42,0.14);
+  min-width: 560px; z-index: 2000;
+}
+.nav-dropdown-wrap:hover .nav-dropdown,
+.nav-dropdown-wrap.active .nav-dropdown { display: block; }
+.nav-dropdown-wrap:hover .nav-arrow { transform: rotate(180deg); }
+
+.nav-dropdown-inner {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+}
+.nav-dropdown-col {
+  padding: 1.2rem 1.4rem;
+  border-right: 1px solid rgba(201,169,122,0.15);
+}
+.nav-dropdown-col:last-child { border-right: none; }
+
+.nav-dropdown-region {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--sage);
+  margin-bottom: 0.8rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(201,169,122,0.2);
+}
+.nav-city-link {
+  display: flex; flex-direction: column; gap: 0.1rem;
+  padding: 0.5rem 0.6rem; margin-bottom: 0.15rem;
+  text-decoration: none; border-radius: 2px;
+  transition: background 0.12s;
+}
+.nav-city-link:hover { background: rgba(201,169,122,0.08); }
+.nav-city-name {
+  font-size: 0.82rem; font-weight: 600; color: var(--charcoal); line-height: 1.3;
+}
+.nav-city-desc {
+  font-size: 0.72rem; font-weight: 300; color: #8a8a88; line-height: 1.3;
+}
+.nav-view-all {
+  margin-top: 0.5rem;
+  font-size: 0.72rem !important; font-weight: 700;
+  color: var(--oak) !important; letter-spacing: 0.05em;
+  border-top: 1px solid rgba(201,169,122,0.2); padding-top: 0.6rem;
+}
+.nav-view-all .nav-city-name { font-size: 0.72rem; color: var(--oak); }
+
+/* ── Burger / Mobile ── */
+.nav-burger {
+  display: none; background: none; border: none;
+  font-size: 1.4rem; cursor: pointer; color: var(--charcoal); padding: 0.3rem;
+}
+@media (max-width: 960px) {
+  .nav-burger { display: block; }
+  .nav-links {
+    display: none;
+    position: fixed; top: 62px; left: 0; right: 0;
+    background: rgba(245,239,228,0.98); backdrop-filter: blur(14px);
+    flex-direction: column; align-items: stretch;
+    padding: 1rem 1.5rem 1.5rem; gap: 0.2rem;
+    border-bottom: 1px solid rgba(201,169,122,0.3);
+    max-height: calc(100vh - 62px); overflow-y: auto;
+  }
+  #main-nav.open .nav-links { display: flex; }
+  .nav-links > a,
+  .nav-dropdown-trigger { padding: 0.7rem 0.5rem; font-size: 0.8rem; }
+  .nav-dropdown {
+    position: static; transform: none; box-shadow: none;
+    min-width: unset; border: none; border-top: 1px solid rgba(201,169,122,0.2);
+    display: none;
+  }
+  .nav-dropdown-wrap.active .nav-dropdown { display: block; }
+  .nav-dropdown-inner { grid-template-columns: 1fr; }
+  .nav-dropdown-col { border-right: none; padding: 0.8rem 0.5rem; }
+  #main-nav { padding: 0 1.5rem; }
+}
+
 </style>
 <link rel="alternate" hreflang="en" href="https://vickiwongrealty.com/">
 <link rel="alternate" hreflang="zh-Hant" href="https://vickiwongrealty.com/?lang=zh-HK">
@@ -1122,75 +1249,79 @@ footer{background:var(--charcoal);padding:3rem 0 2rem;border-top:1px solid rgba(
 </div>
 
 <!-- ═══ NAV ═══ -->
-<nav>
-  <a class="nav-logo" href="#"><img src="data:image/png;base64,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" alt="Vicki Wong" class="nav-logo-img">Vicki <span>Wong</span></a>
-  <ul class="nav-links">
-    <li><a href="#about" data-i18n="nav_about">關於我</a></li>
-    <li><a href="#intro-video">Video</a></li>
-    <li><a href="#services" data-i18n="nav_services">服務</a></li>
-    <li><a href="#sold" data-i18n="nav_listings">樓盤</a></li>
-    <li class="nav-dropdown">
-      <a href="#cities" data-i18n="nav_cities">服務地區</a>
-      <div class="dropdown-menu">
-        <div class="dropdown-region">🏘 East Bay</div>
-        <a class="dropdown-city" href="cities/castro-valley.html">
-          <span class="dropdown-city-name">Castro Valley</span>
-          <span class="dropdown-city-sub">Top schools · Family community</span>
-        </a>
-        <a class="dropdown-city" href="cities/fremont.html">
-          <span class="dropdown-city-name">Fremont</span>
-          <span class="dropdown-city-sub">Mission San Jose · Large Chinese community</span>
-        </a>
-        <a class="dropdown-city" href="cities/hayward.html">
-          <span class="dropdown-city-name">Hayward</span>
-          <span class="dropdown-city-sub">Best value · Diverse culture</span>
-        </a>
-        <a class="dropdown-city" href="cities/dublin.html">
-          <span class="dropdown-city-name">Dublin · Pleasanton</span>
-          <span class="dropdown-city-sub">New builds · BART access</span>
-        </a>
-        <div class="dropdown-region">💻 South Bay / Silicon Valley</div>
-        <a class="dropdown-city" href="cities/cupertino.html">
-          <span class="dropdown-city-name">Cupertino</span>
-          <span class="dropdown-city-sub">Apple HQ · Top-ranked schools</span>
-        </a>
-        <a class="dropdown-city" href="cities/palo-alto.html">
-          <span class="dropdown-city-name">Palo Alto</span>
-          <span class="dropdown-city-sub">PAUSD · Stanford · Tech elite</span>
-        </a>
-        <a class="dropdown-city" href="cities/san-jose.html">
-          <span class="dropdown-city-name">San Jose</span>
-          <span class="dropdown-city-sub">Silicon Valley hub · Best entry price</span>
-        </a>
-        <a class="dropdown-city" href="cities/mountain-view.html">
-          <span class="dropdown-city-name">Mountain View</span>
-          <span class="dropdown-city-sub">Google HQ · Tech hub · Downtown lifestyle</span>
-        </a>
-        <a class="dropdown-city" href="cities/milpitas.html">
-          <span class="dropdown-city-name">Milpitas · Santa Clara</span>
-          <span class="dropdown-city-sub">Value · BART · Chinese community</span>
-        </a>
-        <a class="dropdown-all" href="#cities">View All Cities →</a>
+<nav id="main-nav">
+  <a class="nav-logo" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Vicki <span>Wong</span></a>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#intro-video">Video</a>
+    <a href="#services">Services</a>
+    <a href="#sold">Listings</a>
+
+    <!-- Cities dropdown -->
+    <div class="nav-dropdown-wrap">
+      <a href="#cities" class="nav-dropdown-trigger">
+        Cities <span class="nav-arrow">▾</span>
+      </a>
+      <div class="nav-dropdown">
+        <div class="nav-dropdown-inner">
+
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-region">💻 South Bay / Silicon Valley</div>
+            <a href="cities/cupertino.html" class="nav-city-link">
+              <span class="nav-city-name">Cupertino</span>
+              <span class="nav-city-desc">Apple HQ · Top-ranked schools</span>
+            </a>
+            <a href="cities/palo-alto.html" class="nav-city-link">
+              <span class="nav-city-name">Palo Alto</span>
+              <span class="nav-city-desc">PAUSD · Stanford · Tech elite</span>
+            </a>
+            <a href="cities/san-jose.html" class="nav-city-link">
+              <span class="nav-city-name">San Jose</span>
+              <span class="nav-city-desc">Silicon Valley hub · Best entry price</span>
+            </a>
+            <a href="cities/mountain-view.html" class="nav-city-link">
+              <span class="nav-city-name">Mountain View</span>
+              <span class="nav-city-desc">Google HQ · Tech hub · Downtown lifestyle</span>
+            </a>
+            <a href="cities/milpitas.html" class="nav-city-link">
+              <span class="nav-city-name">Milpitas · Santa Clara</span>
+              <span class="nav-city-desc">Value · BART · Chinese community</span>
+            </a>
+            <a href="#cities" class="nav-city-link nav-view-all">View All Cities →</a>
+          </div>
+
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-region">🏘 East Bay</div>
+            <a href="cities/castro-valley.html" class="nav-city-link">
+              <span class="nav-city-name">Castro Valley</span>
+              <span class="nav-city-desc">Top schools · Family community</span>
+            </a>
+            <a href="cities/fremont.html" class="nav-city-link">
+              <span class="nav-city-name">Fremont</span>
+              <span class="nav-city-desc">Mission San Jose · Large Chinese community</span>
+            </a>
+            <a href="cities/hayward.html" class="nav-city-link">
+              <span class="nav-city-name">Hayward</span>
+              <span class="nav-city-desc">Best value · Diverse culture</span>
+            </a>
+            <a href="cities/dublin.html" class="nav-city-link">
+              <span class="nav-city-name">Dublin · Pleasanton</span>
+              <span class="nav-city-desc">New builds · BART access</span>
+            </a>
+          </div>
+
+        </div>
       </div>
-    </li>
-    <li><a href="#case-studies">Cases</a></li>
-    <li><a href="#testimonials" data-i18n="nav_reviews">客戶評價</a></li>
-    <li><a href="blog/index.html">Blog</a></li>
-    <li><a href="#contact" data-i18n="nav_contact">聯絡</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
-      <button class="lang-btn active" data-lang="zh-HK" onclick="setLang('zh-HK')">廣東話</button>
-      <button class="lang-btn" data-lang="zh-CN" onclick="setLang('zh-CN')">普通話</button>
     </div>
-    <div style="display:flex;align-items:center;gap:1rem;">
-    <a class="nav-cta" href="#contact" data-i18n="nav_cta">立即聯絡</a>
-    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+
+    <a href="#case-studies">Cases</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="#contact" class="nav-cta">Contact</a>
   </div>
-  </div>
+
+  <button class="nav-burger" onclick="document.getElementById('main-nav').classList.toggle('open')" aria-label="Menu">☰</button>
 </nav>
 
 <!-- ═══ HERO ═══ -->
@@ -2837,6 +2968,27 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   <a class="mobile-cta" href="#contact" onclick="closeMobileMenu()" data-i18n="nav_cta">立即聯絡</a>
 </div>
+
+
+<script>
+// Cities dropdown: click toggles, click outside closes
+document.addEventListener('DOMContentLoaded', function() {
+  var wrap = document.querySelector('.nav-dropdown-wrap');
+  if (!wrap) return;
+  var trigger = wrap.querySelector('.nav-dropdown-trigger');
+
+  trigger.addEventListener('click', function(e) {
+    // If it's the #cities anchor click, let it scroll AND toggle
+    wrap.classList.toggle('active');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove('active');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
