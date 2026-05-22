@@ -270,6 +270,25 @@ footer a:hover{color:var(--white)}
   #main-nav{padding:0 1.5rem}
 }
 
+
+/* ── Translation bar ── */
+#translate-bar{
+  display:none; /* hidden until needed - triggered via nav lang buttons */
+}
+/* Google Translate widget hide default UI */
+.goog-te-banner-frame{display:none!important}
+.goog-te-balloon-frame{display:none!important}
+body{top:0!important}
+#goog-gt-tt{display:none!important}
+.goog-tooltip{display:none!important}
+.goog-te-menu-value:hover{text-decoration:none}
+/* Highlight active language in nav */
+.nav-lang-menu button.active{
+  background:rgba(201,169,122,0.15);
+  color:#C9A97A;
+  font-weight:700;
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1099,49 +1118,7 @@ document.addEventListener('click', function(e){
 });
 
 /* ── language switcher ── */
-function switchLang(lang) {
-  document.getElementById('nav-lang').classList.remove('lang-open');
-  var labels = {'en':'EN ▾','zh-HK':'繁中 ▾','zh-CN':'简中 ▾'};
-  
-  var path = window.location.pathname;
-  var isBlog = path.includes('/blog/');
-  var isCity = path.includes('/cities/');
-  
-  // Get current filename without extension
-  var fname = path.split('/').pop().replace('.html','');
-  
-  // Strip existing lang prefix to get base slug
-  var base = fname.replace(/^zh-HK-/,'').replace(/^zh-CN-/,'');
-  
-  // Build candidate path for target language
-  var prefix = lang === 'en' ? '' : lang + '-';
-  var newFile = prefix + base + '.html';
-  var newPath;
-  if (isBlog) newPath = '/blog/' + newFile;
-  else if (isCity) newPath = '/cities/' + newFile;
-  else newPath = '/' + newFile;
-  
-  // Update button label immediately
-  document.getElementById('lang-label').textContent = labels[lang] || 'EN ▾';
-  
-  // Navigate (fall back silently if page doesn't exist)
-  if (newPath !== path) {
-    fetch(newPath, {method:'HEAD'})
-      .then(function(r){ if(r.ok) window.location.href = newPath; })
-      .catch(function(){});
-  }
-}
 
-/* ── set correct label on load ── */
-(function(){
-  var path = window.location.pathname;
-  var fname = path.split('/').pop();
-  var lbl = 'EN ▾';
-  if (fname.startsWith('zh-HK-')) lbl = '繁中 ▾';
-  else if (fname.startsWith('zh-CN-')) lbl = '简中 ▾';
-  var el = document.getElementById('lang-label');
-  if (el) el.textContent = lbl;
-})();
 </script>
 <script>
 /* ── nav: cities click toggle ── */
@@ -1166,48 +1143,107 @@ document.addEventListener('click', function(e){
 });
 
 /* ── language switcher ── */
+
+</script>
+
+<!-- Google Translate element (hidden) -->
+<div id="google_translate_element" style="display:none"></div>
+
+<script>
+// ── Google Translate initialiser ──────────────────────────────────────────
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'zh-TW,zh-CN',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+
+// ── Core: switch language ─────────────────────────────────────────────────
 function switchLang(lang) {
-  document.getElementById('nav-lang').classList.remove('lang-open');
-  var labels = {'en':'EN ▾','zh-HK':'繁中 ▾','zh-CN':'简中 ▾'};
-  
-  var path = window.location.pathname;
-  var isBlog = path.includes('/blog/');
-  var isCity = path.includes('/cities/');
-  
-  // Get current filename without extension
-  var fname = path.split('/').pop().replace('.html','');
-  
-  // Strip existing lang prefix to get base slug
-  var base = fname.replace(/^zh-HK-/,'').replace(/^zh-CN-/,'');
-  
-  // Build candidate path for target language
-  var prefix = lang === 'en' ? '' : lang + '-';
-  var newFile = prefix + base + '.html';
-  var newPath;
-  if (isBlog) newPath = '/blog/' + newFile;
-  else if (isCity) newPath = '/cities/' + newFile;
-  else newPath = '/' + newFile;
-  
-  // Update button label immediately
-  document.getElementById('lang-label').textContent = labels[lang] || 'EN ▾';
-  
-  // Navigate (fall back silently if page doesn't exist)
-  if (newPath !== path) {
-    fetch(newPath, {method:'HEAD'})
-      .then(function(r){ if(r.ok) window.location.href = newPath; })
-      .catch(function(){});
+  // Close dropdown
+  var ld = document.getElementById('nav-lang');
+  if (ld) ld.classList.remove('lang-open');
+
+  // Update button label
+  var labels = {en:'EN ▾','zh-HK':'繁中 ▾','zh-CN':'简中 ▾'};
+  var btn = document.getElementById('lang-label');
+  if (btn) btn.textContent = labels[lang] || 'EN ▾';
+
+  // Mark active button
+  document.querySelectorAll('.nav-lang-menu button').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('.nav-lang-menu button').forEach(function(b){
+    if ((lang==='en' && b.textContent.trim()==='English') ||
+        (lang==='zh-HK' && b.textContent.includes('繁')) ||
+        (lang==='zh-CN' && b.textContent.includes('简'))) {
+      b.classList.add('active');
+    }
+  });
+
+  // Store preference
+  try { localStorage.setItem('vw_lang', lang); } catch(e){}
+
+  if (lang === 'en') {
+    // Restore original English
+    restoreEnglish();
+  } else {
+    // Translate via Google Translate cookie method
+    var gtLang = lang === 'zh-HK' ? 'zh-TW' : 'zh-CN';
+    triggerGoogleTranslate(gtLang);
   }
 }
 
-/* ── set correct label on load ── */
-(function(){
-  var path = window.location.pathname;
-  var fname = path.split('/').pop();
-  var lbl = 'EN ▾';
-  if (fname.startsWith('zh-HK-')) lbl = '繁中 ▾';
-  else if (fname.startsWith('zh-CN-')) lbl = '简中 ▾';
-  var el = document.getElementById('lang-label');
-  if (el) el.textContent = lbl;
-})();
+// ── Trigger Google Translate via select element ───────────────────────────
+function triggerGoogleTranslate(targetLang) {
+  var tryCount = 0;
+  function attempt() {
+    var select = document.querySelector('#google_translate_element select');
+    if (select) {
+      select.value = targetLang;
+      select.dispatchEvent(new Event('change'));
+    } else if (tryCount < 30) {
+      tryCount++;
+      setTimeout(attempt, 200);
+    }
+  }
+  attempt();
+}
+
+// ── Restore English ───────────────────────────────────────────────────────
+function restoreEnglish() {
+  var iframe = document.querySelector('.goog-te-banner-frame');
+  // Method 1: click the "Show original" in Google Translate
+  if (iframe) {
+    try {
+      var btn = iframe.contentDocument.querySelector('.goog-te-banner a');
+      if (btn) { btn.click(); return; }
+    } catch(e) {}
+  }
+  // Method 2: reload page without translate cookie
+  var url = window.location.href.replace(/#googtrans[^&]*/g, '');
+  // Remove Google Translate cookie
+  document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=' + window.location.hostname;
+  document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; domain=.' + window.location.hostname;
+  window.location.reload();
+}
+
+// ── Restore on load if lang preference saved ─────────────────────────────
+document.addEventListener('DOMContentLoaded', function(){
+  try {
+    var saved = localStorage.getItem('vw_lang');
+    if (saved && saved !== 'en') {
+      // Small delay to let GT widget initialise
+      setTimeout(function(){ switchLang(saved); }, 800);
+      // Update label immediately
+      var labels = {en:'EN ▾','zh-HK':'繁中 ▾','zh-CN':'简中 ▾'};
+      var btn = document.getElementById('lang-label');
+      if (btn) btn.textContent = labels[saved] || 'EN ▾';
+    }
+  } catch(e) {}
+});
 </script>
+<!-- Load Google Translate script -->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
 </body></html>
