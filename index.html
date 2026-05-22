@@ -566,7 +566,21 @@ section{padding:6rem 0}
 .cities-two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2.5rem}
 .zone-label{font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--oak);margin-bottom:1rem;display:block}
 .cities-grid{display:flex;flex-wrap:wrap;gap:0.65rem}
-.city-tag{font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:0.55rem 1.2rem;border:1px solid rgba(201,169,122,0.4);color:rgba(255,255,255,0.75);transition:all 0.2s;cursor:default}
+.city-tag {
+  display:inline-block;
+  font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  padding:0.35rem 0.85rem;
+  border:1px solid rgba(255,255,255,0.18);
+  color:rgba(255,255,255,0.65);
+  text-decoration:none;
+  transition:all 0.15s;
+  cursor:pointer;
+}
+.city-tag:hover {
+  background:rgba(201,169,122,0.25);
+  border-color:rgba(201,169,122,0.6);
+  color:#C9A97A;
+}
 .city-tag:hover{border-color:var(--oak);color:var(--white);background:rgba(201,169,122,0.1)}
 
 /* ── TESTIMONIALS ── */
@@ -2206,8 +2220,24 @@ body{top:0!important}
       </a>
     </div>
     <!-- SEO city tags -->
-    <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.5rem;opacity:0.35;">
-      <span class="city-tag">Union City</span><span class="city-tag">Newark</span><span class="city-tag">San Leandro</span><span class="city-tag">San Ramon</span><span class="city-tag">Danville</span><span class="city-tag">Alameda</span><span class="city-tag">Mountain View</span><span class="city-tag">Santa Clara</span><span class="city-tag">Campbell</span><span class="city-tag">Los Altos Hills</span><span class="city-tag">Saratoga</span><span class="city-tag">Los Gatos</span>
+    <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+      <a href="blog/union-city-complete-guide.html" class="city-tag">Union City</a>
+      <a href="blog/newark-complete-guide.html" class="city-tag">Newark</a>
+      <a href="blog/san-leandro-complete-guide.html" class="city-tag">San Leandro</a>
+      <a href="blog/san-lorenzo-complete-guide.html" class="city-tag">San Lorenzo</a>
+      <a href="blog/san-ramon-complete-guide.html" class="city-tag">San Ramon</a>
+      <a href="blog/danville-complete-guide.html" class="city-tag">Danville</a>
+      <a href="blog/alameda-complete-guide.html" class="city-tag">Alameda</a>
+      <a href="blog/albany-complete-guide.html" class="city-tag">Albany</a>
+      <a href="blog/el-cerrito-complete-guide.html" class="city-tag">El Cerrito</a>
+      <a href="blog/berkeley-complete-guide.html" class="city-tag">Berkeley</a>
+      <a href="blog/oakland-complete-guide.html" class="city-tag">Oakland</a>
+      <a href="cities/mountain-view.html" class="city-tag">Mountain View</a>
+      <a href="blog/santa-clara-complete-guide.html" class="city-tag">Santa Clara</a>
+      <a href="blog/campbell-complete-guide.html" class="city-tag">Campbell</a>
+      <a href="blog/los-altos-complete-guide.html" class="city-tag">Los Altos</a>
+      <a href="blog/saratoga-complete-guide.html" class="city-tag">Saratoga</a>
+      <a href="blog/los-gatos-complete-guide.html" class="city-tag">Los Gatos</a>
     </div>
   </div>
 </section>
