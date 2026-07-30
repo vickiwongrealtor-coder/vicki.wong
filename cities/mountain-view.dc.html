@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mountain View, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Mountain View, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/mountain-view">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mountain View, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Mountain View, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Mountain View, CA","description":"Real estate guide to Mountain View, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Santa Clara County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Google\u2019s hometown 谷歌總部', body: 'Google\u2019s sprawling campus and a dense cluster of tech employers keep housing demand consistently strong.' },
+      { title: 'Schools that outperform expectations 學校表現優異', body: 'Local schools average an A+ SchoolGrade, with actual student proficiency well above what\u2019s statistically projected for the area.' },
+      { title: 'Walkable downtown, younger energy 年輕活力', body: 'Castro Street\u2019s restaurants and shops give Mountain View a livelier, more walkable feel than many South Bay peers.' },
+      { title: 'Highly educated resident base 高學歷居民', body: 'Roughly three-quarters of adult residents hold a bachelor\u2019s degree or higher, with a large share holding graduate degrees.' },
+    ];
+    const restaurants = [
+      { name: 'Le Boulanger', cuisine: 'French Bakery Cafe', note: 'A long-time Bay Area bakery chain with a flagship-feel location downtown.' },
+      { name: 'Amici\u2019s East Coast Pizzeria', cuisine: 'New York-Style Pizza', note: 'A local favorite for thin-crust pizza, popular with families and after-work groups.' },
+      { name: 'Xanh Restaurant & Lounge', cuisine: 'Vietnamese Fusion', note: 'A stylish spot for Vietnamese-inspired small plates and cocktails on Castro Street.' },
+    ];
+    return {
+      cityData: {
+        region: '南灣 South Bay', cityNameEn: 'Mountain View', cityNameZh: '山景城', cityNameZhShort: '山景城',
+        tagline: 'Google HQ · AI Hub', heroImageId: 'city-hero-mountainview',
+        narrativeEn: 'Google\u2019s hometown pairs a walkable downtown with schools that consistently outperform expectations — a magnet for tech families.',
+        narrativeZh: '山景城是谷歌總部所在地，擁有可步行的市中心與表現優異的學校，深受科技家庭青睞。',
+        whyHeadlineEn: 'Tech jobs, top schools, walkable living',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A+', schoolNote: 'SchoolGrade average across local schools',
+          educationPct: '~75%', educationNote: '45% master\u2019s+, 30% bachelor\u2019s (Niche)',
+          crimeRate: 'Below Avg.', crimeNote: 'Violent crime well below national average',
+          medianIncome: '$150K±', commute: 'Caltrain · Hwy 101 &amp; 85',
+        },
+        prices: { sfh: '$2.4M–$2.9M', townhouse: '$1.5M–$1.8M', condo: '$1.1M–$1.3M' },
+        schoolDistrictNote: 'Mountain View Whisman District serves elementary and middle grades; high schools fall under Mountain View-Los Altos High School District, shared with neighboring Los Altos.',
+        schools: [
+          { level: 'Elementary', name: 'Stevenson Elementary', type: 'Public', grade: '10/10' },
+          { level: 'Elementary', name: 'Frank L. Huff Elementary', type: 'Public', grade: '10/10' },
+          { level: 'Elementary', name: 'Benjamin Bubb Elementary', type: 'Public', grade: '10/10' },
+          { level: 'Elementary', name: 'Gabriela Mistral Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Edith Landels Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Monta Loma Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Theuerkauf Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Elementary', name: 'Mariano Castro Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Middle', name: 'Isaac Newton Graham Middle', type: 'Public', grade: '10/10' },
+          { level: 'Middle', name: 'Crittenden Middle', type: 'Public', grade: '9/10' },
+          { level: 'High', name: 'Mountain View High', type: 'Public', grade: '8/10' },
+          { level: 'Private', name: 'St. Francis High (Mountain View)', type: 'Private', grade: '9/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

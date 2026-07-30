@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hayward, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Hayward, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/hayward">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hayward, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Hayward, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Hayward, CA","description":"Real estate guide to Hayward, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'The best value in the East Bay 東灣最佳性價比', body: 'Hayward consistently offers the lowest entry price among nearby East Bay cities, making it a first stop for many first-time buyers.' },
+      { title: 'Genuinely diverse community 多元族裔社區', body: 'Hayward\u2019s mix of Hispanic, Asian, and Black communities gives it one of the highest diversity ratings in the East Bay.' },
+      { title: 'Cal State East Bay anchor 大學社區', body: 'The university brings steady rental demand and a younger population mix to parts of the city.' },
+      { title: 'Improving transit and downtown investment 交通與市中心發展', body: 'Two BART stations and ongoing downtown revitalization are gradually reshaping parts of the city.' },
+    ];
+    const restaurants = [
+      { name: "Buffalo Bill's Brewery", cuisine: 'American Brewpub', note: 'A historic downtown brewpub and one of the oldest brewpubs in the United States.' },
+      { name: 'Pho Kim Long', cuisine: 'Vietnamese', note: 'A local favorite for pho and Vietnamese comfort food at accessible prices.' },
+      { name: 'Cask & Cleaver', cuisine: 'American Steakhouse', note: 'A go-to spot for steaks and classic American fare with family groups.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Hayward', cityNameZh: '海沃德', cityNameZhShort: '海沃德',
+        tagline: 'Best Value · Diverse', heroImageId: 'city-hero-hayward',
+        narrativeEn: 'The most affordable entry point among East Bay cities we serve, with a genuinely diverse community and two BART stations.',
+        narrativeZh: '海沃德是我們服務的東灣城市中入門門檻最低的一個，社區族裔多元，並設有兩個 BART 站。',
+        whyHeadlineEn: 'The entry point — value, diversity, and BART access',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B / B+', schoolNote: 'Hayward Unified · above-average, improving',
+          educationPct: '31%', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: 'Higher', crimeNote: 'Above East Bay average — verify by specific neighborhood',
+          medianIncome: '$91K±', commute: 'Hayward &amp; South Hayward BART · I-880 &amp; 238',
+        },
+        prices: { sfh: '$780K–$920K', townhouse: '$580K–$680K', condo: '$430K–$520K' },
+        schoolDistrictNote: 'Hayward Unified serves most of the city — ratings run above average overall but vary more school-to-school than in neighboring cities.',
+        schools: [
+          { level: 'Elementary', name: 'Eden Gardens Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Elementary', name: 'Stonebrae Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Middle', name: 'Bret Harte Middle', type: 'Public', grade: '4/10' },
+          { level: 'High', name: 'Hayward High', type: 'Public', grade: '5/10' },
+          { level: 'High', name: 'Mt. Eden High', type: 'Public', grade: '5/10' },
+          { level: 'Private', name: 'Saint Clement School', type: 'Private', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

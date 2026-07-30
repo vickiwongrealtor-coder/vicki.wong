@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dublin, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Dublin, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/dublin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dublin, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Dublin, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Dublin, CA","description":"Real estate guide to Dublin, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Newer housing stock 新建房屋', body: 'Dublin\u2019s master-planned developments mean buyers get newer construction, modern layouts, and fewer deferred-maintenance surprises than older East Bay stock.' },
+      { title: 'Dublin USD\u2019s reputation 學區口碑良好', body: 'Dublin Unified is one of the more highly regarded East Bay districts, a major draw for relocating families.' },
+      { title: 'BART at both ends of town 兩個 BART 站', body: 'Dublin/Pleasanton BART gives residents a direct line into the East Bay and San Francisco without a car.' },
+      { title: 'A fast-growing Asian community 亞裔社區快速增長', body: 'Dublin has one of the fastest-growing Asian populations in the East Bay, supporting a growing base of Asian grocers, restaurants, and services.' },
+    ];
+    const restaurants = [
+      { name: 'Sabroso Craft Kitchen & Tap Room', cuisine: 'American Gastropub', note: 'A modern gastropub popular for craft beer and shareable plates.' },
+      { name: 'Zephyr Grill & Bar', cuisine: 'American', note: 'A polished spot for steaks and cocktails near downtown Dublin.' },
+      { name: 'Tomatina', cuisine: 'Italian', note: 'A family-friendly Italian spot known for its build-your-own pasta bar.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Dublin', cityNameZh: '都柏林', cityNameZhShort: '都柏林',
+        tagline: 'New Builds · BART', heroImageId: 'city-hero-dublin',
+        narrativeEn: 'A fast-growing, master-planned East Bay city offering newer construction, a well-regarded school district, and direct BART access.',
+        narrativeZh: '都柏林是東灣一個快速發展的規劃社區，擁有較新建的房屋、口碑良好的學區及直達的 BART 交通。',
+        whyHeadlineEn: 'New construction, good schools, direct BART',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A / A-', schoolNote: 'Dublin Unified School District',
+          educationPct: '~55%', educationNote: 'Estimate — strong tech-commuter base',
+          crimeRate: 'Low–Moderate', crimeNote: 'Generally regarded as safe, family-oriented',
+          medianIncome: '$160K±', commute: 'Dublin/Pleasanton BART · I-580 &amp; 680',
+        },
+        prices: { sfh: '$1.5M–$1.8M', townhouse: '$1.05M–$1.25M', condo: '$750K–$880K' },
+        schoolDistrictNote: 'Dublin Unified serves the entire city — one of the more consistently well-regarded East Bay districts across every grade band.',
+        schools: [
+          { level: 'Elementary', name: 'Murray Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Dublin Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Frederiksen Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'John Green Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Harold William Kolb Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Middle', name: 'Fallon Middle', type: 'Public', grade: '6/10' },
+          { level: 'Middle', name: 'Wells Middle', type: 'Public', grade: '7/10' },
+          { level: 'High', name: 'Dublin High', type: 'Public', grade: '7/10' },
+          { level: 'Private', name: 'Quarry Lane School', type: 'Private', grade: '9/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

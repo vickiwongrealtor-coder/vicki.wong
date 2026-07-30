@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Lorenzo, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in San Lorenzo, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/san-lorenzo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="San Lorenzo, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering San Lorenzo, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"San Lorenzo, CA","description":"Real estate guide to San Lorenzo, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Quiet, close-knit, residential 寧靜社區', body: 'San Lorenzo is a small, mostly owner-occupied community — residents describe it as a quiet, friendly town rather than a destination in itself.' },
+      { title: 'Schools that outperform expectations 學校表現超出預期', body: 'Local schools average an A- SchoolGrade, with actual proficiency well above statistical projections for the area.' },
+      { title: 'One of the more affordable Alameda County entry points 阿拉米達郡較實惠的入門選擇', body: 'Home prices run meaningfully below Alameda, San Leandro, and points north — a common first stop for East Bay buyers.' },
+      { title: 'Everything nearby, without the density 鄰近一切所需', body: 'Sitting directly between Hayward and San Leandro, residents reach dining, shopping, and BART in either direction within minutes.' },
+    ];
+    const restaurants = [
+      { name: 'El Farolito', cuisine: 'Taqueria', note: 'A beloved Bay Area taqueria chain favorite for burritos, with easy access from San Lorenzo.' },
+      { name: 'Rasoi Indian Bistro', cuisine: 'Indian', note: 'A casual spot for North Indian classics just outside San Lorenzo\u2019s borders.' },
+      { name: "Val's Burgers (Castro Valley)", cuisine: 'Classic American', note: 'Many San Lorenzo residents head to nearby Castro Valley or San Leandro for a wider dining scene.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'San Lorenzo', cityNameZh: '聖羅倫佐', cityNameZhShort: '聖羅倫佐',
+        tagline: 'Quiet · Affordable Entry Point', heroImageId: 'city-hero-sanlorenzo',
+        narrativeEn: 'A small, quiet residential town wedged between Hayward and San Leandro — an affordable entry point for buyers who don\u2019t need a destination of their own.',
+        narrativeZh: '聖羅倫佐是位於海沃德和聖利安卓之間的一個寧靜小鎮，是不追求獨立市中心的買家的實惠入門選擇。',
+        whyHeadlineEn: 'A quiet, affordable pocket between two bigger cities',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A- / B-', schoolNote: 'SchoolGrade average · San Lorenzo USD (Niche B-)',
+          educationPct: '25%', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: 'Mixed reports', crimeNote: 'Sources vary — generally regarded as safe and residential',
+          medianIncome: '$91,319', commute: 'Near San Leandro BART · I-880 &amp; 238',
+        },
+        prices: { sfh: '$820K–$950K', townhouse: '$620K–$720K', condo: '$450K–$540K' },
+        schoolDistrictNote: 'San Lorenzo Unified serves the whole town — Niche rates the district B-minus overall, but individual schools like KIPP King Collegiate outperform that average considerably.',
+        schools: [
+          { level: 'Elementary', name: 'Grant Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Middle', name: 'Bohannon Middle', type: 'Public', grade: '4/10' },
+          { level: 'High', name: 'San Lorenzo High', type: 'Public', grade: '4/10' },
+          { level: 'Charter', name: 'KIPP King Collegiate High', type: 'Charter', grade: '9/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Leandro, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in San Leandro, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/san-leandro">
+<meta property="og:type" content="website">
+<meta property="og:title" content="San Leandro, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering San Leandro, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"San Leandro, CA","description":"Real estate guide to San Leandro, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Historic charm, real character 歷史風情', body: 'Downtown San Leandro retains its historic architecture, giving the city a warmth and identity that newer East Bay suburbs lack.' },
+      { title: 'Two BART stations 兩個 BART 站', body: 'San Leandro and Bay Fair BART give residents a direct line to Oakland and San Francisco without a car.' },
+      { title: 'More home for the money 更實惠的居住空間', body: 'Compared to Alameda or Oakland, San Leandro consistently offers larger lots and lower price-per-square-foot.' },
+      { title: 'Crime near the state average 治安接近全州平均', body: 'Overall crime sits close to both the California and national averages — a middle-of-the-road profile among East Bay cities.' },
+    ];
+    const restaurants = [
+      { name: 'The Englander', cuisine: 'Historic Pub & Restaurant', note: 'A San Leandro landmark since the early 1900s, known for its beer selection and old-world dining room.' },
+      { name: 'Aqui Cal-Mex Grill', cuisine: 'Cal-Mex', note: 'A local favorite for burritos and Cal-Mex staples in a casual setting.' },
+      { name: "MoMo's BBQ & Grill", cuisine: 'Filipino BBQ', note: 'A neighborhood spot for Filipino-style grilled skewers and rice plates.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'San Leandro', cityNameZh: '聖利安卓', cityNameZhShort: '聖利安卓',
+        tagline: 'Historic Downtown · BART Access', heroImageId: 'city-hero-sanleandro',
+        narrativeEn: 'A historic East Bay city with two BART stations and a housing market that offers more space for the money than Alameda or Oakland next door.',
+        narrativeZh: '聖利安卓是一個具歷史風情的東灣城市，設有兩個 BART 站，相比鄰近的阿拉米達或奧克蘭提供更寬敞的居住空間。',
+        whyHeadlineEn: 'Historic character with room to grow into',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B', schoolNote: 'San Leandro Unified School District',
+          educationPct: '32%', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: '30.5/1,000', crimeNote: 'Near the CA and national average',
+          medianIncome: '$86,604', commute: 'San Leandro &amp; Bay Fair BART · I-880 &amp; 238',
+        },
+        prices: { sfh: '$900K–$1.05M', townhouse: '$650K–$780K', condo: '$480K–$580K' },
+        schoolDistrictNote: 'San Leandro Unified serves the entire city — ratings run above average at the elementary level, trending closer to average by high school.',
+        schools: [
+          { level: 'Elementary', name: 'Washington Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'James Madison Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Middle', name: 'Creekside Middle', type: 'Public', grade: '10/10' },
+          { level: 'Middle', name: 'Bancroft Middle', type: 'Public', grade: '4/10' },
+          { level: 'High', name: 'San Leandro High', type: 'Public', grade: '4/10' },
+          { level: 'Private', name: 'St. Leander School', type: 'Private', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

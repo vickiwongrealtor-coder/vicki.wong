@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Union City, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Union City, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/union-city">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Union City, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Union City, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Union City, CA","description":"Real estate guide to Union City, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Lower crime than the national average 治安優於全國平均', body: 'Union City runs well below the national violent-crime rate, giving buyers East Bay affordability without the safety trade-off of some neighboring cities.' },
+      { title: 'One of the Bay Area\u2019s most diverse cities 族裔多元', body: 'A large Filipino, Asian, and South Asian population supports deep grocery, temple, and community infrastructure.' },
+      { title: 'BART-connected, freeway central 交通樞紐', body: 'Union City BART plus direct access to I-880 and Hwy 92 make it one of the more flexible commute bases in the East Bay.' },
+      { title: 'Above-average education levels 教育水平高於預期', body: 'Roughly 45% of adults hold a bachelor\u2019s degree or higher — notably high for an entry-to-mid East Bay price point.' },
+    ];
+    const restaurants = [
+      { name: '99 Ranch Market Food Hall', cuisine: 'Asian Food Hall', note: 'A go-to stop for quick, authentic Asian eats alongside Bay Area grocery staples.' },
+      { name: 'Zaika Restaurant', cuisine: 'Indian', note: 'A neighborhood favorite for North Indian curries and weekend thali.' },
+      { name: 'Jollibee', cuisine: 'Filipino Fast Food', note: 'The beloved Filipino fried-chicken chain, reflecting Union City\u2019s large Filipino community.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Union City', cityNameZh: '聯合市', cityNameZhShort: '聯合市',
+        tagline: 'Diverse · BART Access', heroImageId: 'city-hero-unioncity',
+        narrativeEn: 'A genuinely diverse East Bay city with crime rates below the national average, a BART station, and a growing base of well-educated buyers.',
+        narrativeZh: '聯合市是東灣一個真正多元的城市，治安優於全國平均，設有 BART 站，高學歷居民比例持續上升。',
+        whyHeadlineEn: 'Diversity, safety, and a direct line to BART',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B+', schoolNote: 'New Haven Unified School District',
+          educationPct: '45%', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: '28/1,000', crimeNote: 'Below national average (33.4/1,000)',
+          medianIncome: '$138K', commute: 'Union City BART · I-880 &amp; Hwy 92',
+        },
+        prices: { sfh: '$1.15M–$1.35M', townhouse: '$800K–$950K', condo: '$580K–$680K' },
+        schoolDistrictNote: 'New Haven Unified serves all of Union City — solid, above-average ratings across grade levels, anchored by James Logan High\u2019s strong graduation outcomes.',
+        schools: [
+          { level: 'Elementary', name: 'Delaine Eastin Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Tom Kitayama Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Pioneer Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'Alvarado Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Elementary', name: 'Guy Emanuele Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'Searles Elementary', type: 'Public', grade: '5/10' },
+          { level: 'Middle', name: 'Itliong-Vera Cruz Middle', type: 'Public', grade: '6/10' },
+          { level: 'Middle', name: 'Cesar Chavez Middle', type: 'Public', grade: '5/10' },
+          { level: 'High', name: 'James Logan High', type: 'Public', grade: '6/10' },
+          { level: 'Private', name: 'Connecting Waters Charter (East Bay)', type: 'Charter', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

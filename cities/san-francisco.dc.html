@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Francisco, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in San Francisco, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/san-francisco">
+<meta property="og:type" content="website">
+<meta property="og:title" content="San Francisco, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering San Francisco, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"San Francisco, CA","description":"Real estate guide to San Francisco, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"San Francisco County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'The Bay Area\u2019s cultural and economic core 灣區文化經濟核心', body: 'San Francisco anchors the region\u2019s finance, tech, and culture — for many buyers, proximity to the city itself is the primary draw.' },
+      { title: 'One of the most educated cities in the country 全國教育水平最高城市之一', body: 'Well over half of adult residents hold a bachelor\u2019s degree or higher, among the highest rates of any major U.S. city.' },
+      { title: 'Neighborhood-by-neighborhood diversity 社區差異極大', body: 'From family-oriented Sunset and Richmond to dense, transit-rich SoMa and Nob Hill, San Francisco offers dramatically different lifestyles within city limits.' },
+      { title: 'Unmatched transit access 交通網絡完善', body: 'BART, Muni, and Caltrain give San Francisco residents the best car-free mobility in the Bay Area.' },
+    ];
+    const restaurants = [
+      { name: 'Tadich Grill', cuisine: 'Seafood · American', note: "California's oldest continuously operating restaurant, serving classic seafood since 1849." },
+      { name: 'House of Prime Rib', cuisine: 'American Steakhouse', note: 'A San Francisco institution famous for its cart-side prime rib service.' },
+      { name: "Mister Jiu's", cuisine: 'Modern Chinese', note: 'An acclaimed Chinatown restaurant reinventing Cantonese-American classics.' },
+    ];
+    return {
+      cityData: {
+        region: '半島 Peninsula', cityNameEn: 'San Francisco', cityNameZh: '三藩市', cityNameZhShort: '三藩市',
+        tagline: "The Bay's Cultural Core", heroImageId: 'city-hero-sanfrancisco',
+        narrativeEn: 'The Bay Area\u2019s cultural and economic anchor — a highly educated, transit-rich city where the right neighborhood matters as much as the city itself.',
+        narrativeZh: '三藩市是灣區的文化與經濟核心，居民教育水平高、交通便利，選對社區與選對城市同樣重要。',
+        whyHeadlineEn: 'Every neighborhood is its own decision',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B / B-', schoolNote: 'SFUSD — varies significantly by school',
+          educationPct: '~58%', educationNote: 'Among the highest rates of any major U.S. city',
+          crimeRate: 'Varies widely', crimeNote: 'Property crime higher downtown; residential districts safer',
+          medianIncome: '$130K±', commute: 'BART · Muni · Caltrain',
+        },
+        prices: { sfh: '$1.6M–$2.2M', townhouse: '$1.3M–$1.7M', condo: '$950K–$1.2M' },
+        schoolDistrictNote: 'SFUSD serves the entire city — ratings vary dramatically by school and neighborhood far more than in any other city we cover, so it pays to check the specific assignment, not just the district average.',
+        schools: [
+          { level: 'Elementary', name: 'Clarendon Elementary (Alternative)', type: 'Public', grade: '9/10' },
+          { level: 'Middle', name: 'Presidio Middle', type: 'Public', grade: '7/10' },
+          { level: 'High', name: 'Lowell High', type: 'Public', grade: '10/10' },
+          { level: 'Private', name: 'University High School', type: 'Private', grade: '9/10' },
+        ],
+        landmarks: [
+          { name: 'Postcard Row (Painted Ladies)', note: 'The row of Victorian houses on Steiner Street facing Alamo Square — among the most photographed homes in America, famous from countless film and TV backdrops.', slotId: 'sf-landmark-1' },
+          { name: 'Haas-Lilienthal House', note: 'A meticulously preserved 1886 Queen Anne Victorian in Pacific Heights, now a house museum open for public tours.', slotId: 'sf-landmark-2' },
+        ],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alameda, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Alameda, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/alameda">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alameda, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Alameda, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Alameda, CA","description":"Real estate guide to Alameda, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'An island with small-town character 島嶼小鎮氛圍', body: 'Alameda\u2019s island geography and Victorian-lined streets give it a tight-knit, small-town feel rarely found this close to Oakland and San Francisco.' },
+      { title: 'Highly rated public schools 學校評級優異', body: 'Alameda Unified consistently ranks among the stronger East Bay districts, a major draw for relocating families.' },
+      { title: 'Ferry and bridge access to SF 渡輪直達三藩市', body: 'A direct ferry to San Francisco\u2019s Ferry Building, alongside two bridges/tubes into Oakland, gives residents flexible commute options.' },
+      { title: 'A genuinely walkable, small-business downtown 可步行的市中心', body: 'Park Street and Webster Street support a dense strip of independent restaurants and shops residents describe as central to daily life.' },
+    ];
+    const restaurants = [
+      { name: 'Speisekammer', cuisine: 'German Beer Garden', note: 'A long-running Alameda institution known for its beer garden and live music nights.' },
+      { name: "Angela's Bistro", cuisine: 'Italian', note: 'A neighborhood Italian favorite tucked into a historic Alameda storefront.' },
+      { name: 'Burma Superstar', cuisine: 'Burmese', note: 'The Alameda outpost of the celebrated Bay Area Burmese restaurant group.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Alameda', cityNameZh: '阿拉米達', cityNameZhShort: '阿拉米達',
+        tagline: 'Island City · Walkable Downtown', heroImageId: 'city-hero-alameda',
+        narrativeEn: 'An island city with Victorian streets, strong schools, and a ferry ride to San Francisco — a small-town feel minutes from two major cities.',
+        narrativeZh: '阿拉米達是一個擁有維多利亞式街道與優質學區的島嶼城市，並設有渡輪直達三藩市，享有小鎮氛圍卻鄰近兩大城市。',
+        whyHeadlineEn: 'Small-town streets, big-city access',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A- / B+', schoolNote: 'Alameda Unified School District',
+          educationPct: '~48%', educationNote: 'Estimate based on regional East Bay comparables',
+          crimeRate: 'Below Avg.', crimeNote: 'Generally regarded as one of the safer East Bay cities',
+          medianIncome: '$115K–$130K', commute: 'SF Ferry · Posey/Webster Tubes · Hwy 260 &amp; 880',
+        },
+        prices: { sfh: '$1.3M–$1.55M', townhouse: '$950K–$1.1M', condo: '$680K–$800K' },
+        schoolDistrictNote: 'Alameda Unified serves the entire island — consistently one of the stronger East Bay districts at every grade level.',
+        schools: [
+          { level: 'Elementary', name: 'Frank Otis Elementary', type: 'Public', grade: '10/10' },
+          { level: 'Elementary', name: 'Franklin Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Amelia Earhart Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Elementary', name: 'Edison Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'Bay Farm Elementary', type: 'Public', grade: '7/10' },
+          { level: 'Middle', name: 'Lincoln Middle', type: 'Public', grade: '10/10' },
+          { level: 'Middle', name: 'Will C. Wood Middle', type: 'Public', grade: '6/10' },
+          { level: 'High', name: 'Alameda High', type: 'Public', grade: '10/10' },
+          { level: 'High', name: 'Encinal High', type: 'Public', grade: '6/10' },
+          { level: 'Private', name: 'St. Joseph Notre Dame High', type: 'Private', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

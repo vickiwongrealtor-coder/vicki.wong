@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fremont, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Fremont, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/fremont">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fremont, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Fremont, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Fremont, CA","description":"Real estate guide to Fremont, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Mission San Jose schools 名校學區', body: 'The Mission San Jose district is one of the most sought-after school zones in the East Bay, drawing buyers specifically for its boundaries.' },
+      { title: 'One of the Bay Area\u2019s largest Chinese communities 華人社區龐大', body: 'Fremont has one of the biggest and most established Chinese-American communities in the region, with deep grocery, cultural, and religious infrastructure.' },
+      { title: 'Family-safe, low-key pace 家庭友善', body: 'Residents consistently describe Fremont as quiet and safe enough to let kids walk to school — a trade-off for a lower-key nightlife scene.' },
+      { title: 'Central Bay Area access 地理位置優越', body: 'Positioned between the South Bay and East Bay, Fremont gives commuters flexible access to both job markets via I-880 and Hwy 84.' },
+    ];
+    const restaurants = [
+      { name: 'Bombay Garden', cuisine: 'Indian', note: 'A long-running favorite for North Indian buffet lunches and weekend dinners.' },
+      { name: 'Kabul Kabob House', cuisine: 'Afghan', note: 'A neighborhood staple for grilled kabobs and Afghan comfort food.' },
+      { name: 'Curry Leaf', cuisine: 'South Indian', note: 'Known for dosas and South Indian specialties in a casual, family setting.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Fremont', cityNameZh: '費利蒙', cityNameZhShort: '費利蒙',
+        tagline: 'Mission SJ · Chinese Community', heroImageId: 'city-hero-fremont',
+        narrativeEn: 'Anchored by the sought-after Mission San Jose schools and one of the Bay Area\u2019s largest Chinese communities, Fremont draws families who want quiet, safety, and cultural familiarity.',
+        narrativeZh: '費利蒙以搶手的 Mission San Jose 學區及灣區最大的華人社區之一著稱，吸引重視治安與文化熟悉感的家庭。',
+        whyHeadlineEn: 'A top school zone with deep Chinese community roots',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A / A-', schoolNote: 'Fremont Unified · Mission San Jose zone strongest',
+          educationPct: '~55%', educationNote: 'City-wide estimate, higher in Mission San Jose',
+          crimeRate: 'Below Nat\u2019l', crimeNote: '30.4/1,000 vs. 33.4 national average',
+          medianIncome: '$145K±', commute: 'I-880 &amp; Hwy 84 · Fremont BART',
+        },
+        prices: { sfh: '$1.6M–$1.95M', townhouse: '$1.05M–$1.25M', condo: '$750K–$900K' },
+        schoolDistrictNote: 'Fremont Unified serves all grade levels — the Mission San Jose zone carries the strongest ratings citywide, well above the district-wide average.',
+        schools: [
+          { level: 'Elementary', name: 'Mission San Jose Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Middle', name: 'Hopkins Junior High', type: 'Public', grade: '9/10' },
+          { level: 'High', name: 'Mission San Jose High', type: 'Public', grade: '10/10' },
+          { level: 'High', name: 'American High', type: 'Public', grade: '6/10' },
+          { level: 'High', name: 'Irvington High', type: 'Public', grade: '9/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

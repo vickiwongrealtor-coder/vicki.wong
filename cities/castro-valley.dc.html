@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Castro Valley, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Castro Valley, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/castro-valley">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Castro Valley, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Castro Valley, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Castro Valley, CA","description":"Real estate guide to Castro Valley, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'BART in town 直達 BART', body: 'A dedicated Castro Valley BART station puts San Francisco and Oakland within an easy, car-free commute.' },
+      { title: 'Strong, established schools 學區穩健', body: 'Castro Valley Unified is well regarded, and Castro Valley High holds a 97% graduation rate with broad AP offerings.' },
+      { title: 'More space for the money 更寬敞的居住空間', body: 'Compared to the Peninsula and South Bay, Castro Valley offers noticeably larger lots and homes at a lower price per square foot.' },
+      { title: 'A distinct, family-first identity 家庭氛圍濃厚', body: 'Residents describe it as a pocket of the Bay Area with its own character — quieter, more conservative, and tightly family-oriented.' },
+    ];
+    const restaurants = [
+      { name: "Val's Burgers", cuisine: 'Classic American Burgers', note: 'A Castro Valley landmark drive-in serving burgers since the 1950s.' },
+      { name: 'Nonni\u2019s Ristorante', cuisine: 'Italian', note: 'A neighborhood Italian spot popular for date nights and family dinners alike.' },
+      { name: 'Buon Appetito', cuisine: 'Italian', note: 'A casual, family-run Italian kitchen favored for weeknight dinners.' },
+    ];
+    return {
+      cityData: {
+        region: '東灣 East Bay', cityNameEn: 'Castro Valley', cityNameZh: '卡斯特羅谷', cityNameZhShort: '卡斯特羅谷',
+        tagline: 'Top Schools · Family', heroImageId: 'city-hero-castrovalley',
+        narrativeEn: 'A BART-connected East Bay suburb known for strong schools, larger homes, and a tight-knit, family-first community.',
+        narrativeZh: '卡斯特羅谷是東灣一個連接 BART 的社區，以優質學區、較大居住空間及緊密的家庭社群聞名。',
+        whyHeadlineEn: 'Space, schools, and a straight shot to BART',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A-', schoolNote: 'Niche Overall Grade · CVUSD',
+          educationPct: '44%', educationNote: '17% master\u2019s+, 27% bachelor\u2019s (Niche)',
+          crimeRate: 'Moderate', crimeNote: 'Lower than similarly sized U.S. communities',
+          medianIncome: '$130K±', commute: 'Castro Valley BART · I-580 &amp; 238',
+        },
+        prices: { sfh: '$1.05M–$1.25M', townhouse: '$750K–$900K', condo: '$550K–$680K' },
+        schoolDistrictNote: 'Castro Valley Unified School District serves all grade levels citywide — well regarded through elementary and middle, with a strong but more mixed reputation at the high school level.',
+        schools: [
+          { level: 'Elementary', name: 'Jensen Ranch Elementary', type: 'Public', grade: '10/10' },
+          { level: 'Elementary', name: 'Chabot Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Independent Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Marshall Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Palomares Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Proctor Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Vannoy Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Castro Valley Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'Stanton Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Elementary', name: 'Castro Valley Virtual Academy', type: 'Public', grade: '5/10' },
+          { level: 'Middle', name: 'Creekside Middle', type: 'Public', grade: '10/10' },
+          { level: 'Middle', name: 'Canyon Middle', type: 'Public', grade: '7/10' },
+          { level: 'High', name: 'Castro Valley High', type: 'Public', grade: '9/10' },
+          { level: 'Private', name: 'Redwood Christian Schools', type: 'Private', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

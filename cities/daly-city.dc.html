@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daly City, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Daly City, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/daly-city">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daly City, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Daly City, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Daly City, CA","description":"Real estate guide to Daly City, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"San Mateo County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Right on the San Francisco line 緊鄰三藩市', body: 'Daly City borders San Francisco directly, giving buyers city-adjacent access at a meaningfully lower price point.' },
+      { title: 'One of the largest Filipino communities in the U.S. 全美最大菲律賓社區之一', body: 'Daly City is home to one of the largest concentrations of Filipino Americans in the country, with deep cultural and religious infrastructure.' },
+      { title: 'Lower violent crime than the national average 暴力罪案率低', body: 'Violent crime runs notably below the national rate, even though overall cost-of-living pressure is high.' },
+      { title: 'BART at both ends of the city 雙 BART 站', body: 'Daly City and Colma BART stations offer a direct line into San Francisco without driving through it.' },
+    ];
+    const restaurants = [
+      { name: 'Goldilocks Bakeshop', cuisine: 'Filipino Bakery', note: 'A Filipino bakery institution known for its cakes and pastries, reflecting the city\u2019s Filipino heritage.' },
+      { name: 'Pampanga\u2019s Cuisine', cuisine: 'Filipino', note: 'A long-standing Filipino restaurant serving classic home-style dishes.' },
+      { name: 'Jollibee', cuisine: 'Filipino Fast Food', note: 'A Daly City staple for the country\u2019s most iconic Filipino fast-food chain.' },
+    ];
+    return {
+      cityData: {
+        region: '南灣 South Bay', cityNameEn: 'Daly City', cityNameZh: '戴利城', cityNameZhShort: '戴利城',
+        tagline: 'SF-Adjacent · Filipino Community', heroImageId: 'city-hero-dalycity',
+        narrativeEn: 'Bordering San Francisco directly, Daly City offers city-adjacent living, one of the country\u2019s largest Filipino communities, and two BART stations.',
+        narrativeZh: '戴利城緊鄰三藩市，擁有全美數一數二的菲律賓社區，並設有兩個 BART 站。',
+        whyHeadlineEn: 'San Francisco access without San Francisco pricing',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B', schoolNote: 'Jefferson Union High School District',
+          educationPct: '~35%', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: '24/1,000', crimeNote: 'Violent crime well below national average',
+          medianIncome: '$120K–$148K', commute: 'Daly City &amp; Colma BART · I-280 &amp; Hwy 1',
+        },
+        prices: { sfh: '$1.35M–$1.6M', townhouse: '$950K–$1.1M', condo: '$680K–$800K' },
+        schoolDistrictNote: 'Jefferson Elementary District covers K-8; Jefferson Union High School District covers high school — both rate above average, just shy of neighboring Peninsula districts.',
+        schools: [
+          { level: 'Elementary', name: 'Marjorie H. Tobias Elementary', type: 'Public', grade: '6/10' },
+          { level: 'Middle', name: 'Fernando Rivera Intermediate', type: 'Public', grade: '5/10' },
+          { level: 'High', name: 'Jefferson High', type: 'Public', grade: '5/10' },
+          { level: 'Private', name: 'Hilldale School', type: 'Private', grade: '8/10' },
+        ],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

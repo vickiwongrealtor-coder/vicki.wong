@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Jose, CA Real Estate Guide — Schools, Home Prices &amp; Safety | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in San Jose, CA? School ratings by neighborhood, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/san-jose">
+<meta property="og:type" content="website">
+<meta property="og:title" content="San Jose, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering San Jose, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"San Jose, CA","description":"Real estate guide to San Jose, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Santa Clara County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'Silicon Valley\u2019s biggest job base 最大就業腹地', body: 'As the largest city in the Bay Area, San Jose puts buyers within easy reach of the region\u2019s largest concentration of tech employers.' },
+      { title: 'Neighborhood-by-neighborhood variety 社區選擇多元', body: 'From West San Jose\u2019s top-rated schools to Downtown\u2019s urban core, the city offers a wider range of price points than most of the Peninsula.' },
+      { title: 'Best transit access in the South Bay 交通便利', body: 'Caltrain, VTA light rail, and Highways 101/280/880/17 converge here, making it the easiest South Bay city to commute from in any direction.' },
+      { title: 'Diverse, family-oriented communities 多元家庭社區', body: 'Large, established Chinese and Vietnamese communities give newcomers an easy landing — from grocery stores to community associations.' },
+    ];
+    const restaurants = [
+      { name: "Original Joe's", cuisine: 'Italian-American', note: 'A San Jose institution since 1956, known for its old-school dining room and classic Italian-American menu.' },
+      { name: 'San Pedro Square Market', cuisine: 'Food Hall', note: 'A downtown food hall with a rotating mix of vendors, popular for casual group dinners.' },
+      { name: "Falafel's Drive-In", cuisine: 'Middle Eastern / American', note: 'A beloved neighborhood drive-in serving falafel and burgers since the 1970s.' },
+    ];
+    return {
+      cityData: {
+        region: '南灣 South Bay', cityNameEn: 'San Jose', cityNameZh: '聖荷西', cityNameZhShort: '聖荷西',
+        tagline: 'Silicon Valley Hub', heroImageId: 'city-hero-sanjose',
+        narrativeEn: 'The capital of Silicon Valley — a wide range of neighborhoods, price points, and communities across the largest city in the Bay Area.',
+        narrativeZh: '聖荷西是矽谷之都，作為灣區最大城市，擁有多元的社區、價位與族裔社群供買家選擇。',
+        whyHeadlineEn: 'Variety, transit, and community — at every price point',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'B+ / A-', schoolNote: 'Varies widely by neighborhood/district',
+          educationPct: '45%±', educationNote: 'City-wide average, higher in West San Jose',
+          crimeRate: 'Varies', crimeNote: 'Downtown higher, suburbs closer to Bay average',
+          medianIncome: '$120K±', commute: 'Caltrain · VTA · Hwy 101/280/880/17',
+        },
+        prices: { sfh: '$1.3M–$1.7M', townhouse: '$900K–$1.1M', condo: '$700K–$850K' },
+        schoolDistrictNote: 'San Jose spans many districts — San Jose Unified serves the urban core, while zones like West San Jose (Cupertino Union / Fremont Union) and Evergreen carry notably stronger ratings.',
+        schools: [
+          { level: 'Elementary', name: 'Simonds Elementary (Evergreen SD)', type: 'Public', grade: '7/10' },
+          { level: 'Middle', name: 'Bret Harte Middle (San Jose Unified)', type: 'Public', grade: '6/10' },
+          { level: 'High', name: 'Lynbrook High (Fremont Union HSD, West SJ)', type: 'Public', grade: '10/10' },
+          { level: 'Private', name: 'Valley Christian High', type: 'Private', grade: '9/10' },
+        ],
+        landmarks: [
+          { name: 'Winchester Mystery House', note: 'The sprawling, famously labyrinthine Victorian mansion built by Sarah Winchester over 38 years — now one of the most visited historic homes in the country.', slotId: 'sj-landmark-1' },
+        ],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palo Alto, CA Real Estate Guide — PAUSD Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Palo Alto, CA? PAUSD school ratings by level, typical home prices for single-family, townhouse &amp; condo, safety data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/palo-alto">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Palo Alto, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Palo Alto, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Palo Alto, CA","description":"Real estate guide to Palo Alto, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Santa Clara County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      { title: 'PAUSD — California\u2019s top district 學區之首', body: 'Palo Alto Unified consistently ranks among the strongest public school systems in the state, drawing families years ahead of enrollment.' },
+      { title: 'Stanford at the doorstep 史丹福鄰接', body: 'Proximity to Stanford University brings a dense concentration of researchers, founders, and academics into the housing pool.' },
+      { title: 'Safe, walkable, and clean 安全宜居', body: 'Downtown Palo Alto and its neighborhoods are consistently rated among the safest, best-kept communities in the Bay Area.' },
+      { title: 'Deep, durable equity 保值穩健', body: 'Decades of constrained supply against relentless demand have made Palo Alto one of the most resilient housing markets in the country.' },
+    ];
+    const restaurants = [
+      { name: 'Evvia Estiatorio', cuisine: 'Greek', note: 'A long-running downtown favorite for wood-fired Greek fare and a lively taverna atmosphere.' },
+      { name: 'Nola', cuisine: 'Cajun / Creole', note: 'New Orleans-inspired plates and a rooftop patio, popular for celebrations and weekend brunch.' },
+      { name: 'Tamarine', cuisine: 'Vietnamese', note: 'Refined, modern Vietnamese cuisine a short walk from University Avenue.' },
+    ];
+    return {
+      cityData: {
+        region: '南灣 South Bay', cityNameEn: 'Palo Alto', cityNameZh: '帕羅奧圖', cityNameZhShort: '帕羅奧圖',
+        tagline: 'PAUSD · Stanford', heroImageId: 'city-hero-paloalto',
+        narrativeEn: 'Home to Stanford University and some of the strongest public schools in California, Palo Alto draws families who plan to stay for a generation.',
+        narrativeZh: '帕羅奧圖是史丹福大學所在地，亦擁有加州數一數二的公立學區，吸引許多打算長期扎根的家庭。',
+        whyHeadlineEn: 'Stanford, schools, and staying power',
+        whyBuy, restaurants,
+        stats: {
+          schoolRating: 'A+', schoolNote: 'Palo Alto Unified School District',
+          educationPct: '80%+', educationNote: 'Adults with a bachelor\u2019s degree or higher',
+          crimeRate: 'Very Low', crimeNote: 'Among the safest cities in the Bay Area',
+          medianIncome: '$200K+', commute: 'Caltrain · Hwy 101 &amp; I-280',
+        },
+        prices: { sfh: '$3.2M–$4M+', townhouse: '$2M–$2.5M', condo: '$1.4M–$1.8M' },
+        schoolDistrictNote: 'Palo Alto Unified School District (PAUSD) serves the entire city — 20 schools total (15 elementary, 5 middle, 2 comprehensive high schools plus alternative programs), consistently one of the top-ranked public districts in California. Ratings below reflect GreatSchools\u2019 1\u201310 scale; a few are confirmed exact (Gunn, JLS), others reflect the district\u2019s consistently above-average pattern — verify the exact current score for any specific school before relying on it.',
+        schools: [
+          { level: 'Elementary', name: 'Addison Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Barron Park Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Duveneck Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'El Carmelo Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Escondido Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Fairmeadow Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Herbert Hoover Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Juana Briones Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Lucille M. Nixon Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Ohlone Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Elementary', name: 'Palo Verde Elementary', type: 'Public', grade: '8/10' },
+          { level: 'Elementary', name: 'Walter Hays Elementary', type: 'Public', grade: '9/10' },
+          { level: 'Middle', name: 'Jane Lathrop Stanford (JLS) Middle', type: 'Public', grade: '10/10' },
+          { level: 'Middle', name: 'Ellen Fletcher Middle', type: 'Public', grade: '8/10' },
+          { level: 'Middle', name: 'Frank S. Greene Jr. Middle', type: 'Public', grade: '9/10' },
+          { level: 'High', name: 'Henry M. Gunn High', type: 'Public', grade: '10/10' },
+          { level: 'High', name: 'Palo Alto High (Paly)', type: 'Public', grade: '9/10' },
+        ],
+        landmarks: [
+          { name: 'HP Garage', note: '367 Addison Ave — the one-car garage where Bill Hewlett and Dave Packard founded HP in 1939, now a California Historical Landmark known as the "Birthplace of Silicon Valley."', slotId: 'pa-landmark-1' },
+          { name: 'Steve Jobs House', note: 'Jobs\u2019 longtime Waverley Street home, a Tudor Revival house he lived in until his passing in 2011 — still a quiet pilgrimage site for Apple admirers.', slotId: 'pa-landmark-2' },
+        ],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>
