@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piedmont, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Piedmont, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/piedmont">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Piedmont, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Piedmont, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Piedmont, CA","description":"Real estate guide to Piedmont, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      {
+            "title": "Its own K-12 school district",
+            "body": "Piedmont Unified is independent of Oakland Unified and ranks among the top districts in California — the single largest driver of demand here."
+      },
+      {
+            "title": "Extremely limited supply",
+            "body": "At 1.7 square miles and fully built out, turnover is low and listings are scarce, which has held values remarkably steady."
+      },
+      {
+            "title": "Its own police and services",
+            "body": "Piedmont runs its own police, fire, and recreation departments, a distinction residents cite as central to daily life."
+      },
+      {
+            "title": "Minutes from Oakland and SF",
+            "body": "Despite feeling suburban and insulated, the city is a short drive to downtown Oakland and a straightforward commute into San Francisco."
+      }
+];
+    const restaurants = [
+      {
+            "name": "Mulberry’s Market",
+            "cuisine": "Market · Deli",
+            "note": "The Piedmont Avenue institution locals treat as the town kitchen."
+      },
+      {
+            "name": "Chef Yu",
+            "cuisine": "Chinese",
+            "note": "A neighborhood Chinese kitchen popular for family dinners."
+      },
+      {
+            "name": "Piedmont Grocery-adjacent cafes",
+            "cuisine": "Cafe",
+            "note": "A cluster of small cafes serving the Piedmont Avenue corridor."
+      }
+];
+    return {
+      cityData: {
+        region: 'East Bay', cityNameEn: 'Piedmont', tagline: 'Top Schools · Prestige', heroImageId: 'city-hero-piedmont',
+        narrativeEn: "An independent city of 1.7 square miles entirely surrounded by Oakland, with its own school district and one of the most sought-after addresses in the East Bay.", whyHeadlineEn: "A separate city, a separate school district, a separate market",
+        whyBuy, restaurants,
+        stats: {
+        "schoolRating": "9–10/10",
+        "schoolNote": "Piedmont Unified School District",
+        "educationPct": "~85%",
+        "educationNote": "Among the highest in the East Bay",
+        "crimeRate": "Very Low",
+        "crimeNote": "Own police department; among the safest East Bay cities",
+        "medianIncome": "$250K+",
+        "commute": "Hwy 580 &amp; 24 · MacArthur BART nearby"
+},
+        prices: {"sfh":"$2.0M–$2.6M","townhouse":"$1.3M–$1.6M","condo":"$900K–$1.1M"},
+        schoolDistrictNote: "Piedmont Unified is an independent district serving only Piedmont — three elementary schools, one middle, and one high school, all rating at or near the top of the state.",
+        schools: [
+        {
+                "level": "Elementary",
+                "name": "Frank Havens Elementary",
+                "type": "Public",
+                "grade": "10/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Beach Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Wildwood Elementary",
+                "type": "Public",
+                "grade": "10/10"
+        },
+        {
+                "level": "Middle",
+                "name": "Piedmont Middle",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "High",
+                "name": "Piedmont High",
+                "type": "Public",
+                "grade": "10/10"
+        }
+],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

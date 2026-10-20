@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&amp;family=Noto+Sans+TC:wght@400;600;700;800&amp;family=Noto+Sans+SC:wght@400;600;700;800&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0}
+::selection{background:rgba(236,48,19,0.25)}
+a{color:#ae1800;text-decoration:none}
+a:hover{color:#ec3013}
+summary::-webkit-details-marker{display:none}
+</style>
+<script src="../zh-hans.js"></script>
+<script src="./lifestyles-data.js"></script>
+<script src="../image-slot.js"></script>
+</helmet>
+
+<div style="background:#f3f2f2;color:#201e1d;font-family:'Archivo','Noto Sans TC','Noto Sans SC',system-ui,sans-serif;line-height:1.5;overflow-x:hidden;overflow-wrap:break-word">
+
+<dc-import name="SiteHeader" lang="{{ lang }}" on-lang="{{ setLang }}" style="position:sticky;top:0;z-index:50;display:block" hint-size="100%,70px"></dc-import>
+
+<sc-if value="{{ ready }}" hint-placeholder-val="{{ true }}">
+<main>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(48px,8vw,96px) clamp(20px,4vw,48px) clamp(32px,5vw,56px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <nav aria-label="Breadcrumb" style="display:flex;flex-wrap:wrap;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:22px">
+      <a href="./index.html" style="color:#ae1800">{{ ui.lifestyles }}</a>
+      <span style="color:rgba(32,30,29,0.45)">/</span>
+      <span style="color:rgba(32,30,29,0.7)">{{ d.name }}</span>
+    </nav>
+    <h1 style="font-weight:800;font-size:clamp(40px,6vw,72px);line-height:1.04;letter-spacing:-0.015em;margin:0 0 10px;max-width:900px">{{ d.name }}</h1>
+    <div style="font-size:clamp(18px,2vw,24px);font-weight:600;font-style:italic;color:rgba(32,30,29,0.6);margin:0 0 26px">{{ nameAlt }}</div>
+    <p style="font-size:18px;max-width:640px;color:rgba(32,30,29,0.8);margin:0 0 32px;text-wrap:pretty">{{ d.intro }}</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px">
+      <a href="{{ ctaHref }}" style="display:inline-flex;align-items:center;gap:8px;background:#ec3013;color:#f3f2f2;font-weight:800;font-size:15px;padding:16px 26px">{{ ui.ctaPrivate }} →</a>
+      <a href="{{ luxuryUrl }}" target="_blank" rel="noopener" style="white-space:nowrap;display:inline-flex;align-items:center;gap:8px;border:1px solid #201e1d;color:#201e1d;font-weight:800;font-size:15px;padding:16px 26px">{{ ui.luxury }}</a>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4)">
+  <div role="img" aria-label="{{ heroAlt }}" style="width:100%;aspect-ratio:21/8;min-height:240px">
+    <sc-if value="{{ hasHeroPhoto }}" hint-placeholder-val="{{ false }}">{{ heroPhotoEl }}</sc-if>
+    <sc-if value="{{ noHeroPhoto }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ heroId }}" shape="rect" placeholder="{{ heroAlt }}" style="width:100%;height:100%"></image-slot></sc-if>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 36px">{{ ui.looksKicker }}</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));border-top:2px solid rgba(32,30,29,0.4);border-left:2px solid rgba(32,30,29,0.4)">
+      <sc-for list="{{ features }}" as="f" hint-placeholder-count="4">
+        <div style="padding:28px;border-right:2px solid rgba(32,30,29,0.4);border-bottom:2px solid rgba(32,30,29,0.4)">
+          <h3 style="font-size:18px;margin:0 0 10px">{{ f.title }}</h3>
+          <p style="font-size:14px;color:rgba(32,30,29,0.75);margin:0">{{ f.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px)">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(28px,5vw,64px)">
+    <div>
+      <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 20px">{{ ui.marketKicker }}</h2>
+      <p style="font-size:15px;color:rgba(32,30,29,0.75);margin:0;max-width:420px">{{ ui.proof }}</p>
+    </div>
+    <div>
+      <sc-for list="{{ marketing }}" as="mk" hint-placeholder-count="3">
+        <div style="display:flex;gap:18px;padding:18px 0;border-top:2px solid rgba(32,30,29,0.4);font-size:15px">
+          <div style="font-weight:800;color:#ae1800;flex:0 0 32px">{{ mk.n }}</div>
+          <div style="color:rgba(32,30,29,0.85)">{{ mk.text }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px);background:#eae9e9">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 36px">{{ ui.whereKicker }}</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));border-top:2px solid rgba(32,30,29,0.4);border-left:2px solid rgba(32,30,29,0.4)">
+      <sc-for list="{{ areas }}" as="a" hint-placeholder-count="4">
+        <div style="padding:28px;border-right:2px solid rgba(32,30,29,0.4);border-bottom:2px solid rgba(32,30,29,0.4);background:#f3f2f2;display:flex;flex-direction:column;gap:10px">
+          <h3 style="font-size:18px;margin:0">{{ a.name }}</h3>
+          <p style="font-size:14px;color:rgba(32,30,29,0.75);margin:0;flex:1">{{ a.note }}</p>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:800">
+            <sc-if value="{{ a.hasCity }}" hint-placeholder-val="{{ true }}"><a href="{{ a.href }}">{{ ui.cityGuide }}</a></sc-if>
+            <sc-if value="{{ a.hasExt }}" hint-placeholder-val="{{ false }}"><a href="{{ a.ext }}" target="_blank" rel="noopener">{{ ui.districtSite }}</a></sc-if>
+            <sc-if value="{{ a.noCity }}" hint-placeholder-val="{{ false }}"><a href="{{ a.ask }}">{{ ui.askVicki }}</a></sc-if>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 28px">{{ ui.knowKicker }}</h2>
+    <div>
+      <sc-for list="{{ know }}" as="k" hint-placeholder-count="4">
+        <div style="display:flex;flex-wrap:wrap;gap:8px 28px;padding:22px 0;border-top:2px solid rgba(32,30,29,0.4)">
+          <div style="font-weight:800;font-size:15px;color:#ae1800;flex:0 0 40px">{{ k.n }}</div>
+          <div style="font-weight:800;font-size:16px;flex:1 1 220px;min-width:0">{{ k.title }}</div>
+          <div style="font-size:15px;color:rgba(32,30,29,0.78);flex:2 1 320px;min-width:0">{{ k.body }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px)">
+  <div style="max-width:900px;margin:0 auto">
+    <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 28px">{{ ui.faqKicker }}</h2>
+    <div style="border-bottom:2px solid rgba(32,30,29,0.4)">
+      <sc-for list="{{ faq }}" as="q" hint-placeholder-count="4">
+        <details style="border-top:2px solid rgba(32,30,29,0.4)">
+          <summary style="list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:800;font-size:17px">
+            <span>{{ q.q }}</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ec3013" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+          </summary>
+          <p style="margin:0 0 24px;font-size:15px;color:rgba(32,30,29,0.8);max-width:720px">{{ q.a }}</p>
+        </details>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px);background:#eae9e9">
+  <div style="max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(28px,5vw,56px);align-items:center">
+    <div role="img" aria-label="Portrait of Vicki Wong, REALTOR®" style="width:min(320px,100%);aspect-ratio:4/5">
+      <image-slot id="advisor-portrait" shape="rect" placeholder="Portrait of Vicki Wong, REALTOR®" style="width:100%;height:100%"></image-slot>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#ae1800;margin-bottom:12px">{{ ui.advisorKicker }}</div>
+      <h2 style="font-size:clamp(26px,3vw,34px);margin:0 0 14px">Vicki Wong, REALTOR®</h2>
+      <p style="font-size:16px;color:rgba(32,30,29,0.8);margin:0 0 26px;max-width:460px">{{ ui.advisorBio }}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <a href="{{ ctaHref }}" style="display:inline-flex;align-items:center;gap:8px;background:#ec3013;color:#f3f2f2;font-weight:800;font-size:14px;padding:14px 22px">{{ ui.ctaPrivate }} →</a>
+        <a href="tel:6503945303" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(32,30,29,0.4);color:#201e1d;font-weight:800;font-size:14px;padding:14px 22px">(650) 394-5303</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:2px solid rgba(32,30,29,0.4);padding:clamp(56px,9vw,100px) clamp(20px,4vw,48px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="font-size:clamp(26px,3.2vw,38px);margin:0 0 32px">{{ ui.relatedKicker }}</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:2px">
+      <sc-for list="{{ related }}" as="r" hint-placeholder-count="3">
+        <a href="{{ r.href }}" style="display:flex;flex-direction:column;background:#f3f2f2;outline:2px solid rgba(32,30,29,0.4);color:#201e1d">
+          <div role="img" aria-label="{{ r.alt }}" style="width:100%;aspect-ratio:4/3">
+            <sc-if value="{{ r.hasPhoto }}" hint-placeholder-val="{{ false }}">{{ r.photoEl }}</sc-if>
+            <sc-if value="{{ r.noPhoto }}" hint-placeholder-val="{{ true }}"><image-slot id="{{ r.imgId }}" shape="rect" placeholder="{{ r.alt }}" style="width:100%;height:100%"></image-slot></sc-if>
+          </div>
+          <div style="padding:20px 22px 24px">
+            <h3 style="font-size:18px;margin:0 0 6px">{{ r.name }}</h3>
+            <p style="font-size:13px;color:rgba(32,30,29,0.7);margin:0 0 12px">{{ r.short }}</p>
+            <div style="font-size:13px;font-weight:800;color:#ae1800">{{ ui.explore }}</div>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="padding:40px clamp(20px,4vw,48px);background:#201e1d;color:rgba(243,242,242,0.8)">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center">
+    <div style="font-size:13px">Vicki Wong, REALTOR® | eXp Realty of California | DRE #02234809</div>
+    <div style="display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">
+      <svg width="30" height="30" viewBox="0 0 40 40" role="img" aria-label="Equal Housing Opportunity logo"><path d="M20 5 4 17h4v17h24V17h4z" fill="none" stroke="currentColor" stroke-width="2.6"></path><rect x="13" y="20" width="14" height="3" fill="currentColor"></rect><rect x="13" y="26" width="14" height="3" fill="currentColor"></rect></svg>
+      {{ ui.eho }}
+    </div>
+  </div>
+</footer>
+</sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;slug&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;school-districts&quot;, &quot;multi-generational&quot;, &quot;eco-friendly&quot;, &quot;equestrian&quot;, &quot;golf&quot;, &quot;historic&quot;, &quot;metropolitan&quot;, &quot;wine-vineyard&quot;], &quot;default&quot;: &quot;equestrian&quot;, &quot;tsType&quot;: &quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { ready: false, lang: 'en' };
+
+  componentDidMount() {
+    const go = () => {
+      if (window.VW_LS && window.VW_pick && window.VW_toHans) {
+        clearInterval(this._t);
+        const lang = window.VW_initLang();
+        window.VW_saveLang(lang);
+        this.setState({ ready: true, lang });
+        return true;
+      }
+      return false;
+    };
+    if (!go()) this._t = setInterval(go, 40);
+  }
+
+  componentWillUnmount() { clearInterval(this._t); }
+
+  setLang(lang) {
+    this.setState({ lang });
+    window.VW_saveLang && window.VW_saveLang(lang);
+  }
+
+  renderVals() {
+    const lang = this.state.lang;
+    const base = { lang, setLang: (l) => this.setLang(l) };
+    const L = window.VW_LS;
+    if (!this.state.ready || !L) return { ...base, ready: false };
+
+    const slug = this.props.slug || 'equestrian';
+    const raw = L.items[slug] || L.items[L.featured[0]];
+    const pick = (v) => window.VW_pick(v, lang);
+    const d = pick(raw);
+    const ui = pick(L.ui);
+    const mail = (subject) => 'mailto:vickiwongrealtor@gmail.com?subject=' + encodeURIComponent(subject);
+
+    const photoEl = (slug, alt, w) => {
+      const src = window.VW_photoUrl(slug, w);
+      return src ? React.createElement('img', { src, alt, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }) : null;
+    };
+    const heroPhoto = L.photos[slug];
+    return {
+      ...base,
+      ready: true,
+      d, ui,
+      luxuryUrl: L.luxuryUrl,
+      hasHeroPhoto: !!heroPhoto, noHeroPhoto: !heroPhoto,
+      heroPhotoEl: heroPhoto ? photoEl(slug, heroPhoto.alt, 2000) : null,
+      nameAlt: lang === 'en' ? raw.name.zh : raw.name.en,
+      heroId: 'ls-hero-' + slug,
+      heroAlt: heroPhoto ? heroPhoto.alt : raw.heroAlt,
+      ctaHref: L.sellerUrl + '?lifestyle=' + slug,
+      marketing: d.marketing.map((t, i) => ({ text: t, n: String(i + 1).padStart(2, '0') })),
+      features: d.features,
+      areas: d.areas.map(a => ({
+        ...a,
+        hasCity: !!a.city, noCity: !a.city,
+        href: a.city ? '../cities/' + a.city + '.html' : '',
+        hasExt: !!a.ext,
+        ask: L.sellerUrl + '?lifestyle=' + slug,
+      })),
+      know: d.know.map((k, i) => ({ ...k, n: String(i + 1).padStart(2, '0') })),
+      faq: d.faq,
+      related: raw.related.map(s => ({
+        href: './' + s + '.html',
+        name: pick(L.items[s].name),
+        short: pick(L.items[s].short),
+        imgId: 'ls-tile-' + s,
+        alt: L.photos[s] ? L.photos[s].alt : L.items[s].heroAlt,
+        hasPhoto: !!L.photos[s], noPhoto: !L.photos[s],
+        photoEl: L.photos[s] ? photoEl(s, L.photos[s].alt, 900) : null,
+      })),
+    };
+  }
+}
+
+</script>
+</body>
+</html>

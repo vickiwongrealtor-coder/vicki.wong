@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menlo Park, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Menlo Park, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/menlo-park">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menlo Park, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Menlo Park, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Menlo Park, CA","description":"Real estate guide to Menlo Park, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"San Mateo County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      {
+            "title": "Meta headquarters and Sand Hill Road",
+            "body": "The concentration of technology and venture capital employment here is among the densest anywhere, and it shows up directly in housing demand."
+      },
+      {
+            "title": "Menlo Park City School District",
+            "body": "The elementary district rates near the top of the state, and high schoolers feed into the highly regarded Sequoia Union district."
+      },
+      {
+            "title": "Stanford and Palo Alto next door",
+            "body": "Access to Stanford, its hospital system, and downtown Palo Alto without paying Palo Alto prices in every neighborhood."
+      },
+      {
+            "title": "Caltrain and 101 access",
+            "body": "A downtown Caltrain station plus quick 101 and 280 access make commuting in either direction straightforward."
+      }
+];
+    const restaurants = [
+      {
+            "name": "Flea St. Cafe",
+            "cuisine": "California",
+            "note": "A long-running farm-to-table restaurant that predates the trend by decades."
+      },
+      {
+            "name": "Camper",
+            "cuisine": "Californian",
+            "note": "A modern downtown spot popular for both business lunches and dinners."
+      },
+      {
+            "name": "Ann’s Coffee Shop",
+            "cuisine": "American Diner",
+            "note": "A genuine old-school diner that has outlasted most of the neighborhood around it."
+      }
+];
+    return {
+      cityData: {
+        region: 'Peninsula', cityNameEn: 'Menlo Park', tagline: 'Meta HQ · Sand Hill Road', heroImageId: 'city-hero-menlo-park',
+        narrativeEn: "Home to Meta and the venture capital corridor on Sand Hill Road, with quiet tree-lined neighborhoods a few minutes from Stanford.", whyHeadlineEn: "The venture capital corridor, with neighborhoods to match",
+        whyBuy, restaurants,
+        stats: {
+        "schoolRating": "8–10/10",
+        "schoolNote": "Menlo Park City SD · Sequoia Union HSD",
+        "educationPct": "~75%",
+        "educationNote": "Adults with a bachelor’s degree or higher",
+        "crimeRate": "Low",
+        "crimeNote": "Well below county and national averages",
+        "medianIncome": "$200K+",
+        "commute": "Menlo Park Caltrain · Hwy 101 &amp; I-280"
+},
+        prices: {"sfh":"$2.6M–$3.4M","townhouse":"$1.6M–$2.0M","condo":"$1.1M–$1.4M"},
+        schoolDistrictNote: "Menlo Park City School District covers K-8 and rates near the top of the state; high schoolers attend Sequoia Union High School District schools, primarily Menlo-Atherton High.",
+        schools: [
+        {
+                "level": "Elementary",
+                "name": "Oak Knoll Elementary",
+                "type": "Public",
+                "grade": "10/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Encinal Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Laurel Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Middle",
+                "name": "Hillview Middle",
+                "type": "Public",
+                "grade": "10/10"
+        },
+        {
+                "level": "High",
+                "name": "Menlo-Atherton High",
+                "type": "Public",
+                "grade": "8/10"
+        },
+        {
+                "level": "Private",
+                "name": "Menlo School",
+                "type": "Private",
+                "grade": "10/10"
+        }
+],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

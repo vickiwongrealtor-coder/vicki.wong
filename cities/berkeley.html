@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berkeley, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Berkeley, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/berkeley">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Berkeley, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Berkeley, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Berkeley, CA","description":"Real estate guide to Berkeley, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      {
+            "title": "UC Berkeley anchors the economy",
+            "body": "The university and its research ecosystem provide a stable employment base and steady rental demand across the city."
+      },
+      {
+            "title": "Two BART stations plus AC Transit",
+            "body": "Downtown Berkeley and North Berkeley BART make this one of the easiest East Bay cities to live in without a car."
+      },
+      {
+            "title": "The food and culture scene",
+            "body": "The Gourmet Ghetto, Fourth Street, and a dense concentration of theaters and music venues give Berkeley a cultural life larger than its size."
+      },
+      {
+            "title": "Distinct neighborhood character",
+            "body": "Elmwood, Rockridge-adjacent North Berkeley, Claremont, and the flats each carry their own architecture, price point, and feel."
+      }
+];
+    const restaurants = [
+      {
+            "name": "Chez Panisse",
+            "cuisine": "California",
+            "note": "The restaurant that defined California cuisine, still drawing reservations from across the country."
+      },
+      {
+            "name": "Cheese Board Collective",
+            "cuisine": "Pizza · Bakery",
+            "note": "A worker-owned Shattuck Avenue institution with a line out the door most days."
+      },
+      {
+            "name": "Angeline’s Louisiana Kitchen",
+            "cuisine": "Cajun · Creole",
+            "note": "A lively downtown spot for New Orleans-style cooking."
+      }
+];
+    return {
+      cityData: {
+        region: 'East Bay', cityNameEn: 'Berkeley', tagline: 'UC Berkeley · Culture', heroImageId: 'city-hero-berkeley',
+        narrativeEn: "A university city with a dense food and arts scene, strong transit, and neighborhoods that range from flatland bungalows to hillside view homes.", whyHeadlineEn: "A university city with real neighborhoods behind it",
+        whyBuy, restaurants,
+        stats: {
+        "schoolRating": "6–8/10",
+        "schoolNote": "Berkeley Unified School District",
+        "educationPct": "~72%",
+        "educationNote": "Very high, driven by the university",
+        "crimeRate": "Moderate",
+        "crimeNote": "Property crime above average; varies by neighborhood",
+        "medianIncome": "$110K±",
+        "commute": "Downtown &amp; North Berkeley BART · I-80 &amp; Hwy 24"
+},
+        prices: {"sfh":"$1.3M–$1.7M","townhouse":"$900K–$1.1M","condo":"$650K–$850K"},
+        schoolDistrictNote: "Berkeley Unified serves the whole city and uses a controlled-choice assignment system rather than strict neighborhood boundaries — worth understanding early, since your address does not automatically determine your school.",
+        schools: [
+        {
+                "level": "Elementary",
+                "name": "Oxford Elementary",
+                "type": "Public",
+                "grade": "8/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Cragmont Elementary",
+                "type": "Public",
+                "grade": "7/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Malcolm X Elementary",
+                "type": "Public",
+                "grade": "6/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "John Muir Elementary",
+                "type": "Public",
+                "grade": "7/10"
+        },
+        {
+                "level": "Middle",
+                "name": "Martin Luther King Jr. Middle",
+                "type": "Public",
+                "grade": "6/10"
+        },
+        {
+                "level": "Middle",
+                "name": "Willard Middle",
+                "type": "Public",
+                "grade": "6/10"
+        },
+        {
+                "level": "High",
+                "name": "Berkeley High",
+                "type": "Public",
+                "grade": "7/10"
+        },
+        {
+                "level": "Private",
+                "name": "The College Preparatory School",
+                "type": "Private",
+                "grade": "10/10"
+        }
+],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

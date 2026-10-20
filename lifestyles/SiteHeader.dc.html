@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&amp;family=Noto+Sans+TC:wght@400;600;700;800&amp;family=Noto+Sans+SC:wght@400;600;700;800&amp;display=swap">
+<script src="../zh-hans.js"></script>
+<script src="./lifestyles-data.js"></script>
+</helmet>
+<header style="position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:12px clamp(14px,3vw,36px);padding:14px clamp(16px,4vw,48px);border-bottom:2px solid rgba(32,30,29,0.4);background:#f3f2f2;color:#201e1d;font-family:'Archivo','Noto Sans TC','Noto Sans SC',system-ui,sans-serif;line-height:1.5">
+  <a href="../index.html" style="display:flex;margin-right:auto">
+    <img src="../logo.png" alt="Vicki Wong, REALTOR® · eXp Realty of California" style="height:36px;width:auto;object-fit:contain">
+  </a>
+  <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+    <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;font-size:14px;font-weight:600">
+      <sc-for list="{{ navBefore }}" as="link" hint-placeholder-count="3">
+        <a href="{{ link.href }}" style="color:#201e1d">{{ link.label }}</a>
+      </sc-for>
+      <div style="position:relative">
+        <button type="button" onclick="{{ toggleDrop }}" aria-expanded="{{ dropOpen }}" aria-haspopup="true" style="display:flex;align-items:center;gap:6px;padding:0;background:none;border:none;font:inherit;font-weight:700;color:#ae1800;cursor:pointer">
+          {{ ui.lifestyles }}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+        <sc-if value="{{ dropOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:calc(100% + 20px);left:-18px;width:300px;background:#f3f2f2;border:2px solid rgba(32,30,29,0.4);display:flex;flex-direction:column;z-index:60">
+            <sc-for list="{{ dropItems }}" as="it" hint-placeholder-count="8">
+              <a href="{{ it.href }}" style="padding:12px 18px;font-size:14px;font-weight:600;color:#201e1d;border-bottom:1px solid rgba(32,30,29,0.15)" style-hover="background:#eae9e9">{{ it.label }}</a>
+            </sc-for>
+            <a href="./index.html" style="padding:12px 18px;font-size:14px;font-weight:800;color:#ae1800;border-bottom:1px solid rgba(32,30,29,0.15)" style-hover="background:#eae9e9">{{ ui.viewAll }}</a>
+            <a href="{{ luxuryUrl }}" target="_blank" rel="noopener" style="padding:12px 18px;font-size:14px;font-weight:800;color:#201e1d" style-hover="background:#eae9e9">{{ ui.luxury }}</a>
+          </div>
+        </sc-if>
+      </div>
+      <sc-for list="{{ navAfter }}" as="link" hint-placeholder-count="2">
+        <a href="{{ link.href }}" style="color:#201e1d">{{ link.label }}</a>
+      </sc-for>
+    </nav>
+  </sc-if>
+  <div style="display:flex;border:1px solid rgba(32,30,29,0.4);flex:none">
+    <sc-for list="{{ langs }}" as="l" hint-placeholder-count="3">
+      <button type="button" onclick="{{ l.fn }}" aria-pressed="{{ l.active }}" style="white-space:nowrap;padding:9px 11px;border:none;border-left:{{ l.border }};font:inherit;font-size:12px;font-weight:800;cursor:pointer;background:{{ l.bg }};color:{{ l.color }}">{{ l.label }}</button>
+    </sc-for>
+  </div>
+  <a href="tel:6503945303" style="display:inline-flex;align-items:center;gap:8px;background:#ec3013;color:#f3f2f2;font-weight:800;font-size:13px;padding:10px 18px;flex:none">(650) 394-5303</a>
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+    <button type="button" onclick="{{ toggleMenu }}" aria-label="{{ ui.menu }}" aria-expanded="{{ menuOpen }}" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid rgba(32,30,29,0.4);color:#201e1d;cursor:pointer;flex:none">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></svg>
+    </button>
+  </sc-if>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav style="position:absolute;top:100%;left:0;right:0;background:#f3f2f2;border-bottom:2px solid rgba(32,30,29,0.4);display:flex;flex-direction:column;max-height:80vh;overflow-y:auto;z-index:60">
+      <sc-for list="{{ mobileLinks }}" as="link" hint-placeholder-count="12">
+        <a href="{{ link.href }}" style="display:block;padding:14px clamp(16px,4vw,48px) 14px {{ link.indent }};font-size:{{ link.size }};font-weight:700;color:#201e1d;border-top:1px solid rgba(32,30,29,0.2)">{{ link.label }}</a>
+      </sc-for>
+      <a href="./contact.html" style="display:block;padding:16px clamp(16px,4vw,48px);font-size:16px;font-weight:800;background:#ec3013;color:#f3f2f2">{{ ui.ctaPrivate }} →</a>
+    </nav>
+  </sc-if>
+</header>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1280, &quot;height&quot;: 420}, &quot;lang&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;en&quot;, &quot;zh&quot;, &quot;hans&quot;], &quot;default&quot;: &quot;en&quot;, &quot;tsType&quot;: &quot;'en' | 'zh' | 'hans'&quot;}, &quot;onLang&quot;: {&quot;editor&quot;: null, &quot;tsType&quot;: &quot;(lang: string) =&gt; void&quot;}}">
+class Component extends DCLogic {
+  state = { ready: !!window.VW_LS, drop: false, menu: false, narrow: false };
+
+  componentDidMount() {
+    if (!this.state.ready) {
+      this._t = setInterval(() => {
+        if (window.VW_LS && window.VW_pick) { clearInterval(this._t); this.setState({ ready: true }); }
+      }, 40);
+    }
+    this._measure = () => {
+      const narrow = window.innerWidth < 1000;
+      if (narrow !== this.state.narrow) this.setState({ narrow, menu: false, drop: false });
+    };
+    this._measure();
+    window.addEventListener('resize', this._measure);
+    this._outside = (e) => { if (this.state.drop && !e.target.closest('[aria-haspopup]') ) this.setState({ drop: false }); };
+    document.addEventListener('click', this._outside);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._t);
+    window.removeEventListener('resize', this._measure);
+    document.removeEventListener('click', this._outside);
+  }
+
+  renderVals() {
+    const lang = this.props.lang || 'en';
+    const L = window.VW_LS;
+    const ready = this.state.ready && L && window.VW_pick;
+    const ui = ready ? window.VW_pick(L.ui, lang) : {};
+    const home = '../index.html';
+    const navBefore = [
+      { href: home + '#about', label: ui.navAbout },
+      { href: home + '#services', label: ui.navServices },
+      { href: home + '#areas', label: ui.navAreas },
+    ];
+    const navAfter = [
+      { href: home + '#listings', label: ui.navListings },
+      { href: home + '#reviews', label: ui.navReviews },
+    ];
+    const dropItems = ready ? L.featured.map(s => ({ href: './' + s + '.html', label: window.VW_pick(L.items[s].name, lang) })) : [];
+    const edge = 'clamp(16px,4vw,48px)';
+    const mobileLinks = [
+      ...navBefore.map(l => ({ ...l, indent: edge, size: '16px' })),
+      { href: './index.html', label: ui.lifestyles, indent: edge, size: '16px' },
+      ...dropItems.map(l => ({ ...l, indent: 'calc(' + edge + ' + 20px)', size: '14px' })),
+      { href: L ? L.luxuryUrl : '#', label: ui.luxury, indent: 'calc(' + edge + ' + 20px)', size: '14px' },
+      ...navAfter.map(l => ({ ...l, indent: edge, size: '16px' })),
+    ];
+    const langs = [['en', 'EN'], ['zh', '繁中'], ['hans', '简中']].map(([code, label], i) => ({
+      code, label,
+      active: code === lang,
+      bg: code === lang ? '#201e1d' : 'transparent',
+      color: code === lang ? '#f3f2f2' : '#201e1d',
+      border: i ? '1px solid rgba(32,30,29,0.4)' : 'none',
+      fn: () => this.props.onLang && this.props.onLang(code),
+    }));
+    return {
+      ui, navBefore, navAfter, luxuryUrl: L ? L.luxuryUrl : '#', dropItems, mobileLinks, langs,
+      wide: !this.state.narrow,
+      narrow: this.state.narrow,
+      dropOpen: this.state.drop,
+      menuOpen: this.state.narrow && this.state.menu,
+      toggleDrop: () => this.setState(s => ({ drop: !s.drop })),
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+    };
+  }
+}
+
+</script>
+</body>
+</html>

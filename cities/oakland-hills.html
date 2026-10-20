@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oakland Hills, CA Real Estate Guide — Schools &amp; Home Prices | Vicki Wong</title>
+<meta name="description" content="Thinking about buying in Oakland Hills, CA? School ratings by level, typical home prices for single-family, townhouse &amp; condo, crime data, and local insight from trilingual realtor Vicki Wong.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vicki-wong.com/cities/oakland-hills">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Oakland Hills, CA Real Estate Guide | Vicki Wong">
+<meta property="og:description" content="School ratings, home prices, and safety data for buyers considering Oakland Hills, CA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Place","name":"Oakland Hills, CA","description":"Real estate guide to Oakland Hills, CA covering schools, home prices, crime, and local amenities.","containedInPlace":{"@type":"AdministrativeArea","name":"Alameda County, CA"}}
+</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="CityPage" dc-props="{{ cityData }}" hint-size="100%,100%"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const whyBuy = [
+      {
+            "title": "Bay and Golden Gate views",
+            "body": "Elevation is the whole point — a large share of homes have unobstructed views across the bay to San Francisco and the Golden Gate."
+      },
+      {
+            "title": "Architecturally distinctive housing",
+            "body": "Mid-century moderns, custom contemporaries, and post-1991 rebuilds give the hills a housing stock unlike the Oakland flats."
+      },
+      {
+            "title": "Quiet, wooded setting minutes from the city",
+            "body": "Redwood Regional Park, Joaquin Miller Park, and miles of trails sit at the doorstep, with downtown Oakland 15 minutes away."
+      },
+      {
+            "title": "Value relative to the Peninsula",
+            "body": "Comparable square footage and views cost substantially less here than in equivalent hillside neighborhoods across the bay."
+      }
+];
+    const restaurants = [
+      {
+            "name": "Montclair Bistro",
+            "cuisine": "American",
+            "note": "A neighborhood staple in Montclair Village for weeknight dinners."
+      },
+      {
+            "name": "Sequoia Diner",
+            "cuisine": "Breakfast · American",
+            "note": "A well-loved Redwood Road spot known for weekend breakfast lines."
+      },
+      {
+            "name": "Crogan’s Montclair",
+            "cuisine": "American Grill",
+            "note": "A long-running bar and grill at the center of Montclair Village."
+      }
+];
+    return {
+      cityData: {
+        region: 'East Bay', cityNameEn: 'Oakland Hills', tagline: 'Views · Established Homes', heroImageId: 'city-hero-oakland-hills',
+        narrativeEn: "A hillside pocket of Oakland known for bay views, mature trees, and architecturally distinctive homes on large, private lots.", whyHeadlineEn: "Views, space, and architecture you cannot build new",
+        whyBuy, restaurants,
+        stats: {
+        "schoolRating": "Varies",
+        "schoolNote": "OUSD — hill schools rate well above district average",
+        "educationPct": "~65%",
+        "educationNote": "Notably higher than Oakland city-wide",
+        "crimeRate": "Lower",
+        "crimeNote": "Well below Oakland city-wide rates",
+        "medianIncome": "$150K±",
+        "commute": "Hwy 13 &amp; 24 · Rockridge BART nearby"
+},
+        prices: {"sfh":"$1.1M–$1.6M","townhouse":"$800K–$1.0M","condo":"$550K–$750K"},
+        schoolDistrictNote: "Oakland Unified serves the hills, and the hill schools consistently rate well above the district average — verify the exact attendance boundary for any address, as ratings drop sharply just downhill.",
+        schools: [
+        {
+                "level": "Elementary",
+                "name": "Thornhill Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Montclair Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Joaquin Miller Elementary",
+                "type": "Public",
+                "grade": "8/10"
+        },
+        {
+                "level": "Elementary",
+                "name": "Chabot Elementary",
+                "type": "Public",
+                "grade": "9/10"
+        },
+        {
+                "level": "Middle",
+                "name": "Montera Middle",
+                "type": "Public",
+                "grade": "6/10"
+        },
+        {
+                "level": "High",
+                "name": "Skyline High",
+                "type": "Public",
+                "grade": "4/10"
+        },
+        {
+                "level": "Private",
+                "name": "Head-Royce School",
+                "type": "Private",
+                "grade": "10/10"
+        }
+],
+        landmarks: [],
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>
